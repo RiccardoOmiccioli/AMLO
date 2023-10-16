@@ -1,0 +1,233 @@
+@prefix : <https://github.com/RiccardoOmiccioli/AMLO/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix mlo: <http://www.a2rd.net.br/mlo#> .
+@prefix aiiso: <https://vocab.org/aiiso/#> .
+@base <https://github.com/RiccardoOmiccioli/AMLO/> .
+
+<https://github.com/RiccardoOmiccioli/AMLO/> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
+<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://github.com/RiccardoOmiccioli/AMLO/assignment
+:assignment rdf:type owl:ObjectProperty .
+
+###  https://github.com/RiccardoOmiccioli/AMLO/isAssignedTo
+:isAssignedTo rdf:type owl:ObjectProperty ;
+        rdfs:subPropertyOf :assignment ;
+        rdfs:domain :Author ;
+        rdfs:range foaf:Project ;
+        rdfs:comment "An author working on a project." ;
+        rdfs:label "is assigned to" .
+
+### https://github.com/RiccardoOmiccioli/AMLO/hasAssigned
+:hasAssigned rdf:type owl:ObjectProperty ;
+        rdfs:subPropertyOf :assignment ;
+        owl:inverseOf :isAssignedTo ;
+        rdfs:comment "An author which is assigned to the project" ;
+        rdfs:label "has assigned" .
+
+###  https://github.com/RiccardoOmiccioli/AMLO/involvment
+:involvment rdf:type owl:ObjectProperty .
+
+###  http://xmlns.com/foaf/0.1/fundedBy
+foaf:fundedBy rdf:type owl:ObjectProperty ;
+        rdfs:subPropertyOf :involvment ;
+        rdfs:domain foaf:Project ;
+        rdfs:range foaf:Organization ;
+        rdfs:comment "An organization funding a project." ;
+        rdfs:isDefinedBy foaf: ;
+        rdfs:label "is funded by" .
+
+### https://github.com/RiccardoOmiccioli/AMLO/isDevelopedBy
+:isDevelopedBy rdf:type owl:ObjectProperty ;
+        rdfs:subPropertyOf :involvment ;
+        rdfs:domain foaf:Project ;
+        rdfs:range foaf:Organization ;
+        rdfs:comment "A project developed by an organization." ;
+        rdfs:label "is developed by" .
+
+###  https://github.com/RiccardoOmiccioli/AMLO/membership
+:membership rdf:type owl:ObjectProperty .
+
+###  http://xmlns.com/foaf/0.1/member
+foaf:member rdf:type owl:ObjectProperty ;
+        rdfs:subPropertyOf :membership ;
+        rdfs:domain foaf:Group ;
+        rdfs:range foaf:Agent ;
+        rdfs:comment "Indicates a member of a Group." ;
+        rdfs:isDefinedBy foaf: ;
+        rdfs:label "has member" .
+
+### https://github.com/RiccardoOmiccioli/AMLO/isMemberOf
+:isMemberOf rdf:type owl:ObjectProperty ;
+        rdfs:subPropertyOf :membership ;
+        owl:inverseOf foaf:member ;
+        rdfs:label "is member of" .
+
+###  https://github.com/RiccardoOmiccioli/AMLO/hasColleague
+:hasColleague rdf:type owl:ObjectProperty ;
+        rdfs:domain foaf:Person ;
+        rdfs:range foaf:Person ;
+        owl:propertyChainAxiom ( :isMemberOf foaf:member ) .
+
+###  https://github.com/RiccardoOmiccioli/AMLO/isCoAuthor
+:isCoAuthor rdf:type owl:ObjectProperty ,
+                owl:SymmetricProperty ;
+        rdfs:domain :Author ;
+        rdfs:range :Author .
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://github.com/RiccardoOmiccioli/AMLO/familyName
+:familyName rdf:type owl:DatatypeProperty ;
+        rdfs:subPropertyOf owl:topDataProperty ;
+        rdfs:domain foaf:Person ;
+        rdfs:range xsd:string .
+
+
+###  https://github.com/RiccardoOmiccioli/AMLO/firstName
+:firstName rdf:type owl:DatatypeProperty ;
+        rdfs:subPropertyOf owl:topDataProperty ;
+        rdfs:domain foaf:Person ;
+        rdfs:range xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.a2rd.net.br/mlo#Institutions
+mlo:Institutions rdf:type owl:Class ;
+        rdfs:subClassOf foaf:Organization ;
+        rdfs:isDefinedBy mlo: ;
+        rdfs:label "Company"@en .
+
+
+###  http://xmlns.com/foaf/0.1/Agent
+foaf:Agent rdf:type owl:Class ;
+        rdfs:comment "An agent (eg. person, group, software or physical artifact)." ;
+        rdfs:isDefinedBy foaf: ;
+        rdfs:label "Agent" .
+
+
+###  http://xmlns.com/foaf/0.1/Group
+foaf:Group rdf:type owl:Class ;
+        rdfs:subClassOf foaf:Agent ;
+        rdfs:comment "A collection of individual agents." ;
+        rdfs:isDefinedBy foaf: ;
+        rdfs:label "Group" .
+
+
+###  http://xmlns.com/foaf/0.1/Organization
+foaf:Organization rdf:type owl:Class ;
+        rdfs:subClassOf foaf:Agent ;
+        owl:disjointWith foaf:Person ;
+        rdfs:comment "An organization." ;
+        rdfs:isDefinedBy foaf: ;
+        rdfs:label "Organization" .
+
+### http://purl.org/vocab/aiiso/schema#Institute
+aiiso:Institute rdf:type owl:Class ;
+        rdfs:subClassOf foaf:Organization ;
+        owl:disjointWith mlo:Institutions ;
+        rdfs:comment "An Institute is a group of people recognised by an organization as forming a cohesive group referred to by the organization as an institute." ;
+        rdfs:isDefinedBy aiiso: ;
+        rdfs:label "Institute" .
+
+
+###  http://xmlns.com/foaf/0.1/Person
+foaf:Person rdf:type owl:Class ;
+        rdfs:subClassOf foaf:Agent ;
+        owl:disjointWith foaf:Project ;
+        rdfs:comment "A person." ;
+        rdfs:isDefinedBy foaf: ;
+        rdfs:label "Person" .
+
+###  https://github.com/RiccardoOmiccioli/AMLO/Author
+:Author rdf:type owl:Class ;
+        rdfs:subClassOf foaf:Person ;
+        owl:disjointWith :Organizer ;
+        rdfs:comment "An author which works on a project." ;
+        rdfs:label "Author" .
+
+###  https://github.com/RiccardoOmiccioli/AMLO/Organizer
+:Organizer rdf:type owl:Class ;
+        rdfs:subClassOf foaf:Person ;
+        owl:disjointWith :Author ;
+        rdfs:comment "An organizer of an event." ;
+        rdfs:label "Organizer" .
+
+
+###  http://xmlns.com/foaf/0.1/Project
+foaf:Project rdf:type owl:Class ;
+        rdfs:comment "A project (a collective endeavour of some kind)." ;
+        rdfs:isDefinedBy foaf: ;
+        rdfs:label "Project" .
+
+#################################################################
+#    Individuals
+#################################################################
+
+######################## People ########################
+
+###  https://github.com/RiccardoOmiccioli/AMLO/Adrin_Jalal
+:Adrin_Jalal rdf:type owl:NamedIndividual ;
+        :familyName "Jalal" ;
+        :firstName "Adrin" ;
+        :isAssignedTo :scikit-learn .
+
+###  https://github.com/RiccardoOmiccioli/AMLO/Alexandre_Gramfort
+:Alexandre_Gramfort rdf:type owl:NamedIndividual ;
+        :familyName "Gramfort" ;
+        :firstName "Alexandre" ;
+        :isAssignedTo :scikit-learn .
+
+###  https://github.com/RiccardoOmiccioli/AMLO/Alan_Ho
+:Alan_Ho rdf:type owl:NamedIndividual ;
+        :familyName "Alan" ;
+        :firstName "Ho" ;
+        :isAssignedTo :tensorFlow_Quantum .
+
+######################## Organization ########################
+
+###  https://github.com/RiccardoOmiccioli/AMLO/Google
+:Google rdf:type owl:NamedIndividual .
+
+######################## Project ########################
+
+###  https://github.com/RiccardoOmiccioli/AMLO/scikit-learn
+:scikit-learn rdf:type owl:NamedIndividual .
+
+###  https://github.com/RiccardoOmiccioli/AMLO/tensorFlow_Quantum
+:tensorFlow_Quantum rdf:type owl:NamedIndividual .
+
+######################## Group ########################
+
+###  https://github.com/RiccardoOmiccioli/AMLO/scikit-learn_group
+:scikit-learn_group rdf:type owl:NamedIndividual ;
+        foaf:fundedBy :Google ;
+        foaf:member :Adrin_Jalal ,
+                :Alexandre_Gramfort .
+
+###  https://github.com/RiccardoOmiccioli/AMLO/tensorFlow_Quantum_group
+:tensorFlow_Quantum_group rdf:type owl:NamedIndividual ;
+        foaf:member :Alan_Ho .
+
+###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi
