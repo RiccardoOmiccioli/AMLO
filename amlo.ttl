@@ -165,7 +165,7 @@ foaf:fundedBy rdf:type owl:ObjectProperty ;
 :hasMLType rdf:type owl:ObjectProperty ;
         owl:inverseOf :isMLTypeOf ;
         rdf:type owl:FunctionalProperty ;
-        rdfs:domain :Algorithms ;
+        rdfs:domain mlo:Algorithms ;
         rdfs:range :MachineLearningTypes .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/isMLTypeOf
@@ -174,7 +174,7 @@ foaf:fundedBy rdf:type owl:ObjectProperty ;
 ###  https://github.com/RiccardoOmiccioli/AMLO/hasReleaseYear
 :hasReleaseYear rdf:type owl:ObjectProperty ;
         owl:inverseOf :isReleaseYearOf ;
-        rdfs:domain :Algorithms ;
+        rdfs:domain mlo:Algorithms ;
         rdfs:range dbo:Year .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/isReleaseYearOf
@@ -192,7 +192,7 @@ foaf:fundedBy rdf:type owl:ObjectProperty ;
 ###  https://github.com/RiccardoOmiccioli/AMLO/won
 :won rdf:type owl:ObjectProperty ;
      owl:inverseOf :isWonBy ;
-     rdfs:domain :Algorithms ;
+     rdfs:domain mlo:Algorithms ;
      rdfs:range :Edition .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/isWonBy
@@ -229,8 +229,6 @@ mlo:Institutions rdf:type owl:Class ;
 
 ###  http://xmlns.com/foaf/0.1/Agent
 foaf:Agent rdf:type owl:Class ;
-        owl:disjointWith foaf:Project ,
-                :Role ;
         owl:equivalentClass [ rdf:type owl:Class ;
                 owl:unionOf ( foaf:Group
                         foaf:Person
@@ -239,7 +237,7 @@ foaf:Agent rdf:type owl:Class ;
         ] ;
         rdfs:comment "An agent (eg. person, group, software or physical artifact)." ;
         rdfs:isDefinedBy foaf: ;
-        rdfs:label "Agent" .
+        rdfs:label "Agent"@en .
 
 
 ###  http://xmlns.com/foaf/0.1/Group
@@ -253,7 +251,6 @@ foaf:Group rdf:type owl:Class ;
 ###  http://xmlns.com/foaf/0.1/Organization
 foaf:Organization rdf:type owl:Class ;
         rdfs:subClassOf foaf:Agent ;
-        owl:disjointWith foaf:Person ;
         owl:equivalentClass [ rdf:type owl:Class ;
                 owl:unionOf ( mlo:Institutions
                         aiiso:Institute
@@ -291,8 +288,6 @@ foaf:Person rdf:type owl:Class ;
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/Role
 :Role rdf:type owl:Class ;
-        owl:disjointWith foaf:Project,
-                foaf:Agent ;
         owl:equivalentClass [ rdf:type owl:Class ;
                 owl:unionOf ( :Author
                         :Organizer
@@ -314,8 +309,6 @@ foaf:Person rdf:type owl:Class ;
 
 ###  http://xmlns.com/foaf/0.1/Project
 foaf:Project rdf:type owl:Class ;
-        owl:disjointWith foaf:Agent,
-                :Role ;
         rdfs:comment "A project (a collective endeavour of some kind)." ;
         rdfs:isDefinedBy foaf: ;
         rdfs:label "Project" .
@@ -331,8 +324,8 @@ dbo:Year rdf:type owl:Class ;
         rdfs:label "Anno"@it ,
                 "Year"@en .
 
-###  https://github.com/RiccardoOmiccioli/AMLO/Algorithms
-:Algorithms rdf:type owl:Class .
+###  http://www.a2rd.net.br/mlo#Algorithms
+mlo:Algorithms rdf:type owl:Class .
 
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/Edition
@@ -418,11 +411,13 @@ dbo:Year rdf:type owl:Class ;
 ###  https://github.com/RiccardoOmiccioli/AMLO/scikit-learn_group
 :scikit-learn_group rdf:type owl:NamedIndividual ;
         foaf:member :Adrin_Jalal ,
-                :Alexandre_Gramfort .
+                :Alexandre_Gramfort ;
+        :isAssignedTo :scikit-learn .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/tensorFlow_Quantum_group
 :tensorFlow_Quantum_group rdf:type owl:NamedIndividual ;
-        foaf:member :Alan_Ho .
+        foaf:member :Alan_Ho ;
+        :isAssignedTo :tensorFlow_Quantum .
 
 ###  http://dbpedia.org/resource/2014
 dbr:2014 rdf:type owl:NamedIndividual ;
@@ -452,7 +447,7 @@ dbr:2015 rdf:type owl:NamedIndividual .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/GoogLeNet
 :GoogLeNet rdf:type owl:NamedIndividual ,
-        :Algorithms .
+        mlo:Algorithms .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/ImageNet_LSVRC
 :ImageNet_LSVRC rdf:type owl:NamedIndividual ;
@@ -531,12 +526,14 @@ dbr:2015 rdf:type owl:NamedIndividual .
 #################################################################
 
 [ rdf:type owl:AllDisjointClasses ;
-  owl:members ( dbo:Competition
-        dbo:Year
-        foaf:Person
-        :Algorithms
+  owl:members ( foaf:Agent
+        mlo:Algorithms
+        dbo:Competition
         :Edition
         :MachineLearningTypes
+        foaf:Project
+        :Role
+        dbo:Year
         )
 ] .
 
