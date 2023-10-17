@@ -43,19 +43,12 @@ foaf:fundedBy rdf:type owl:ObjectProperty ;
         rdfs:comment "A project developed by an organization." ;
         rdfs:label "is developed by" .
 
-### https://github.com/RiccardoOmiccioli/AMLO/isAuthor
-:isAuthor rdf:type owl:ObjectProperty ;
+### https://github.com/RiccardoOmiccioli/AMLO/hasRole
+:hasRole rdf:type owl:ObjectProperty ;
         rdfs:domain foaf:Person ;
-        rdfs:range :Author ;
-        rdfs:comment "A person which is an author." ;
-        rdfs:label "is author" .
-
-### https://github.com/RiccardoOmiccioli/AMLO/isOrganizer
-:isOrganizer rdf:type owl:ObjectProperty ;
-        rdfs:domain foaf:Person ;
-        rdfs:range :Organizer ;
-        rdfs:comment "A person which is an organizer." ;
-        rdfs:label "is organizer" .
+        rdfs:range :Role ;
+        rdfs:comment "A person which has a role." ;
+        rdfs:label "has role" .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/membership
 :membership rdf:type owl:ObjectProperty .
@@ -111,6 +104,14 @@ mlo:Institutions rdf:type owl:Class ;
 
 ###  http://xmlns.com/foaf/0.1/Agent
 foaf:Agent rdf:type owl:Class ;
+        owl:disjointWith foaf:Project ,
+                :Role ;
+        owl:equivalentClass [ rdf:type owl:Class ;
+                owl:unionOf ( foaf:Group
+                        foaf:Person
+                        foaf:Organization
+                )
+        ] ;
         rdfs:comment "An agent (eg. person, group, software or physical artifact)." ;
         rdfs:isDefinedBy foaf: ;
         rdfs:label "Agent" .
@@ -128,6 +129,11 @@ foaf:Group rdf:type owl:Class ;
 foaf:Organization rdf:type owl:Class ;
         rdfs:subClassOf foaf:Agent ;
         owl:disjointWith foaf:Person ;
+        owl:equivalentClass [ rdf:type owl:Class ;
+                owl:unionOf ( mlo:Institutions
+                        aiiso:Institute
+                )
+        ] ;
         rdfs:comment "An organization." ;
         rdfs:isDefinedBy foaf: ;
         rdfs:label "Organization" .
@@ -143,25 +149,37 @@ aiiso:Institute rdf:type owl:Class ;
 ###  http://xmlns.com/foaf/0.1/Person
 foaf:Person rdf:type owl:Class ;
         rdfs:subClassOf foaf:Agent ;
-        owl:disjointWith foaf:Project ;
         rdfs:comment "A person." ;
         rdfs:isDefinedBy foaf: ;
         rdfs:label "Person" .
 
+###  https://github.com/RiccardoOmiccioli/AMLO/Role
+:Role rdf:type owl:Class ;
+        owl:disjointWith foaf:Project,
+                foaf:Agent ;
+        owl:equivalentClass [ rdf:type owl:Class ;
+                owl:unionOf ( :Author
+                        :Organizer
+                )
+        ] ;
+        rdfs:label "Role" .
+
 ###  https://github.com/RiccardoOmiccioli/AMLO/Author
 :Author rdf:type owl:Class ;
-        rdfs:subClassOf foaf:Person ;
+        rdfs:subClassOf :Role ;
         rdfs:comment "An author of a project." ;
         rdfs:label "Author" .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/Organizer
 :Organizer rdf:type owl:Class ;
-        rdfs:subClassOf foaf:Person ;
+        rdfs:subClassOf :Role ;
         rdfs:comment "An organizer of an event." ;
         rdfs:label "Organizer" .
 
 ###  http://xmlns.com/foaf/0.1/Project
 foaf:Project rdf:type owl:Class ;
+        owl:disjointWith foaf:Agent,
+                :Role ;
         rdfs:comment "A project (a collective endeavour of some kind)." ;
         rdfs:isDefinedBy foaf: ;
         rdfs:label "Project" .
@@ -176,7 +194,7 @@ foaf:Project rdf:type owl:Class ;
 :Adrin_Jalal rdf:type owl:NamedIndividual ;
         :familyName "Jalal" ;
         :firstName "Adrin" ;
-        :isAuthor :Adrin_Jalal_scikit-learn .
+        :hasRole :Adrin_Jalal_scikit-learn .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/Adrin_Jalal_scikit-learn
 :Adrin_Jalal_scikit-learn rdf:type owl:NamedIndividual ;
@@ -186,17 +204,21 @@ foaf:Project rdf:type owl:Class ;
 :Alexandre_Gramfort rdf:type owl:NamedIndividual ;
         :familyName "Gramfort" ;
         :firstName "Alexandre" ;
-        :isAuthor :Adrin_Jalal_scikit-learn .
+        :hasRole :Alexandre_Gramfort_scikit-learn ,
+                :Alexandre_Gramfort_organizer .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/Alexandre_Gramfort_scikit-learn
 :Alexandre_Gramfort_scikit-learn rdf:type owl:NamedIndividual ;
         :isMemberOf :scikit-learn_group .
 
+###  https://github.com/RiccardoOmiccioli/AMLO/Alexandre_Gramfort_organizer
+:Alexandre_Gramfort_organizer rdf:type owl:NamedIndividual .
+
 ###  https://github.com/RiccardoOmiccioli/AMLO/Alan_Ho
 :Alan_Ho rdf:type owl:NamedIndividual ;
         :familyName "Alan" ;
         :firstName "Ho" ;
-        :isAuthor :Alan_Ho_tensorFlow_Quantum .
+        :hasRole :Alan_Ho_tensorFlow_Quantum .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/Alan_Ho_tensorFlow_Quantum
 :Alan_Ho_tensorFlow_Quantum rdf:type owl:NamedIndividual ;
@@ -210,7 +232,8 @@ foaf:Project rdf:type owl:Class ;
 ######################## Project ########################
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/scikit-learn
-:scikit-learn rdf:type owl:NamedIndividual .
+:scikit-learn rdf:type owl:NamedIndividual ;
+        foaf:fundedBy :Google .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/tensorFlow_Quantum
 :tensorFlow_Quantum rdf:type owl:NamedIndividual .
@@ -219,7 +242,6 @@ foaf:Project rdf:type owl:Class ;
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/scikit-learn_group
 :scikit-learn_group rdf:type owl:NamedIndividual ;
-        foaf:fundedBy :Google ;
         foaf:member :Adrin_Jalal ,
                 :Alexandre_Gramfort .
 
