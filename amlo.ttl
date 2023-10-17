@@ -35,6 +35,11 @@ foaf:fundedBy rdf:type owl:ObjectProperty ;
         rdfs:isDefinedBy foaf: ;
         rdfs:label "is funded by" .
 
+###  https://github.com/RiccardoOmiccioli/AMLO/funds
+:funds rdf:type owl:ObjectProperty ;
+       rdfs:subPropertyOf :involvment ;
+       rdfs:label "funds" .
+
 ### https://github.com/RiccardoOmiccioli/AMLO/isDevelopedBy
 :isDevelopedBy rdf:type owl:ObjectProperty ;
         rdfs:subPropertyOf :involvment ;
@@ -43,12 +48,29 @@ foaf:fundedBy rdf:type owl:ObjectProperty ;
         rdfs:comment "A project developed by an organization." ;
         rdfs:label "is developed by" .
 
-### https://github.com/RiccardoOmiccioli/AMLO/hasRole
+###  https://github.com/RiccardoOmiccioli/AMLO/develops
+:develops rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf :involvment ;
+          owl:inverseOf :isDevelopedBy ;
+          rdfs:label "develops" .
+
+###  https://github.com/RiccardoOmiccioli/AMLO/playsRole
+:playsRole rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf owl:topObjectProperty .
+
+###  https://github.com/RiccardoOmiccioli/AMLO/hasRole
 :hasRole rdf:type owl:ObjectProperty ;
-        rdfs:domain foaf:Person ;
-        rdfs:range :Role ;
-        rdfs:comment "A person which has a role." ;
-        rdfs:label "has role" .
+         rdfs:subPropertyOf :playsRole ;
+         owl:inverseOf :isRoleOf ;
+         rdfs:domain foaf:Person ;
+         rdfs:range :Role ;
+         rdfs:comment "A person which has a role." ;
+         rdfs:label "has role" .
+
+###  https://github.com/RiccardoOmiccioli/AMLO/isRoleOf
+:isRoleOf rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf :playsRole ;
+          rdfs:label "is role of" .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/membership
 :membership rdf:type owl:ObjectProperty .
@@ -67,11 +89,45 @@ foaf:fundedBy rdf:type owl:ObjectProperty ;
         owl:inverseOf :isMemberOf ;
         rdfs:label "has member" .
 
+###  https://github.com/RiccardoOmiccioli/AMLO/employment
+:employment rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty .
+
+###  https://github.com/RiccardoOmiccioli/AMLO/isEmployedBy
+:isEmployedBy rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :employment ;
+              rdfs:domain :Organizer ;
+              rdfs:range foaf:Organization ;
+              rdfs:label "is employed by" .
+
+###  https://github.com/RiccardoOmiccioli/AMLO/hasEmployee
+:hasEmployee rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :employment ;
+             owl:inverseOf :isEmployedBy ;
+             rdfs:label "has employee" .
+
 ###  https://github.com/RiccardoOmiccioli/AMLO/isCoAuthor
 :isCoAuthor rdf:type owl:ObjectProperty ;
         rdfs:domain :Author ;
         rdfs:range :Author ;
         owl:propertyChainAxiom ( :isMemberOf :hasMember ) .
+
+###  https://github.com/RiccardoOmiccioli/AMLO/assignment
+:assignment rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty .
+
+###  https://github.com/RiccardoOmiccioli/AMLO/isAssignedTo
+:isAssignedTo rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :assignment ;
+              rdfs:domain foaf:Group ;
+              rdfs:range foaf:Project ;
+              rdfs:label "is assigned to" .
+
+###  https://github.com/RiccardoOmiccioli/AMLO/hasAssigned
+:hasAssigned rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :assignment ;
+             owl:inverseOf :isAssignedTo ;
+             rdfs:label "has assigned" .
 
 #################################################################
 #    Data properties
@@ -132,6 +188,7 @@ foaf:Organization rdf:type owl:Class ;
         owl:equivalentClass [ rdf:type owl:Class ;
                 owl:unionOf ( mlo:Institutions
                         aiiso:Institute
+                        aiiso:College
                 )
         ] ;
         rdfs:comment "An organization." ;
@@ -141,10 +198,20 @@ foaf:Organization rdf:type owl:Class ;
 ### http://purl.org/vocab/aiiso/schema#Institute
 aiiso:Institute rdf:type owl:Class ;
         rdfs:subClassOf foaf:Organization ;
-        owl:disjointWith mlo:Institutions ;
+        owl:disjointWith mlo:Institutions,
+                aiiso:College ;
         rdfs:comment "An Institute is a group of people recognised by an organization as forming a cohesive group referred to by the organization as an institute." ;
         rdfs:isDefinedBy aiiso: ;
         rdfs:label "Institute" .
+
+### http://purl.org/vocab/aiiso/schema#College
+aiiso:College rdf:type owl:Class ;
+        rdfs:subClassOf foaf:Organization ;
+        owl:disjointWith mlo:Institutions,
+                aiiso:Institute;
+        rdfs:comment "A College is a group of people recognised by an organization as forming a cohesive group referred to by the organization as a college." ;
+        rdfs:isDefinedBy aiiso: ;
+        rdfs:label "College" .
 
 ###  http://xmlns.com/foaf/0.1/Person
 foaf:Person rdf:type owl:Class ;
