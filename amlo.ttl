@@ -39,6 +39,10 @@ dcterms:title rdf:type owl:AnnotationProperty .
 
 ###  http://xmlns.com/foaf/0.1/fundedBy
 foaf:fundedBy rdf:type owl:ObjectProperty ;
+        owl:inverseOf :funds ;
+        rdf:type owl:FunctionalProperty ,
+                owl:AsymmetricProperty ,
+                owl:IrreflexiveProperty ;
         rdfs:domain foaf:Project ;
         rdfs:range foaf:Organization ;
         rdfs:comment "An organization funding a project." ;
@@ -50,7 +54,10 @@ foaf:fundedBy rdf:type owl:ObjectProperty ;
        rdfs:label "funds"@en .
 
 ### https://github.com/RiccardoOmiccioli/AMLO/isDevelopedBy
-:isDevelopedBy rdf:type owl:ObjectProperty ;
+:isDevelopedBy rdf:type owl:ObjectProperty ,
+                owl:FunctionalProperty ,
+                owl:AsymmetricProperty ,
+                owl:IrreflexiveProperty ;
         rdfs:domain foaf:Project ;
         rdfs:range foaf:Organization ;
         rdfs:comment "A project developed by an organization." ;
@@ -64,6 +71,9 @@ foaf:fundedBy rdf:type owl:ObjectProperty ;
 ###  https://github.com/RiccardoOmiccioli/AMLO/hasRole
 :hasRole rdf:type owl:ObjectProperty ;
         owl:inverseOf :isRoleOf ;
+        rdf:type owl:FunctionalProperty ,
+                owl:AsymmetricProperty ,
+                owl:IrreflexiveProperty ;
         rdfs:domain foaf:Person ;
         rdfs:range :Role ;
         rdfs:comment "A person which has a role." ;
@@ -74,7 +84,9 @@ foaf:fundedBy rdf:type owl:ObjectProperty ;
         rdfs:label "is role of"@en .
 
 ### https://github.com/RiccardoOmiccioli/AMLO/isMemberOf
-:isMemberOf rdf:type owl:ObjectProperty ;
+:isMemberOf rdf:type owl:ObjectProperty ,
+                owl:AsymmetricProperty ,
+                owl:IrreflexiveProperty ;
         rdfs:domain :Author ;
         rdfs:range foaf:Group ;
         rdfs:comment "An author which a member of a Group." ;
@@ -86,14 +98,18 @@ foaf:fundedBy rdf:type owl:ObjectProperty ;
         rdfs:label "has member"@en .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/isCoAuthor
-:isCoAuthor rdf:type owl:ObjectProperty ;
+:isCoAuthor rdf:type owl:ObjectProperty ,
+                owl:SymmetricProperty ;
         rdfs:domain :Author ;
         rdfs:range :Author ;
         owl:propertyChainAxiom ( :isMemberOf :hasMember ) ;
         rdfs:label "is coauthor"@en .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/isEmployedBy
-:isEmployedBy rdf:type owl:ObjectProperty ;
+:isEmployedBy rdf:type owl:ObjectProperty ,
+                owl:FunctionalProperty ,
+                owl:AsymmetricProperty ,
+                owl:IrreflexiveProperty ;
         rdfs:domain :Organizer ;
         rdfs:range foaf:Organization ;
         rdfs:label "is employed by"@en .
@@ -104,7 +120,9 @@ foaf:fundedBy rdf:type owl:ObjectProperty ;
         rdfs:label "has employee"@en .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/isAssignedTo
-:isAssignedTo rdf:type owl:ObjectProperty ;
+:isAssignedTo rdf:type owl:ObjectProperty ,
+                owl:AsymmetricProperty ,
+                owl:IrreflexiveProperty ;
         rdfs:domain foaf:Group ;
         rdfs:range foaf:Project ;
         rdfs:label "is assigned to"@en .
@@ -117,6 +135,8 @@ foaf:fundedBy rdf:type owl:ObjectProperty ;
 ###  https://github.com/RiccardoOmiccioli/AMLO/hasEdition
 :hasEdition rdf:type owl:ObjectProperty ;
         owl:inverseOf :isEditionOf ;
+        rdf:type owl:AsymmetricProperty ,
+                owl:IrreflexiveProperty ;
         rdfs:domain dbo:Competition ;
         rdfs:range :Edition ;
         rdfs:label "has edition"@en .
@@ -128,6 +148,8 @@ foaf:fundedBy rdf:type owl:ObjectProperty ;
 ###  https://github.com/RiccardoOmiccioli/AMLO/hasEditionYear
 :hasEditionYear rdf:type owl:ObjectProperty ;
         owl:inverseOf :isEditionYearOf ;
+        rdf:type owl:AsymmetricProperty ,
+                owl:IrreflexiveProperty ;
         rdfs:domain :Edition ;
         rdfs:range dbo:Year ;
         rdfs:label "has edition year"@en .
@@ -137,7 +159,9 @@ foaf:fundedBy rdf:type owl:ObjectProperty ;
         rdfs:label "is edition year of"@en .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/isOrganizedBy
-:isOrganizedBy rdf:type owl:ObjectProperty ;
+:isOrganizedBy rdf:type owl:ObjectProperty ,
+                owl:AsymmetricProperty ,
+                owl:IrreflexiveProperty ;
         rdfs:domain :Edition ;
         rdfs:range :Organizer ;
         rdfs:label "is organized by"@en .
@@ -148,7 +172,9 @@ foaf:fundedBy rdf:type owl:ObjectProperty ;
         rdfs:label "organized"@en .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/won
-:won rdf:type owl:ObjectProperty ;
+:won rdf:type owl:ObjectProperty ,
+              owl:AsymmetricProperty ,
+              owl:IrreflexiveProperty ;
         owl:inverseOf :isWonBy ;
         rdfs:domain mlo:Algorithms ;
         rdfs:range :Edition ;
@@ -159,7 +185,10 @@ foaf:fundedBy rdf:type owl:ObjectProperty ;
         rdfs:label "is won by"@en .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/isImplementationOf
-:isImplementationOf rdf:type owl:ObjectProperty ;
+:isImplementationOf rdf:type owl:ObjectProperty ,
+                owl:FunctionalProperty ,
+                owl:AsymmetricProperty ,
+                owl:IrreflexiveProperty ;
         rdfs:domain foaf:Project ;
         rdfs:range mlo:Algorithms ;
         rdfs:label "is implementation of"@en .
@@ -172,7 +201,9 @@ foaf:fundedBy rdf:type owl:ObjectProperty ;
 ###  https://github.com/RiccardoOmiccioli/AMLO/hasMLType
 :hasMLType rdf:type owl:ObjectProperty ;
         owl:inverseOf :isMLTypeOf ;
-        rdf:type owl:FunctionalProperty ;
+        rdf:type owl:FunctionalProperty ,
+                owl:AsymmetricProperty ,
+                owl:IrreflexiveProperty ;
         rdfs:domain mlo:Algorithms ;
         rdfs:range :MachineLearningType ;
         rdfs:label "has ML type"@en .
@@ -184,6 +215,8 @@ foaf:fundedBy rdf:type owl:ObjectProperty ;
 ###  https://github.com/RiccardoOmiccioli/AMLO/hasReleaseYear
 :hasReleaseYear rdf:type owl:ObjectProperty ;
         owl:inverseOf :isReleaseYearOf ;
+        rdf:type owl:AsymmetricProperty ,
+                owl:IrreflexiveProperty ;
         rdfs:domain mlo:Algorithms ;
         rdfs:range dbo:Year ;
         rdfs:label "has release year"@en .
@@ -193,7 +226,10 @@ foaf:fundedBy rdf:type owl:ObjectProperty ;
         rdfs:label "is release year of"@en .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/uses
-:uses rdf:type owl:ObjectProperty ;
+:uses rdf:type owl:ObjectProperty ,
+                owl:FunctionalProperty ,
+                owl:AsymmetricProperty ,
+                owl:IrreflexiveProperty ;
         rdfs:domain mlo:Algorithms ;
         rdfs:range :Tool ;
         rdfs:label "uses"@en .
@@ -205,6 +241,9 @@ foaf:fundedBy rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/hasLayerType
 :hasLayerType rdf:type owl:ObjectProperty ;
+        rdf:type owl:FunctionalProperty ,
+                owl:AsymmetricProperty ,
+                owl:IrreflexiveProperty ;
         rdfs:domain :Layer ;
         rdfs:range :LayerType ;
         rdfs:label "has layer type"@en .
@@ -262,7 +301,8 @@ foaf:fundedBy rdf:type owl:ObjectProperty ;
 mlo:Institutions rdf:type owl:Class ;
         rdfs:subClassOf foaf:Organization ;
         rdfs:isDefinedBy mlo: ;
-        rdfs:label "Company"@en .
+        rdfs:label "Company"@en ,
+                "Azienda"@it .
 
 ###  http://xmlns.com/foaf/0.1/Agent
 foaf:Agent rdf:type owl:Class ;
@@ -274,14 +314,16 @@ foaf:Agent rdf:type owl:Class ;
         ] ;
         rdfs:comment "An agent (eg. person, group, software or physical artifact)."@en ;
         rdfs:isDefinedBy foaf: ;
-        rdfs:label "Agent"@en .
+        rdfs:label "Agent"@en ,
+                "Agente"@it .
 
 ###  http://xmlns.com/foaf/0.1/Group
 foaf:Group rdf:type owl:Class ;
         rdfs:subClassOf foaf:Agent ;
         rdfs:comment "A collection of individual agents."@en ;
         rdfs:isDefinedBy foaf: ;
-        rdfs:label "Group"@en .
+        rdfs:label "Group"@en ,
+                "Gruppo"@it .
 
 ###  http://xmlns.com/foaf/0.1/Organization
 foaf:Organization rdf:type owl:Class ;
@@ -294,7 +336,8 @@ foaf:Organization rdf:type owl:Class ;
         ] ;
         rdfs:comment "An organization."@en ;
         rdfs:isDefinedBy foaf: ;
-        rdfs:label "Organization"@en .
+        rdfs:label "Organization"@en ,
+                "Ente"@it .
 
 ### http://purl.org/vocab/aiiso/schema#Institute
 aiiso:Institute rdf:type owl:Class ;
@@ -303,7 +346,8 @@ aiiso:Institute rdf:type owl:Class ;
                 aiiso:College ;
         rdfs:comment "An Institute is a group of people recognised by an organization as forming a cohesive group referred to by the organization as an institute."@en ;
         rdfs:isDefinedBy aiiso: ;
-        rdfs:label "Institute"@en .
+        rdfs:label "Institute"@en ,
+                "Istituto"@it .
 
 ### http://purl.org/vocab/aiiso/schema#College
 aiiso:College rdf:type owl:Class ;
@@ -312,14 +356,16 @@ aiiso:College rdf:type owl:Class ;
                 aiiso:Institute;
         rdfs:comment "A College is a group of people recognised by an organization as forming a cohesive group referred to by the organization as a college."@en ;
         rdfs:isDefinedBy aiiso: ;
-        rdfs:label "College"@en .
+        rdfs:label "College"@en ,
+                "Università"@it .
 
 ###  http://xmlns.com/foaf/0.1/Person
 foaf:Person rdf:type owl:Class ;
         rdfs:subClassOf foaf:Agent ;
         rdfs:comment "A person."@en ;
         rdfs:isDefinedBy foaf: ;
-        rdfs:label "Person"@en .
+        rdfs:label "Person"@en ,
+                "Persona"@it .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/Role
 :Role rdf:type owl:Class ;
@@ -328,33 +374,39 @@ foaf:Person rdf:type owl:Class ;
                         :Organizer
                 )
         ] ;
-        rdfs:label "Role"@en .
+        rdfs:label "Role"@en ,
+                "Ruolo"@it .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/Author
 :Author rdf:type owl:Class ;
         rdfs:subClassOf :Role ;
         rdfs:comment "An author of a project."@en ;
-        rdfs:label "Author"@en .
+        rdfs:label "Author"@en ,
+                "Autore"@it .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/Organizer
 :Organizer rdf:type owl:Class ;
         rdfs:subClassOf :Role ;
         rdfs:comment "An organizer of an event."@en ;
-        rdfs:label "Organizer"@en .
+        rdfs:label "Organizer"@en ,
+                "Organizzatore"@it .
 
 ###  http://xmlns.com/foaf/0.1/Project
 foaf:Project rdf:type owl:Class ;
         rdfs:comment "A project (a collective endeavour of some kind)."@en ;
         rdfs:isDefinedBy foaf: ;
-        rdfs:label "Project"@en .
+        rdfs:label "Project"@en ,
+                "Progetto"@it .
 
 ###  http://dbpedia.org/ontology/Competition
 dbo:Competition rdf:type owl:Class ;
+        rdfs:isDefinedBy dbo: ;
         rdfs:label "Competition"@en ,
                 "Competizione"@it .
 
 ###  http://dbpedia.org/ontology/Year
 dbo:Year rdf:type owl:Class ;
+        rdfs:isDefinedBy dbo: ;
         rdfs:label "Anno"@it ,
                 "Year"@en .
 
@@ -367,7 +419,8 @@ dbo:Year rdf:type owl:Class ;
 mlo:Algorithms rdf:type owl:Class ;
         rdfs:comment "A concrete implementation of a theoretical concept of the AI field."@en ;
         rdfs:isDefinedBy mlo:;
-        rdfs:label "Technology"@en .
+        rdfs:label "Technology"@en ,
+                "Tecnologia"@it .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/NeuralNetwork
 :NeuralNetwork rdf:type owl:Class ;
@@ -378,19 +431,22 @@ mlo:Algorithms rdf:type owl:Class ;
                 )
         ] ;
         rdfs:comment "todo"@en ;
-        rdfs:label "Neural Network"@en .
+        rdfs:label "Neural Network"@en ,
+                "Rete Neurale"@it .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/ConvolutionalNeuralNetwork
 :ConvolutionalNeuralNetwork rdf:type owl:Class ;
         rdfs:subClassOf :NeuralNetwork ;
         rdfs:comment "todo"@en ;
-        rdfs:label "Convolutional Neural Network"@en .
+        rdfs:label "Convolutional Neural Network"@en ,
+                "Rete Neurale Convoluzionale"@it .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/RecurrentNeuralNetwork
 :RecurrentNeuralNetwork rdf:type owl:Class ;
         rdfs:subClassOf :NeuralNetwork ;
         rdfs:comment "todo"@en ;
-        rdfs:label "Recurrent Neural Network"@en .
+        rdfs:label "Recurrent Neural Network"@en ,
+                "Rete Neurale Ricorrente"@it .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/Tool
 :Tool rdf:type owl:Class ;
@@ -401,7 +457,8 @@ mlo:Algorithms rdf:type owl:Class ;
                 )
         ] ;
         rdfs:comment "A theoretical concept of the mathematical or AI field."@en ;
-        rdfs:label "Tool"@en .
+        rdfs:label "Tool"@en ,
+                "Strumento"@it .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/Layer
 :Layer rdf:type owl:Class ;
@@ -411,19 +468,22 @@ mlo:Algorithms rdf:type owl:Class ;
                 owl:someValuesFrom :LayerType
         ] ;
         rdfs:comment "A single layer of neurons of a Neural Network"@en ;
-        rdfs:label "Layer"@en .
+        rdfs:label "Layer"@en ,
+                "Strato"@it .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/GradientDescent
 :GradientDescent rdf:type owl:Class ;
         rdfs:subClassOf :Tool ;
         rdfs:comment "todo"@en ;
-        rdfs:label "Gradient Descent"@en .
+        rdfs:label "Gradient Descent"@en ,
+                "Discesa del Gradiente"@it .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/ActivationFunction
 :ActivationFunction rdf:type owl:Class ;
         rdfs:subClassOf :Tool ;
         rdfs:comment "todo"@en ;
-        rdfs:label "Activation Function"@en .
+        rdfs:label "Activation Function"@en ,
+                "Funzione di Attivazione"@it .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/Category
 :Category rdf:type owl:Class ;
@@ -431,7 +491,9 @@ mlo:Algorithms rdf:type owl:Class ;
                 owl:unionOf ( :MachineLearningType
                         :LayerType
                 )
-        ] .
+        ] ;
+        rdfs:label "Category"@en ,
+                "Categoria"@it .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/MachineLearningType
 :MachineLearningType rdf:type owl:Class ;
@@ -448,8 +510,9 @@ mlo:Algorithms rdf:type owl:Class ;
 ###  https://github.com/RiccardoOmiccioli/AMLO/ReinforcementLearning
 :ReinforcementLearning rdf:type owl:Class ;
         rdfs:subClassOf :MachineLearningType ;
-        rdfs:label "Reinforcement Learning"@en .
-
+        rdfs:label "Reinforcement Learning"@en ,
+                "Apprendimento per Rinforzo"@it .
+        
 ###  https://github.com/RiccardoOmiccioli/AMLO/SupervisedLearning
 :SupervisedLearning rdf:type owl:Class ;
         rdfs:subClassOf :MachineLearningType ;
@@ -458,7 +521,8 @@ mlo:Algorithms rdf:type owl:Class ;
                         :Regression
                 )
         ] ;
-        rdfs:label "Supervised Learning"@en .
+        rdfs:label "Supervised Learning"@en ,
+                "Apprendimento Supervisionato"@it .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/UnsupervisedLearning
 :UnsupervisedLearning rdf:type owl:Class ;
@@ -468,7 +532,8 @@ mlo:Algorithms rdf:type owl:Class ;
                         :Dimensionality_Reduction
                 )
         ] ;
-        rdfs:label "Unsupervised Learning"@en .
+        rdfs:label "Unsupervised Learning"@en ,
+                "Apprendimento non Supervisionato"@it .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/LayerType
 :LayerType rdf:type owl:Class ;
@@ -479,7 +544,8 @@ mlo:Algorithms rdf:type owl:Class ;
                 )
         ] ;
         rdfs:subClassOf :Category ;
-        rdfs:label "Layer Type"@en .
+        rdfs:label "Layer Type"@en ,
+                "Tipo Strato"@it .
 
 #################################################################
 #    Individuals
@@ -499,20 +565,16 @@ mlo:Algorithms rdf:type owl:Class ;
 :Alexandre_Gramfort rdf:type owl:NamedIndividual ;
         :familyName "Gramfort" ;
         :firstName "Alexandre" ;
-        :hasRole :Alexandre_Gramfort_scikit-learn ,
-                :Alexandre_Gramfort_organizer .
+        :hasRole :Alexandre_Gramfort_scikit-learn .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/Alexandre_Gramfort_scikit-learn
 :Alexandre_Gramfort_scikit-learn rdf:type owl:NamedIndividual ;
         :isMemberOf :scikit-learn_group .
 
-###  https://github.com/RiccardoOmiccioli/AMLO/Alexandre_Gramfort_organizer
-:Alexandre_Gramfort_organizer rdf:type owl:NamedIndividual .
-
 ###  https://github.com/RiccardoOmiccioli/AMLO/Alan_Ho
 :Alan_Ho rdf:type owl:NamedIndividual ;
-        :familyName "Alan" ;
-        :firstName "Ho" ;
+        :familyName "Ho" ;
+        :firstName "Alan" ;
         :hasRole :Alan_Ho_tensorFlow_Quantum .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/Alan_Ho_tensorFlow_Quantum
@@ -520,7 +582,8 @@ mlo:Algorithms rdf:type owl:Class ;
         :isMemberOf :tensorFlow_Quantum_group .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/Google
-:Google rdf:type owl:NamedIndividual .
+:Google rdf:type owl:NamedIndividual ,
+        mlo:Institutions .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/scikit-learn
 :scikit-learn rdf:type owl:NamedIndividual ;
@@ -531,13 +594,10 @@ mlo:Algorithms rdf:type owl:Class ;
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/scikit-learn_group
 :scikit-learn_group rdf:type owl:NamedIndividual ;
-        foaf:member :Adrin_Jalal ,
-                :Alexandre_Gramfort ;
         :isAssignedTo :scikit-learn .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/tensorFlow_Quantum_group
 :tensorFlow_Quantum_group rdf:type owl:NamedIndividual ;
-        foaf:member :Alan_Ho ;
         :isAssignedTo :tensorFlow_Quantum .
 
 ###  http://dbpedia.org/resource/2014
@@ -549,8 +609,8 @@ dbr:2015 rdf:type owl:NamedIndividual .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/Alex_Berg
 :Alex_Berg rdf:type owl:NamedIndividual ;
-        :familyName "Alex" ;
-        :firstName "Berg" ;
+        :familyName "Berg" ;
+        :firstName "Alex" ;
         :hasRole :Alex_Berg_organizer .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/Alex_Berg_organizer
@@ -558,8 +618,8 @@ dbr:2015 rdf:type owl:NamedIndividual .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/Fei-Fei_Li
 :Fei-Fei_Li rdf:type owl:NamedIndividual ;
-        :familyName "Fei-Fei" ;
-        :firstName "Li" ;
+        :familyName "Li" ;
+        :firstName "Fei-Fei" ;
         :hasRole :Fei-Fei_Li_organizer .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/Fei-Fei_Li_organizer
@@ -568,7 +628,7 @@ dbr:2015 rdf:type owl:NamedIndividual .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/GoogLeNet
 :GoogLeNet rdf:type owl:NamedIndividual ,
-        mlo:Algorithms .
+        :ConvolutionalNeuralNetwork .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/ImageNet_LSVRC
 :ImageNet_LSVRC rdf:type owl:NamedIndividual ;
@@ -586,14 +646,14 @@ dbr:2015 rdf:type owl:NamedIndividual .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/ImageNet_LSVRC_2015
 :ImageNet_LSVRC_2015 rdf:type owl:NamedIndividual ;
-        :hasEditionYear <http://dbpedia.org/resource/2015> ;
+        :hasEditionYear dbr:2015 ;
         :isOrganizedBy :Alex_Berg_organizer ,
                 :Jia_Deng_organizer .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/Jia_Deng
 :Jia_Deng rdf:type owl:NamedIndividual ;
-        :familyName "Jia" ;
-        :firstName "Deng" ;
+        :familyName "Deng" ;
+        :firstName "Jia" ;
         :hasRole :Jia_Deng_organizer .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/Jia_Deng_organizer
@@ -601,8 +661,8 @@ dbr:2015 rdf:type owl:NamedIndividual .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/Jonathan_Krause
 :Jonathan_Krause rdf:type owl:NamedIndividual ;
-        :familyName "Jonathan" ;
-        :firstName "Krause" ;
+        :familyName "Krause" ;
+        :firstName "Jonathan" ;
         :hasRole :Jonathan_Krause_organizer .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/Jonathan_Krause_organizer
@@ -610,8 +670,8 @@ dbr:2015 rdf:type owl:NamedIndividual .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/Olga_Russakovsky
 :Olga_Russakovsky rdf:type owl:NamedIndividual ;
-        :familyName "Olga" ;
-        :firstName "Russakovsky" ;
+        :familyName "Russakovsky" ;
+        :firstName "Olga" ;
         :hasRole :Olga_Russakovsky_organizer .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/Olga_Russakovsky_organizer
@@ -635,8 +695,8 @@ dbr:2015 rdf:type owl:NamedIndividual .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/Sean_Ma
 :Sean_Ma rdf:type owl:NamedIndividual ;
-        :familyName "Sean" ;
-        :firstName "Ma" ;
+        :familyName "Ma" ;
+        :firstName "Sean" ;
         :hasRole :Sean_Ma_organizer .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/Sean_Ma_organizer
@@ -644,8 +704,8 @@ dbr:2015 rdf:type owl:NamedIndividual .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/Wei_Liu
 :Wei_Liu rdf:type owl:NamedIndividual ;
-        :familyName "Wei" ;
-        :firstName "Liu" ;
+        :familyName "Liu" ;
+        :firstName "Wei" ;
         :hasRole :Wei_Liu_organizer .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/Wei_Liu_organizer
@@ -654,13 +714,13 @@ dbr:2015 rdf:type owl:NamedIndividual .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/Jian_Sun
 :Jian_Sun rdf:type owl:NamedIndividual ;
+        :familyName "Sun" ;
+        :firstName "Jian";
         :hasRole :Jian_Sun_author_ResNet .
-
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/Jian_Sun_author_ResNet
 :Jian_Sun_author_ResNet rdf:type owl:NamedIndividual ;
         :isMemberOf :ResNet_group .
-
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/Kaiming_He
 :Kaiming_He rdf:type owl:NamedIndividual ;
@@ -677,11 +737,10 @@ dbr:2015 rdf:type owl:NamedIndividual .
         :familyName "Ren" ;
         :firstName "Shaoquing" .
 
-# TODO: Check if hasRole is needed
-
 ###  https://github.com/RiccardoOmiccioli/AMLO/Shaoquing_Ren_author_ResNet
 :Shaoquing_Ren_author_ResNet rdf:type owl:NamedIndividual ;
-        :isMemberOf :ResNet_group .
+        :isMemberOf :ResNet_group ;
+        :isRoleOf :Shaoquing_Ren .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/Xiangyu_Zhang
 :Xiangyu_Zhang rdf:type owl:NamedIndividual ;
