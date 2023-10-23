@@ -1,0 +1,1484 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://github.com/RiccardoOmiccioli/AMLO/"
+     xml:base="https://github.com/RiccardoOmiccioli/AMLO/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:AMLO="https://github.com/RiccardoOmiccioli/AMLO/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://github.com/RiccardoOmiccioli/AMLO/"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/fundedBy -->
+
+    <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/fundedBy">
+        <owl:inverseOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/funds"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/develops -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/RiccardoOmiccioli/AMLO/develops">
+        <owl:inverseOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/isDevelopedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/funds -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/RiccardoOmiccioli/AMLO/funds"/>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/hasAssigned -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/RiccardoOmiccioli/AMLO/hasAssigned">
+        <owl:inverseOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/isAssignedTo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/hasEdition -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/RiccardoOmiccioli/AMLO/hasEdition">
+        <owl:inverseOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/isEditionOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/hasEditionYear -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/RiccardoOmiccioli/AMLO/hasEditionYear">
+        <owl:inverseOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/isEditionYearOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/hasEmployee -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/RiccardoOmiccioli/AMLO/hasEmployee">
+        <owl:inverseOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/isEmployedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/hasImplementation -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/RiccardoOmiccioli/AMLO/hasImplementation">
+        <owl:inverseOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/isImplementationOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/hasLayerType -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/RiccardoOmiccioli/AMLO/hasLayerType">
+        <owl:inverseOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/isLayerTypeOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/hasMLType -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/RiccardoOmiccioli/AMLO/hasMLType">
+        <owl:inverseOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/isMLTypeOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/hasMember -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/RiccardoOmiccioli/AMLO/hasMember">
+        <owl:inverseOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/isMemberOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/hasReleaseYear -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/RiccardoOmiccioli/AMLO/hasReleaseYear">
+        <owl:inverseOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/isReleaseYearOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/hasRole -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/RiccardoOmiccioli/AMLO/hasRole">
+        <owl:inverseOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/isRoleOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/isAssignedTo -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/RiccardoOmiccioli/AMLO/isAssignedTo"/>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/isCoAuthor -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/RiccardoOmiccioli/AMLO/isCoAuthor">
+        <owl:inverseOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/isCoAuthor"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/isDevelopedBy -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/RiccardoOmiccioli/AMLO/isDevelopedBy"/>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/isEditionOf -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/RiccardoOmiccioli/AMLO/isEditionOf"/>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/isEditionYearOf -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/RiccardoOmiccioli/AMLO/isEditionYearOf"/>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/isEmployedBy -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/RiccardoOmiccioli/AMLO/isEmployedBy"/>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/isImplementationOf -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/RiccardoOmiccioli/AMLO/isImplementationOf"/>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/isLayerTypeOf -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/RiccardoOmiccioli/AMLO/isLayerTypeOf"/>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/isMLTypeOf -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/RiccardoOmiccioli/AMLO/isMLTypeOf"/>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/isMemberOf -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/RiccardoOmiccioli/AMLO/isMemberOf"/>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/isOrganizedBy -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/RiccardoOmiccioli/AMLO/isOrganizedBy">
+        <owl:inverseOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/organized"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/isReleaseYearOf -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/RiccardoOmiccioli/AMLO/isReleaseYearOf"/>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/isRoleOf -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/RiccardoOmiccioli/AMLO/isRoleOf"/>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/isUsedBy -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/RiccardoOmiccioli/AMLO/isUsedBy">
+        <owl:inverseOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/uses"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/isWinnerOf -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/RiccardoOmiccioli/AMLO/isWinnerOf"/>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/isWonBy -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/RiccardoOmiccioli/AMLO/isWonBy">
+        <owl:inverseOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/won"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/organized -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/RiccardoOmiccioli/AMLO/organized"/>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/uses -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/RiccardoOmiccioli/AMLO/uses"/>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/won -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/RiccardoOmiccioli/AMLO/won"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/familyName -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/RiccardoOmiccioli/AMLO/familyName"/>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/firstName -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/RiccardoOmiccioli/AMLO/firstName"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dbpedia.org/ontology/Competition -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Competition">
+        <owl:disjointWith rdf:resource="http://dbpedia.org/ontology/Year"/>
+        <owl:disjointWith rdf:resource="http://www.a2rd.net.br/mlo#Algorithms"/>
+        <owl:disjointWith rdf:resource="http://www.a2rd.net.br/mlo#Institutions"/>
+        <owl:disjointWith rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <owl:disjointWith rdf:resource="http://xmlns.com/foaf/0.1/Group"/>
+        <owl:disjointWith rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <owl:disjointWith rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <owl:disjointWith rdf:resource="http://xmlns.com/foaf/0.1/Project"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ActivationFunction"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Author"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Category"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ConvolutionalNeuralNetwork"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Edition"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/GradientDescent"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Layer"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/LayerType"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/MachineLearningType"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/NeuralNetwork"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Organizer"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/RecurrentNeuralNetwork"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ReinforcementLearning"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Role"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/SupervisedLearning"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/UnsupervisedLearning"/>
+        <owl:disjointWith rdf:resource="https://vocab.org/aiiso/#College"/>
+        <owl:disjointWith rdf:resource="https://vocab.org/aiiso/#Institute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Year -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Year">
+        <owl:disjointWith rdf:resource="http://www.a2rd.net.br/mlo#Algorithms"/>
+        <owl:disjointWith rdf:resource="http://www.a2rd.net.br/mlo#Institutions"/>
+        <owl:disjointWith rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <owl:disjointWith rdf:resource="http://xmlns.com/foaf/0.1/Group"/>
+        <owl:disjointWith rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <owl:disjointWith rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <owl:disjointWith rdf:resource="http://xmlns.com/foaf/0.1/Project"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ActivationFunction"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Author"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Category"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ConvolutionalNeuralNetwork"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Edition"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/GradientDescent"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Layer"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/LayerType"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/MachineLearningType"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/NeuralNetwork"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Organizer"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/RecurrentNeuralNetwork"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ReinforcementLearning"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Role"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/SupervisedLearning"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/UnsupervisedLearning"/>
+        <owl:disjointWith rdf:resource="https://vocab.org/aiiso/#College"/>
+        <owl:disjointWith rdf:resource="https://vocab.org/aiiso/#Institute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.a2rd.net.br/mlo#Algorithms -->
+
+    <owl:Class rdf:about="http://www.a2rd.net.br/mlo#Algorithms">
+        <owl:disjointWith rdf:resource="http://www.a2rd.net.br/mlo#Institutions"/>
+        <owl:disjointWith rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <owl:disjointWith rdf:resource="http://xmlns.com/foaf/0.1/Group"/>
+        <owl:disjointWith rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <owl:disjointWith rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <owl:disjointWith rdf:resource="http://xmlns.com/foaf/0.1/Project"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ActivationFunction"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Author"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Category"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Edition"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/GradientDescent"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Layer"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/LayerType"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/MachineLearningType"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Organizer"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ReinforcementLearning"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Role"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/SupervisedLearning"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/UnsupervisedLearning"/>
+        <owl:disjointWith rdf:resource="https://vocab.org/aiiso/#College"/>
+        <owl:disjointWith rdf:resource="https://vocab.org/aiiso/#Institute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.a2rd.net.br/mlo#Institutions -->
+
+    <owl:Class rdf:about="http://www.a2rd.net.br/mlo#Institutions">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <owl:disjointWith rdf:resource="http://xmlns.com/foaf/0.1/Project"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ActivationFunction"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Author"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Category"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ConvolutionalNeuralNetwork"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Edition"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/GradientDescent"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Layer"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/LayerType"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/MachineLearningType"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/NeuralNetwork"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Organizer"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/RecurrentNeuralNetwork"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ReinforcementLearning"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Role"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/SupervisedLearning"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/UnsupervisedLearning"/>
+        <owl:disjointWith rdf:resource="https://vocab.org/aiiso/#College"/>
+        <owl:disjointWith rdf:resource="https://vocab.org/aiiso/#Institute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Agent -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Agent">
+        <owl:disjointWith rdf:resource="http://xmlns.com/foaf/0.1/Project"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ActivationFunction"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Author"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Category"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ConvolutionalNeuralNetwork"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Edition"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/GradientDescent"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Layer"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/LayerType"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/MachineLearningType"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/NeuralNetwork"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Organizer"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/RecurrentNeuralNetwork"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ReinforcementLearning"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Role"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/SupervisedLearning"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/UnsupervisedLearning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Group -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Group">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <owl:disjointWith rdf:resource="http://xmlns.com/foaf/0.1/Project"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ActivationFunction"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Author"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Category"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ConvolutionalNeuralNetwork"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Edition"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/GradientDescent"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Layer"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/LayerType"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/MachineLearningType"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/NeuralNetwork"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Organizer"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/RecurrentNeuralNetwork"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ReinforcementLearning"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Role"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/SupervisedLearning"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/UnsupervisedLearning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Organization -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Organization">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <owl:disjointWith rdf:resource="http://xmlns.com/foaf/0.1/Project"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ActivationFunction"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Author"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Category"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ConvolutionalNeuralNetwork"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Edition"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/GradientDescent"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Layer"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/LayerType"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/MachineLearningType"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/NeuralNetwork"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Organizer"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/RecurrentNeuralNetwork"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ReinforcementLearning"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Role"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/SupervisedLearning"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/UnsupervisedLearning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <owl:disjointWith rdf:resource="http://xmlns.com/foaf/0.1/Project"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ActivationFunction"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Author"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Category"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ConvolutionalNeuralNetwork"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Edition"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/GradientDescent"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Layer"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/LayerType"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/MachineLearningType"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/NeuralNetwork"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Organizer"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/RecurrentNeuralNetwork"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ReinforcementLearning"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Role"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/SupervisedLearning"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/UnsupervisedLearning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Project -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Project">
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ActivationFunction"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Author"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Category"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ConvolutionalNeuralNetwork"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Edition"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/GradientDescent"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Layer"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/LayerType"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/MachineLearningType"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/NeuralNetwork"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Organizer"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/RecurrentNeuralNetwork"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ReinforcementLearning"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Role"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/SupervisedLearning"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/UnsupervisedLearning"/>
+        <owl:disjointWith rdf:resource="https://vocab.org/aiiso/#College"/>
+        <owl:disjointWith rdf:resource="https://vocab.org/aiiso/#Institute"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/ActivationFunction -->
+
+    <owl:Class rdf:about="https://github.com/RiccardoOmiccioli/AMLO/ActivationFunction">
+        <rdfs:subClassOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Author"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Category"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ConvolutionalNeuralNetwork"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Edition"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/LayerType"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/MachineLearningType"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/NeuralNetwork"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Organizer"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/RecurrentNeuralNetwork"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ReinforcementLearning"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Role"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/SupervisedLearning"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/UnsupervisedLearning"/>
+        <owl:disjointWith rdf:resource="https://vocab.org/aiiso/#College"/>
+        <owl:disjointWith rdf:resource="https://vocab.org/aiiso/#Institute"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/Author -->
+
+    <owl:Class rdf:about="https://github.com/RiccardoOmiccioli/AMLO/Author">
+        <rdfs:subClassOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Role"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Category"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ConvolutionalNeuralNetwork"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Edition"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/GradientDescent"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Layer"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/LayerType"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/MachineLearningType"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/NeuralNetwork"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/RecurrentNeuralNetwork"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ReinforcementLearning"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/SupervisedLearning"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/UnsupervisedLearning"/>
+        <owl:disjointWith rdf:resource="https://vocab.org/aiiso/#College"/>
+        <owl:disjointWith rdf:resource="https://vocab.org/aiiso/#Institute"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/Category -->
+
+    <owl:Class rdf:about="https://github.com/RiccardoOmiccioli/AMLO/Category">
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ConvolutionalNeuralNetwork"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Edition"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/GradientDescent"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Layer"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/NeuralNetwork"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Organizer"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/RecurrentNeuralNetwork"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Role"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <owl:disjointWith rdf:resource="https://vocab.org/aiiso/#College"/>
+        <owl:disjointWith rdf:resource="https://vocab.org/aiiso/#Institute"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/ConvolutionalNeuralNetwork -->
+
+    <owl:Class rdf:about="https://github.com/RiccardoOmiccioli/AMLO/ConvolutionalNeuralNetwork">
+        <rdfs:subClassOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/NeuralNetwork"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Edition"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/GradientDescent"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Layer"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/LayerType"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/MachineLearningType"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Organizer"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ReinforcementLearning"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Role"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/SupervisedLearning"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/UnsupervisedLearning"/>
+        <owl:disjointWith rdf:resource="https://vocab.org/aiiso/#College"/>
+        <owl:disjointWith rdf:resource="https://vocab.org/aiiso/#Institute"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/Edition -->
+
+    <owl:Class rdf:about="https://github.com/RiccardoOmiccioli/AMLO/Edition">
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/GradientDescent"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Layer"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/LayerType"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/MachineLearningType"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/NeuralNetwork"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Organizer"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/RecurrentNeuralNetwork"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ReinforcementLearning"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Role"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/SupervisedLearning"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/UnsupervisedLearning"/>
+        <owl:disjointWith rdf:resource="https://vocab.org/aiiso/#College"/>
+        <owl:disjointWith rdf:resource="https://vocab.org/aiiso/#Institute"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/GradientDescent -->
+
+    <owl:Class rdf:about="https://github.com/RiccardoOmiccioli/AMLO/GradientDescent">
+        <rdfs:subClassOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/LayerType"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/MachineLearningType"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/NeuralNetwork"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Organizer"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/RecurrentNeuralNetwork"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ReinforcementLearning"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Role"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/SupervisedLearning"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/UnsupervisedLearning"/>
+        <owl:disjointWith rdf:resource="https://vocab.org/aiiso/#College"/>
+        <owl:disjointWith rdf:resource="https://vocab.org/aiiso/#Institute"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/Layer -->
+
+    <owl:Class rdf:about="https://github.com/RiccardoOmiccioli/AMLO/Layer">
+        <rdfs:subClassOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/LayerType"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/MachineLearningType"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/NeuralNetwork"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Organizer"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/RecurrentNeuralNetwork"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ReinforcementLearning"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Role"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/SupervisedLearning"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/UnsupervisedLearning"/>
+        <owl:disjointWith rdf:resource="https://vocab.org/aiiso/#College"/>
+        <owl:disjointWith rdf:resource="https://vocab.org/aiiso/#Institute"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/LayerType -->
+
+    <owl:Class rdf:about="https://github.com/RiccardoOmiccioli/AMLO/LayerType">
+        <rdfs:subClassOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Category"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/NeuralNetwork"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Organizer"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/RecurrentNeuralNetwork"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Role"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <owl:disjointWith rdf:resource="https://vocab.org/aiiso/#College"/>
+        <owl:disjointWith rdf:resource="https://vocab.org/aiiso/#Institute"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/MachineLearningType -->
+
+    <owl:Class rdf:about="https://github.com/RiccardoOmiccioli/AMLO/MachineLearningType">
+        <rdfs:subClassOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Category"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/NeuralNetwork"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Organizer"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/RecurrentNeuralNetwork"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Role"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <owl:disjointWith rdf:resource="https://vocab.org/aiiso/#College"/>
+        <owl:disjointWith rdf:resource="https://vocab.org/aiiso/#Institute"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/NeuralNetwork -->
+
+    <owl:Class rdf:about="https://github.com/RiccardoOmiccioli/AMLO/NeuralNetwork">
+        <rdfs:subClassOf rdf:resource="http://www.a2rd.net.br/mlo#Algorithms"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Organizer"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ReinforcementLearning"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Role"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/SupervisedLearning"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/UnsupervisedLearning"/>
+        <owl:disjointWith rdf:resource="https://vocab.org/aiiso/#College"/>
+        <owl:disjointWith rdf:resource="https://vocab.org/aiiso/#Institute"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/Organizer -->
+
+    <owl:Class rdf:about="https://github.com/RiccardoOmiccioli/AMLO/Organizer">
+        <rdfs:subClassOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Role"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/RecurrentNeuralNetwork"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ReinforcementLearning"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/SupervisedLearning"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/UnsupervisedLearning"/>
+        <owl:disjointWith rdf:resource="https://vocab.org/aiiso/#College"/>
+        <owl:disjointWith rdf:resource="https://vocab.org/aiiso/#Institute"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/RecurrentNeuralNetwork -->
+
+    <owl:Class rdf:about="https://github.com/RiccardoOmiccioli/AMLO/RecurrentNeuralNetwork">
+        <rdfs:subClassOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/NeuralNetwork"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ReinforcementLearning"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Role"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/SupervisedLearning"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/UnsupervisedLearning"/>
+        <owl:disjointWith rdf:resource="https://vocab.org/aiiso/#College"/>
+        <owl:disjointWith rdf:resource="https://vocab.org/aiiso/#Institute"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/ReinforcementLearning -->
+
+    <owl:Class rdf:about="https://github.com/RiccardoOmiccioli/AMLO/ReinforcementLearning">
+        <rdfs:subClassOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/MachineLearningType"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Role"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <owl:disjointWith rdf:resource="https://vocab.org/aiiso/#College"/>
+        <owl:disjointWith rdf:resource="https://vocab.org/aiiso/#Institute"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/Role -->
+
+    <owl:Class rdf:about="https://github.com/RiccardoOmiccioli/AMLO/Role">
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/SupervisedLearning"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/UnsupervisedLearning"/>
+        <owl:disjointWith rdf:resource="https://vocab.org/aiiso/#College"/>
+        <owl:disjointWith rdf:resource="https://vocab.org/aiiso/#Institute"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/SupervisedLearning -->
+
+    <owl:Class rdf:about="https://github.com/RiccardoOmiccioli/AMLO/SupervisedLearning">
+        <rdfs:subClassOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/MachineLearningType"/>
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <owl:disjointWith rdf:resource="https://vocab.org/aiiso/#College"/>
+        <owl:disjointWith rdf:resource="https://vocab.org/aiiso/#Institute"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/Tool -->
+
+    <owl:Class rdf:about="https://github.com/RiccardoOmiccioli/AMLO/Tool">
+        <owl:disjointWith rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/UnsupervisedLearning"/>
+        <owl:disjointWith rdf:resource="https://vocab.org/aiiso/#College"/>
+        <owl:disjointWith rdf:resource="https://vocab.org/aiiso/#Institute"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/UnsupervisedLearning -->
+
+    <owl:Class rdf:about="https://github.com/RiccardoOmiccioli/AMLO/UnsupervisedLearning">
+        <rdfs:subClassOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/MachineLearningType"/>
+        <owl:disjointWith rdf:resource="https://vocab.org/aiiso/#College"/>
+        <owl:disjointWith rdf:resource="https://vocab.org/aiiso/#Institute"/>
+    </owl:Class>
+    
+
+
+    <!-- https://vocab.org/aiiso/#College -->
+
+    <owl:Class rdf:about="https://vocab.org/aiiso/#College">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <owl:disjointWith rdf:resource="https://vocab.org/aiiso/#Institute"/>
+    </owl:Class>
+    
+
+
+    <!-- https://vocab.org/aiiso/#Institute -->
+
+    <owl:Class rdf:about="https://vocab.org/aiiso/#Institute">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dbpedia.org/resource/2014 -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/2014">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Year"/>
+        <isEditionYearOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ImageNet_LSVRC_2014"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/2015 -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/2015">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Year"/>
+        <isEditionYearOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ImageNet_LSVRC_2015"/>
+        <isReleaseYearOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/Adrin_Jalal -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/Adrin_Jalal">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <hasRole rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Adrin_Jalal_author_scikit-learn"/>
+        <familyName>Jalal</familyName>
+        <firstName>Adrin</firstName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/Adrin_Jalal_author_scikit-learn -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/Adrin_Jalal_author_scikit-learn">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Author"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Role"/>
+        <isCoAuthor rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Alexandre_Gramfort_author_scikit-learn"/>
+        <isMemberOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/scikit-learn_group"/>
+        <isRoleOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Adrin_Jalal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/Alan_Ho -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/Alan_Ho">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <hasRole rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Alan_Ho_author_tensorFlow_Quantum"/>
+        <familyName>Ho</familyName>
+        <firstName>Alan</firstName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/Alan_Ho_author_tensorFlow_Quantum -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/Alan_Ho_author_tensorFlow_Quantum">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Author"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Role"/>
+        <isMemberOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/tensorFlow_Quantum_group"/>
+        <isRoleOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Alan_Ho"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/Alex_Berg -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/Alex_Berg">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <hasRole rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Alex_Berg_organizer_UNCCH"/>
+        <familyName>Berg</familyName>
+        <firstName>Alex</firstName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/Alex_Berg_organizer_UNCCH -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/Alex_Berg_organizer_UNCCH">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Organizer"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Role"/>
+        <isEmployedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/University_of_North_Carolina_Chapel_Hill"/>
+        <isRoleOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Alex_Berg"/>
+        <organized rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ImageNet_LSVRC_2014"/>
+        <organized rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ImageNet_LSVRC_2015"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/Alexandre_Gramfort -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/Alexandre_Gramfort">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <hasRole rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Alexandre_Gramfort_author_scikit-learn"/>
+        <familyName>Gramfort</familyName>
+        <firstName>Alexandre</firstName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/Alexandre_Gramfort_author_scikit-learn -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/Alexandre_Gramfort_author_scikit-learn">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Author"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Role"/>
+        <isCoAuthor rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Adrin_Jalal_author_scikit-learn"/>
+        <isMemberOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/scikit-learn_group"/>
+        <isRoleOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Alexandre_Gramfort"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/Carnegie_Mellon_University -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/Carnegie_Mellon_University">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdf:type rdf:resource="https://vocab.org/aiiso/#College"/>
+        <hasEmployee rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Olga_Russakovsky_organizer_CMU"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/Classification -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/Classification">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Category"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/MachineLearningType"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/SupervisedLearning"/>
+        <isMLTypeOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/Clustering -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/Clustering">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Category"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/MachineLearningType"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/UnsupervisedLearning"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/Convolution -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/Convolution">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Category"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/LayerType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/Dimensionality_Reduction -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/Dimensionality_Reduction">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Category"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/MachineLearningType"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/UnsupervisedLearning"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/Fei-Fei_Li -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/Fei-Fei_Li">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <hasRole rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Fei-Fei_Li_organizer_SU"/>
+        <familyName>Li</familyName>
+        <firstName>Fei-Fei</firstName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/Fei-Fei_Li_organizer_SU -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/Fei-Fei_Li_organizer_SU">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Organizer"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Role"/>
+        <isEmployedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Stanford_University"/>
+        <isRoleOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Fei-Fei_Li"/>
+        <organized rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ImageNet_LSVRC_2014"/>
+        <organized rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ImageNet_LSVRC_2015"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/Fully_Connected -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/Fully_Connected">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Category"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/LayerType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/GoogLeNet -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/GoogLeNet">
+        <rdf:type rdf:resource="http://www.a2rd.net.br/mlo#Algorithms"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ConvolutionalNeuralNetwork"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/NeuralNetwork"/>
+        <won rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ImageNet_LSVRC_2014"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/Google -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/Google">
+        <rdf:type rdf:resource="http://www.a2rd.net.br/mlo#Institutions"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <funds rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/scikit-learn"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/ImageNet_LSVRC -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/ImageNet_LSVRC">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Competition"/>
+        <hasEdition rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ImageNet_LSVRC_2015"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/ImageNet_LSVRC_2014 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/ImageNet_LSVRC_2014">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Edition"/>
+        <hasEditionYear rdf:resource="http://dbpedia.org/resource/2014"/>
+        <isOrganizedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Alex_Berg_organizer_UNCCH"/>
+        <isOrganizedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Fei-Fei_Li_organizer_SU"/>
+        <isOrganizedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Jia_Deng_organizer_UM"/>
+        <isOrganizedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Jonathan_Krause_organizer_SU"/>
+        <isOrganizedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Olga_Russakovsky_organizer_SU"/>
+        <isOrganizedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Sean_Ma_organizer_SU"/>
+        <isWonBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/GoogLeNet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/ImageNet_LSVRC_2015 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/ImageNet_LSVRC_2015">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Edition"/>
+        <hasEditionYear rdf:resource="http://dbpedia.org/resource/2015"/>
+        <isEditionOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ImageNet_LSVRC"/>
+        <isOrganizedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Alex_Berg_organizer_UNCCH"/>
+        <isOrganizedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Fei-Fei_Li_organizer_SU"/>
+        <isOrganizedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Jia_Deng_organizer_UM"/>
+        <isOrganizedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Olga_Russakovsky_organizer_CMU"/>
+        <isOrganizedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Wei_Liu_organizer_UNCCH"/>
+        <isWonBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/Jia_Deng -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/Jia_Deng">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <hasRole rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Jia_Deng_organizer_UM"/>
+        <familyName>Deng</familyName>
+        <firstName>Jia</firstName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/Jia_Deng_organizer_UM -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/Jia_Deng_organizer_UM">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Organizer"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Role"/>
+        <isEmployedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/University_of_Michigan"/>
+        <isRoleOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Jia_Deng"/>
+        <organized rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ImageNet_LSVRC_2014"/>
+        <organized rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ImageNet_LSVRC_2015"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/Jian_Sun -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/Jian_Sun">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <hasRole rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Jian_Sun_author_ResNet"/>
+        <familyName>Sun</familyName>
+        <firstName>Jian</firstName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/Jian_Sun_author_ResNet -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/Jian_Sun_author_ResNet">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Author"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Role"/>
+        <isCoAuthor rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Kaiming_He_author_ResNet"/>
+        <isCoAuthor rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Shaoquing_Ren_author_ResNet"/>
+        <isCoAuthor rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Xiangyu_Zhang_author_ResNet"/>
+        <isMemberOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet_group"/>
+        <isRoleOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Jian_Sun"/>
+        <isWinnerOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ImageNet_LSVRC_2015"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/Jonathan_Krause -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/Jonathan_Krause">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <hasRole rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Jonathan_Krause_organizer_SU"/>
+        <familyName>Krause</familyName>
+        <firstName>Jonathan</firstName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/Jonathan_Krause_organizer_SU -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/Jonathan_Krause_organizer_SU">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Organizer"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Role"/>
+        <isEmployedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Stanford_University"/>
+        <isRoleOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Jonathan_Krause"/>
+        <organized rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ImageNet_LSVRC_2014"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/Kaiming_He -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/Kaiming_He">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <hasRole rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Kaiming_He_author_ResNet"/>
+        <familyName>He</familyName>
+        <firstName>Kaiming</firstName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/Kaiming_He_author_ResNet -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/Kaiming_He_author_ResNet">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Author"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Role"/>
+        <isCoAuthor rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Jian_Sun_author_ResNet"/>
+        <isCoAuthor rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Shaoquing_Ren_author_ResNet"/>
+        <isCoAuthor rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Xiangyu_Zhang_author_ResNet"/>
+        <isMemberOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet_group"/>
+        <isRoleOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Kaiming_He"/>
+        <isWinnerOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ImageNet_LSVRC_2015"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/Olga_Russakovsky -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/Olga_Russakovsky">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <hasRole rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Olga_Russakovsky_organizer_CMU"/>
+        <hasRole rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Olga_Russakovsky_organizer_SU"/>
+        <familyName>Russakovsky</familyName>
+        <firstName>Olga</firstName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/Olga_Russakovsky_organizer_CMU -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/Olga_Russakovsky_organizer_CMU">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Organizer"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Role"/>
+        <isEmployedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Carnegie_Mellon_University"/>
+        <isRoleOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Olga_Russakovsky"/>
+        <organized rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ImageNet_LSVRC_2015"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/Olga_Russakovsky_organizer_SU -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/Olga_Russakovsky_organizer_SU">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Organizer"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Role"/>
+        <isEmployedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Stanford_University"/>
+        <isRoleOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Olga_Russakovsky"/>
+        <organized rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ImageNet_LSVRC_2014"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/Pooling -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/Pooling">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Category"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/LayerType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/Regression -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/Regression">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Category"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/MachineLearningType"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/SupervisedLearning"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/ResNet -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/ResNet">
+        <rdf:type rdf:resource="http://www.a2rd.net.br/mlo#Algorithms"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ConvolutionalNeuralNetwork"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/NeuralNetwork"/>
+        <hasImplementation rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet_project"/>
+        <hasMLType rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Classification"/>
+        <hasReleaseYear rdf:resource="http://dbpedia.org/resource/2015"/>
+        <won rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ImageNet_LSVRC_2015"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/ResNet_group -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/ResNet_group">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Group"/>
+        <hasMember rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Jian_Sun_author_ResNet"/>
+        <hasMember rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Kaiming_He_author_ResNet"/>
+        <hasMember rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Shaoquing_Ren_author_ResNet"/>
+        <hasMember rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Xiangyu_Zhang_author_ResNet"/>
+        <isAssignedTo rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet_project"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/ResNet_project -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/ResNet_project">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Project"/>
+        <hasAssigned rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet_group"/>
+        <isImplementationOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/Sean_Ma -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/Sean_Ma">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <hasRole rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Sean_Ma_organizer_SU"/>
+        <familyName>Ma</familyName>
+        <firstName>Sean</firstName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/Sean_Ma_organizer_SU -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/Sean_Ma_organizer_SU">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Organizer"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Role"/>
+        <isEmployedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Stanford_University"/>
+        <isRoleOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Sean_Ma"/>
+        <organized rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ImageNet_LSVRC_2014"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/Shaoquing_Ren -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/Shaoquing_Ren">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <hasRole rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Shaoquing_Ren_author_ResNet"/>
+        <familyName>Ren</familyName>
+        <firstName>Shaoquing</firstName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/Shaoquing_Ren_author_ResNet -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/Shaoquing_Ren_author_ResNet">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Author"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Role"/>
+        <isCoAuthor rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Jian_Sun_author_ResNet"/>
+        <isCoAuthor rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Kaiming_He_author_ResNet"/>
+        <isCoAuthor rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Xiangyu_Zhang_author_ResNet"/>
+        <isMemberOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet_group"/>
+        <isRoleOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Shaoquing_Ren"/>
+        <isWinnerOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ImageNet_LSVRC_2015"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/Stanford_University -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/Stanford_University">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdf:type rdf:resource="https://vocab.org/aiiso/#College"/>
+        <hasEmployee rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Fei-Fei_Li_organizer_SU"/>
+        <hasEmployee rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Jonathan_Krause_organizer_SU"/>
+        <hasEmployee rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Olga_Russakovsky_organizer_SU"/>
+        <hasEmployee rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Sean_Ma_organizer_SU"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/University_of_Michigan -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/University_of_Michigan">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdf:type rdf:resource="https://vocab.org/aiiso/#College"/>
+        <hasEmployee rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Jia_Deng_organizer_UM"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/University_of_North_Carolina_Chapel_Hill -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/University_of_North_Carolina_Chapel_Hill">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdf:type rdf:resource="https://vocab.org/aiiso/#College"/>
+        <hasEmployee rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Alex_Berg_organizer_UNCCH"/>
+        <hasEmployee rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Wei_Liu_organizer_UNCCH"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/Wei_Liu -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/Wei_Liu">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <hasRole rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Wei_Liu_organizer_UNCCH"/>
+        <familyName>Liu</familyName>
+        <firstName>Wei</firstName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/Wei_Liu_organizer_UNCCH -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/Wei_Liu_organizer_UNCCH">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Organizer"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Role"/>
+        <isEmployedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/University_of_North_Carolina_Chapel_Hill"/>
+        <isRoleOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Wei_Liu"/>
+        <organized rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ImageNet_LSVRC_2015"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/Xiangyu_Zhang -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/Xiangyu_Zhang">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <hasRole rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Xiangyu_Zhang_author_ResNet"/>
+        <familyName>Zhang</familyName>
+        <firstName>Xiangyu</firstName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/Xiangyu_Zhang_author_ResNet -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/Xiangyu_Zhang_author_ResNet">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Author"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Role"/>
+        <isCoAuthor rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Jian_Sun_author_ResNet"/>
+        <isCoAuthor rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Kaiming_He_author_ResNet"/>
+        <isCoAuthor rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Shaoquing_Ren_author_ResNet"/>
+        <isMemberOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet_group"/>
+        <isRoleOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Xiangyu_Zhang"/>
+        <isWinnerOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ImageNet_LSVRC_2015"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/scikit-learn -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/scikit-learn">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Project"/>
+        <foaf:fundedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Google"/>
+        <hasAssigned rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/scikit-learn_group"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/scikit-learn_group -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/scikit-learn_group">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Group"/>
+        <hasMember rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Adrin_Jalal_author_scikit-learn"/>
+        <hasMember rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Alexandre_Gramfort_author_scikit-learn"/>
+        <isAssignedTo rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/scikit-learn"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/tensorFlow_Quantum -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/tensorFlow_Quantum">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Project"/>
+        <hasAssigned rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/tensorFlow_Quantum_group"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/tensorFlow_Quantum_group -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/tensorFlow_Quantum_group">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Group"/>
+        <hasMember rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Alan_Ho_author_tensorFlow_Quantum"/>
+        <isAssignedTo rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/tensorFlow_Quantum"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
