@@ -45,13 +45,18 @@ foaf:fundedBy rdf:type owl:ObjectProperty ;
                 owl:IrreflexiveProperty ;
         rdfs:domain foaf:Project ;
         rdfs:range foaf:Organization ;
-        rdfs:comment "An organization funding a project." ;
+        rdfs:comment "Associate a project with the organization that funds it"@en,
+                "Associa un progetto all'organizzazione che lo finanzia"@it ;
         rdfs:isDefinedBy foaf: ;
-        rdfs:label "is funded by"@en .
+        rdfs:label "is funded by"@en ,
+                "è finanziato da"@it .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/funds
 :funds rdf:type owl:ObjectProperty ;
-       rdfs:label "funds"@en .
+        rdfs:comment "Associate an organization with the project it funds"@en,
+                "Associa un'organizzazione al progetto che finanzia"@it ;
+        rdfs:label "funds"@en ,
+                "finanzia"@it .
 
 ### https://github.com/RiccardoOmiccioli/AMLO/isDevelopedBy
 :isDevelopedBy rdf:type owl:ObjectProperty ,
@@ -60,13 +65,18 @@ foaf:fundedBy rdf:type owl:ObjectProperty ;
                 owl:IrreflexiveProperty ;
         rdfs:domain foaf:Project ;
         rdfs:range foaf:Organization ;
-        rdfs:comment "A project developed by an organization." ;
-        rdfs:label "is developed by"@en .
+        rdfs:comment "Associate a project with the organization that develops it"@en,
+                "Associa un progetto con l'ente che la sviluppa"@it ;
+        rdfs:label "is developed by"@en ,
+                "è sviluppato da"@it .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/develops
 :develops rdf:type owl:ObjectProperty ;
         owl:inverseOf :isDevelopedBy ;
-        rdfs:label "develops"@en .
+        rdfs:comment "Associate the organization with the project it develops"@en,
+                "Associa l'ente con il progetto che sviluppa"@it ;
+        rdfs:label "develops"@en ,
+                "sviluppa"@it .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/hasRole
 :hasRole rdf:type owl:ObjectProperty ;
@@ -75,12 +85,17 @@ foaf:fundedBy rdf:type owl:ObjectProperty ;
                 owl:IrreflexiveProperty ;
         rdfs:domain foaf:Person ;
         rdfs:range :Role ;
-        rdfs:comment "A person which has a role." ;
-        rdfs:label "has role"@en .
+        rdfs:comment "Associate a person with its role"@en,
+                "Associa una persona al suo ruolo"@it ;
+        rdfs:label "has role"@en ,
+                "ha ruolo"@it .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/isRoleOf
 :isRoleOf rdf:type owl:ObjectProperty ;
-        rdfs:label "is role of"@en .
+        rdfs:comment "Associate a role with its person"@en,
+                "Associa un ruolo alla sua persona"@it ;
+        rdfs:label "is role of"@en ,
+                "è ruolo di"@it .
 
 ### https://github.com/RiccardoOmiccioli/AMLO/isMemberOf
 :isMemberOf rdf:type owl:ObjectProperty ,
@@ -88,20 +103,28 @@ foaf:fundedBy rdf:type owl:ObjectProperty ;
                 owl:IrreflexiveProperty ;
         rdfs:domain :Author ;
         rdfs:range foaf:Group ;
-        rdfs:comment "An author which a member of a Group." ;
-        rdfs:label "is member of"@en .
+        rdfs:comment "Associate an author with the group he/she is a member of"@en,
+                "Associa un autore al gruppo di cui è membro"@it ;
+        rdfs:label "is member of"@en ,
+                "è membro di"@it .
 
 ### https://github.com/RiccardoOmiccioli/AMLO/hasMember
 :hasMember rdf:type owl:ObjectProperty ;
         owl:inverseOf :isMemberOf ;
-        rdfs:label "has member"@en .
+        rdfs:comment "Associate a group with one of its member authors"@en,
+                "Associa un gruppo ad un suo autore membro"@it ;
+        rdfs:label "has member"@en ,
+                "ha membro"@it .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/isCoAuthor
 :isCoAuthor rdf:type owl:ObjectProperty ,
                 owl:SymmetricProperty ;
         rdfs:domain :Author ;
         rdfs:range :Author ;
-        rdfs:label "is coauthor"@en .
+        rdfs:comment "Associate an author with his/her coauthor"@en,
+                "Associa un autore con il suo coautore"@it ;
+        rdfs:label "is coauthor"@en ,
+                "è coautore"@it .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/isEmployedBy
 :isEmployedBy rdf:type owl:ObjectProperty ,
@@ -110,12 +133,18 @@ foaf:fundedBy rdf:type owl:ObjectProperty ;
                 owl:IrreflexiveProperty ;
         rdfs:domain :Organizer ;
         rdfs:range foaf:Organization ;
-        rdfs:label "is employed by"@en .
+        rdfs:comment "Associate an organizer with the organization he/she employs"@en,
+                "Associa un organizzatore all'ente in cui è dipendente"@it ;
+        rdfs:label "is employed by"@en ,
+                "è dipendente di"@it .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/hasEmployee
 :hasEmployee rdf:type owl:ObjectProperty ;
         owl:inverseOf :isEmployedBy ;
-        rdfs:label "has employee"@en .
+        rdfs:comment "Associate an organization with its employee who is an organizer"@en,
+                "Associa un ente al suo dipendente che è un organizzatore"@it ;
+        rdfs:label "has employee"@en ,
+                "ha dipendente"@it .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/isAssignedTo
 :isAssignedTo rdf:type owl:ObjectProperty ,
@@ -123,12 +152,18 @@ foaf:fundedBy rdf:type owl:ObjectProperty ;
                 owl:IrreflexiveProperty ;
         rdfs:domain foaf:Group ;
         rdfs:range foaf:Project ;
-        rdfs:label "is assigned to"@en .
+        rdfs:comment "Associate a group with a project"@en,
+                "Associa un gruppo ad progetto"@it ;
+        rdfs:label "is assigned to"@en ,
+                "è assegnato a"@it .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/hasAssigned
 :hasAssigned rdf:type owl:ObjectProperty ;
         owl:inverseOf :isAssignedTo ;
-        rdfs:label "has assigned"@en .
+        rdfs:comment "Associate a project with its group"@en,
+                "Associa un progetto al suo gruppo"@it ;
+        rdfs:label "has assigned"@en ,
+                "ha assegnato"@it .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/hasEdition
 :hasEdition rdf:type owl:ObjectProperty ;
@@ -137,11 +172,17 @@ foaf:fundedBy rdf:type owl:ObjectProperty ;
                 owl:IrreflexiveProperty ;
         rdfs:domain dbo:Competition ;
         rdfs:range :Edition ;
-        rdfs:label "has edition"@en .
+        rdfs:comment "Associate a competition with one of its editions"@en,
+                "Associa una competizione ad una sua edizione"@it ;
+        rdfs:label "has edition"@en ,
+                "ha edizione"@it .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/isEditionOf
 :isEditionOf rdf:type owl:ObjectProperty ;
-        rdfs:label "is edition of"@en .
+        rdfs:comment "Associate an edition with its competition"@en,
+                "Associa un'edizione alla sua competizione"@it ;
+        rdfs:label "is edition of"@en ,
+                "è edizione di"@it .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/hasEditionYear
 :hasEditionYear rdf:type owl:ObjectProperty ;
@@ -150,11 +191,17 @@ foaf:fundedBy rdf:type owl:ObjectProperty ;
                 owl:IrreflexiveProperty ;
         rdfs:domain :Edition ;
         rdfs:range dbo:Year ;
-        rdfs:label "has edition year"@en .
+        rdfs:comment "Associate an edition with the year of its occurrence"@en,
+                "Associa un'edizione all'anno del suo svolgimento"@it ;
+        rdfs:label "has edition year"@en ,
+                "ha anno edizione"@it .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/isEditionYearOf
 :isEditionYearOf rdf:type owl:ObjectProperty ;
-        rdfs:label "is edition year of"@en .
+        rdfs:comment "Associate a year with an edition that took place in that year"@en,
+                "Associa un anno ad un'edizione che si è svolta in quell'anno"@it ;
+        rdfs:label "is edition year of"@en ,
+                "è anno edizione di"@it .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/isOrganizedBy
 :isOrganizedBy rdf:type owl:ObjectProperty ,
@@ -162,12 +209,18 @@ foaf:fundedBy rdf:type owl:ObjectProperty ;
                 owl:IrreflexiveProperty ;
         rdfs:domain :Edition ;
         rdfs:range :Organizer ;
-        rdfs:label "is organized by"@en .
+        rdfs:comment "Associate an edition with its organizer"@en,
+                "Associa un'edizione con il suo organizzatore"@it ;
+        rdfs:label "is organized by"@en ,
+                "è organizzato da"@it .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/organized
 :organized rdf:type owl:ObjectProperty ;
         owl:inverseOf :isOrganizedBy ;
-        rdfs:label "organized"@en .
+        rdfs:comment "Associate an organizer with his/her edition"@en,
+                "Associa un organizzatore alla sua edizione"@it ;
+        rdfs:label "organized"@en ,
+                "organizzò"@it .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/won
 :won rdf:type owl:ObjectProperty ,
@@ -176,11 +229,17 @@ foaf:fundedBy rdf:type owl:ObjectProperty ;
         owl:inverseOf :isWonBy ;
         rdfs:domain mlo:Algorithms ;
         rdfs:range :Edition ;
-        rdfs:label "won"@en .
+        rdfs:comment "Associate an technology with the edition in which it won"@en,
+                "Associa una tecnologia all'edizione in cui ha vinto"@it ;
+        rdfs:label "won"@en ,
+                "ha vinto"@it .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/isWonBy
 :isWonBy rdf:type owl:ObjectProperty ;
-        rdfs:label "is won by"@en .
+        rdfs:comment "Associate an edition with the technology that won it"@en,
+                "Associa un'edizione alla tecnologia che l'ha vinta"@it ;
+        rdfs:label "is won by"@en ,
+                "è vinto da"@it .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/isImplementationOf
 :isImplementationOf rdf:type owl:ObjectProperty ,
@@ -189,12 +248,18 @@ foaf:fundedBy rdf:type owl:ObjectProperty ;
                 owl:IrreflexiveProperty ;
         rdfs:domain foaf:Project ;
         rdfs:range mlo:Algorithms ;
-        rdfs:label "is implementation of"@en .
+        rdfs:comment "Associate a project with the technology it has implemented"@en,
+                "Associa un progetto alla tecnologia che ha implementato"@it ;
+        rdfs:label "is implementation of"@en ,
+                "è implementazione di"@it .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/hasImplementation
 :hasImplementation rdf:type owl:ObjectProperty ;
         owl:inverseOf :isImplementationOf ;
-        rdfs:label "has implementation"@en .
+        rdfs:comment "Associate an technology with the project that implemented it"@en,
+                "Associa una tecnologia al progetto che l'ha implementata"@it ;
+        rdfs:label "has implementation"@en ,
+                "ha implementazione"@it .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/hasMLType
 :hasMLType rdf:type owl:ObjectProperty ;
@@ -204,11 +269,17 @@ foaf:fundedBy rdf:type owl:ObjectProperty ;
                 owl:IrreflexiveProperty ;
         rdfs:domain mlo:Algorithms ;
         rdfs:range :MachineLearningType ;
-        rdfs:label "has ML type"@en .
+        rdfs:comment "Associate an technology with its Machine Learning type"@en,
+                "Associa una tecnologia al suo tipo di Machine Learning"@it ;
+        rdfs:label "has ML type"@en ,
+                "ha tipo ML"@it .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/isMLTypeOf
 :isMLTypeOf rdf:type owl:ObjectProperty ;
-        rdfs:label "is ML type of"@en .
+        rdfs:comment "Associate a type of Machine Learning with one of its technologies"@en,
+                "Associa un tipo di Machine Learning ad una delle sue tecnologie"@it ;
+        rdfs:label "is ML type of"@en ,
+                "è tipo ML di"@it .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/hasReleaseYear
 :hasReleaseYear rdf:type owl:ObjectProperty ;
@@ -217,11 +288,17 @@ foaf:fundedBy rdf:type owl:ObjectProperty ;
                 owl:IrreflexiveProperty ;
         rdfs:domain mlo:Algorithms ;
         rdfs:range dbo:Year ;
-        rdfs:label "has release year"@en .
+        rdfs:comment "Associate an technology with the year of its release"@en,
+                "Associa una tecnologia all'anno del suo rilascio"@it ;
+        rdfs:label "has release year"@en ,
+                "ha anno rilascio"@it .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/isReleaseYearOf
 :isReleaseYearOf rdf:type owl:ObjectProperty ;
-        rdfs:label "is release year of"@en .
+        rdfs:comment "Associate a year with an technology released in that year"@en,
+                "Associa un anno con una tecnologia rilasciata in quell'anno"@it ;
+        rdfs:label "is release year of"@en ,
+                "è anno rilascio di"@it .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/uses
 :uses rdf:type owl:ObjectProperty ,
@@ -230,12 +307,18 @@ foaf:fundedBy rdf:type owl:ObjectProperty ;
                 owl:IrreflexiveProperty ;
         rdfs:domain mlo:Algorithms ;
         rdfs:range :Tool ;
-        rdfs:label "uses"@en .
+        rdfs:comment "Associate a technology with a tool that it uses"@en,
+                "Associa una tecnologia ad uno strumento che essa utilizza"@it ;
+        rdfs:label "uses"@en ,
+                "utilizza"@it .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/isUsedBy
 :isUsedBy rdf:type owl:ObjectProperty ;
         owl:inverseOf :uses ;
-        rdfs:label "is used by"@en .
+        rdfs:comment "Associate a tool with the technology that uses it"@en,
+                "Associa uno strumento con la tecnologia che lo utilizza"@it ;
+        rdfs:label "is used by"@en ,
+                "è utilizzato da"@it .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/hasLayerType
 :hasLayerType rdf:type owl:ObjectProperty ;
@@ -244,12 +327,18 @@ foaf:fundedBy rdf:type owl:ObjectProperty ;
                 owl:IrreflexiveProperty ;
         rdfs:domain :Layer ;
         rdfs:range :LayerType ;
-        rdfs:label "has layer type"@en .
+        rdfs:comment "Associate a layer with its type"@en,
+                "Associa uno strato con il suo tipo"@it ;
+        rdfs:label "has layer type"@en ,
+                "ha tipo strato"@it .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/isLayerTypeOf
 :isLayerTypeOf rdf:type owl:ObjectProperty ;
         owl:inverseOf :hasLayerType ;
-        rdfs:label "is layer type of"@en .
+        rdfs:comment "Associates a layer type with one of its layers"@en,
+                "Associa un tipo di strato con uno dei suoi strati"@it ;
+        rdfs:label "is layer type of"@en ,
+                "è tipo strato di"@it .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/isWinnerOf
 :isWinnerOf rdf:type owl:ObjectProperty ,
@@ -257,7 +346,10 @@ foaf:fundedBy rdf:type owl:ObjectProperty ;
                 owl:IrreflexiveProperty ;
         rdfs:domain :Author ;
         rdfs:range :Edition ;
-        rdfs:label "is winner of"@en .
+        rdfs:comment "Associate an author with an edition won by the technology in which he took part in the development"@en,
+                "Associa un autore ad un'edizione vinta dalla tecnologia in cui ha preso parte allo sviluppo"@it ;
+        rdfs:label "is winner of"@en ,
+                "è vincitore di"@it .
 
 #################################################################
 #    Data properties
