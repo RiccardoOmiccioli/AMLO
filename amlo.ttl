@@ -214,29 +214,29 @@ foaf:fundedBy rdf:type owl:ObjectProperty ;
         rdfs:label "is organized by"@en ,
                 "è organizzato da"@it .
 
-###  https://github.com/RiccardoOmiccioli/AMLO/organized
-:organized rdf:type owl:ObjectProperty ;
+###  https://github.com/RiccardoOmiccioli/AMLO/organizes
+:organizes rdf:type owl:ObjectProperty ;
         owl:inverseOf :isOrganizedBy ;
         rdfs:comment "Associate an organizer with his/her edition"@en,
                 "Associa un organizzatore alla sua edizione"@it ;
-        rdfs:label "organized"@en ,
-                "organizzò"@it .
+        rdfs:label "organizes"@en ,
+                "organizza"@it .
 
-###  https://github.com/RiccardoOmiccioli/AMLO/won
-:won rdf:type owl:ObjectProperty ,
+###  https://github.com/RiccardoOmiccioli/AMLO/wins
+:wins rdf:type owl:ObjectProperty ,
               owl:AsymmetricProperty ,
               owl:IrreflexiveProperty ;
         owl:inverseOf :isWonBy ;
         rdfs:domain mlo:Algorithms ;
         rdfs:range :Edition ;
-        rdfs:comment "Associate an technology with the edition in which it won"@en,
-                "Associa una tecnologia all'edizione in cui ha vinto"@it ;
-        rdfs:label "won"@en ,
-                "ha vinto"@it .
+        rdfs:comment "Associate an technology with the edition in which it wins"@en,
+                "Associa una tecnologia all'edizione in cui vince"@it ;
+        rdfs:label "wins"@en ,
+                "vince"@it .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/isWonBy
 :isWonBy rdf:type owl:ObjectProperty ;
-        rdfs:comment "Associate an edition with the technology that won it"@en,
+        rdfs:comment "Associate an edition with the technology that wins it"@en,
                 "Associa un'edizione alla tecnologia che l'ha vinta"@it ;
         rdfs:label "is won by"@en ,
                 "è vinto da"@it .
@@ -723,7 +723,7 @@ dbr:2015 rdf:type owl:NamedIndividual .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/Fei-Fei_Li_organizer_SU
 :Fei-Fei_Li_organizer_SU rdf:type owl:NamedIndividual ;
-        :organized :ImageNet_LSVRC_2015 ;
+        :organizes :ImageNet_LSVRC_2015 ;
         :isEmployedBy :Stanford_University .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/GoogLeNet
@@ -779,7 +779,7 @@ dbr:2015 rdf:type owl:NamedIndividual .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/:Olga_Russakovsky_organizer_CMU
 :Olga_Russakovsky_organizer_CMU rdf:type owl:NamedIndividual ;
-        :organized :ImageNet_LSVRC_2015 ;
+        :organizes :ImageNet_LSVRC_2015 ;
         :isEmployedBy :Carnegie_Mellon_University .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/:Olga_Russakovsky_organizer_SU
@@ -791,7 +791,7 @@ dbr:2015 rdf:type owl:NamedIndividual .
                 :ConvolutionalNeuralNetwork ;
         :hasMLType :Classification ;
         :hasReleaseYear dbr:2015 ;
-        :won :ImageNet_LSVRC_2015 .
+        :wins :ImageNet_LSVRC_2015 .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/ResNet_group
 :ResNet_group rdf:type owl:NamedIndividual ;
@@ -819,7 +819,7 @@ dbr:2015 rdf:type owl:NamedIndividual .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/Wei_Liu_organizer_UNCCH
 :Wei_Liu_organizer_UNCCH rdf:type owl:NamedIndividual ;
-        :organized :ImageNet_LSVRC_2015 ;
+        :organizes :ImageNet_LSVRC_2015 ;
         :isEmployedBy :University_of_North_Carolina_Chapel_Hill .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/Jian_Sun
@@ -1866,7 +1866,7 @@ rdfs:label "LeNet-5 Layer 6" .
                                                                                       ] ;
                                                                             rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                                                        rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                                                                   <http://www.w3.org/2003/11/swrl#propertyPredicate> :won ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#propertyPredicate> :wins ;
                                                                                                    <http://www.w3.org/2003/11/swrl#argument1> :technology ;
                                                                                                    <http://www.w3.org/2003/11/swrl#argument2> :event
                                                                                                  ] ;
