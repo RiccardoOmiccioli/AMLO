@@ -40,8 +40,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
 ###  http://xmlns.com/foaf/0.1/fundedBy
 foaf:fundedBy rdf:type owl:ObjectProperty ;
         owl:inverseOf :funds ;
-        rdf:type owl:FunctionalProperty ,
-                owl:AsymmetricProperty ,
+        rdf:type owl:AsymmetricProperty ,
                 owl:IrreflexiveProperty ;
         rdfs:domain foaf:Project ;
         rdfs:range foaf:Organization ;
@@ -187,7 +186,8 @@ foaf:fundedBy rdf:type owl:ObjectProperty ;
 ###  https://github.com/RiccardoOmiccioli/AMLO/hasEditionYear
 :hasEditionYear rdf:type owl:ObjectProperty ;
         owl:inverseOf :isEditionYearOf ;
-        rdf:type owl:AsymmetricProperty ,
+        rdf:type owl:FunctionalProperty ,
+                owl:AsymmetricProperty ,
                 owl:IrreflexiveProperty ;
         rdfs:domain :Edition ;
         rdfs:range dbo:Year ;
@@ -224,8 +224,9 @@ foaf:fundedBy rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/wins
 :wins rdf:type owl:ObjectProperty ,
-              owl:AsymmetricProperty ,
-              owl:IrreflexiveProperty ;
+                owl:FunctionalProperty ,
+                owl:AsymmetricProperty ,
+                owl:IrreflexiveProperty ;
         owl:inverseOf :isWonBy ;
         rdfs:domain mlo:Algorithms ;
         rdfs:range :Edition ;
@@ -284,7 +285,8 @@ foaf:fundedBy rdf:type owl:ObjectProperty ;
 ###  https://github.com/RiccardoOmiccioli/AMLO/hasReleaseYear
 :hasReleaseYear rdf:type owl:ObjectProperty ;
         owl:inverseOf :isReleaseYearOf ;
-        rdf:type owl:AsymmetricProperty ,
+        rdf:type owl:FunctionalProperty ,
+                owl:AsymmetricProperty ,
                 owl:IrreflexiveProperty ;
         rdfs:domain mlo:Algorithms ;
         rdfs:range dbo:Year ;
@@ -302,7 +304,6 @@ foaf:fundedBy rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/uses
 :uses rdf:type owl:ObjectProperty ,
-                owl:FunctionalProperty ,
                 owl:AsymmetricProperty ,
                 owl:IrreflexiveProperty ;
         rdfs:domain mlo:Algorithms ;
