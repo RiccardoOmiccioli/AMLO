@@ -910,828 +910,829 @@ dbr:2015 rdf:type owl:NamedIndividual .
 ###  https://github.com/RiccardoOmiccioli/AMLO/ResNet_1
 :ResNet_1 rdf:type owl:NamedIndividual,
        :Layer;
-   :isNth "1";
-   :layerHeight "224";
-   :layerWidth "224";
-   :layerDepth "64";
-   :kernelDimension "7";
+   :isNth 1;
+   :layerHeight 224;
+   :layerWidth 224;
+   :layerDepth 64;
+   :kernelDimension 7;
    :hasLayerType :Convolution;
-   :padding "0";
-   :stride "2";
+   :padding 0;
+   :stride 2;
    :isUsedBy :ResNet;
 rdfs:label "ResNet Layer 1" .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/ResNet_2
 :ResNet_2 rdf:type owl:NamedIndividual,
        :Layer;
-   :isNth "2";
-   :layerHeight "112";
-   :layerWidth "112";
-   :layerDepth "64";
-   :kernelDimension "7";
+   :isNth 2;
+   :layerHeight 112;
+   :layerWidth 112;
+   :layerDepth 64;
+   :kernelDimension 7;
    :hasLayerType :MaxPooling;
-   :padding "0";
-   :stride "2";
+   :padding 0;
+   :stride 2;
    :isUsedBy :ResNet;
 rdfs:label "ResNet Layer 2" .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/ResNet_3
 :ResNet_3 rdf:type owl:NamedIndividual,
        :Layer;
-   :isNth "3";
-   :layerHeight "56";
-   :layerWidth "56";
-   :layerDepth "64";
-   :kernelDimension "3";
+   :isNth 3;
+   :layerHeight 56;
+   :layerWidth 56;
+   :layerDepth 64;
+   :kernelDimension 3;
    :hasLayerType :Convolution;
-   :padding "0";
-   :stride "1";
+   :padding 0;
+   :stride 1;
    :isUsedBy :ResNet;
 rdfs:label "ResNet Layer 3" .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/ResNet_4
 :ResNet_4 rdf:type owl:NamedIndividual,
        :Layer;
-   :isNth "4";
-   :layerHeight "56";
-   :layerWidth "56";
-   :layerDepth "64";
-   :kernelDimension "3";
+   :isNth 4;
+   :layerHeight 56;
+   :layerWidth 56;
+   :layerDepth 64;
+   :kernelDimension 3;
    :hasLayerType :Convolution;
-   :padding "0";
-   :stride "1";
+   :padding 0;
+   :stride 1;
    :isUsedBy :ResNet;
 rdfs:label "ResNet Layer 4" .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/ResNet_5
 :ResNet_5 rdf:type owl:NamedIndividual,
        :Layer;
-   :isNth "5";
-   :layerHeight "56";
-   :layerWidth "56";
-   :layerDepth "64";
-   :kernelDimension "3";
+   :isNth 5;
+   :layerHeight 56;
+   :layerWidth 56;
+   :layerDepth 64;
+   :kernelDimension 3;
    :hasLayerType :Convolution;
-   :padding "0";
-   :stride "1";
+   :padding 0;
+   :stride 1;
    :isUsedBy :ResNet;
 rdfs:label "ResNet Layer 5" .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/ResNet_6
 :ResNet_6 rdf:type owl:NamedIndividual,
        :Layer;
-   :isNth "6";
-   :layerHeight "56";
-   :layerWidth "56";
-   :layerDepth "64";
-   :kernelDimension "3";
+   :isNth 6;
+   :layerHeight 56;
+   :layerWidth 56;
+   :layerDepth 64;
+   :kernelDimension 3;
    :hasLayerType :Convolution;
-   :padding "0";
-   :stride "1";
+   :padding 0;
+   :stride 1;
    :isUsedBy :ResNet;
 rdfs:label "ResNet Layer 6" .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/ResNet_7
 :ResNet_7 rdf:type owl:NamedIndividual,
        :Layer;
-   :isNth "7";
-   :layerHeight "56";
-   :layerWidth "56";
-   :layerDepth "128";
-   :kernelDimension "3";
+   :isNth 7;
+   :layerHeight 56;
+   :layerWidth 56;
+   :layerDepth 128;
+   :kernelDimension 3;
    :hasLayerType :Convolution;
-   :padding "0";
-   :stride "2";
+   :padding 0;
+   :stride 2;
    :isUsedBy :ResNet;
 rdfs:label "ResNet Layer 7" .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/ResNet_8
 :ResNet_8 rdf:type owl:NamedIndividual,
        :Layer;
-   :isNth "8";
-   :layerHeight "28";
-   :layerWidth "28";
-   :layerDepth "128";
-   :kernelDimension "3";
+   :isNth 8;
+   :layerHeight 28;
+   :layerWidth 28;
+   :layerDepth 128;
+   :kernelDimension 3;
    :hasLayerType :Convolution;
-   :padding "0";
-   :stride "1";
+   :padding 0;
+   :stride 1;
    :isUsedBy :ResNet;
 rdfs:label "ResNet Layer 8" .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/ResNet_9
 :ResNet_9 rdf:type owl:NamedIndividual,
        :Layer;
-   :isNth "9";
-   :layerHeight "28";
-   :layerWidth "28";
-   :layerDepth "128";
-   :kernelDimension "3";
+   :isNth 9;
+   :layerHeight 28;
+   :layerWidth 28;
+   :layerDepth 128;
+   :kernelDimension 3;
    :hasLayerType :Convolution;
-   :padding "0";
-   :stride "1";
+   :padding 0;
+   :stride 1;
    :isUsedBy :ResNet;
 rdfs:label "ResNet Layer 9" .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/ResNet_10
 :ResNet_10 rdf:type owl:NamedIndividual,
        :Layer;
-   :isNth "10";
-   :layerHeight "28";
-   :layerWidth "28";
-   :layerDepth "128";
-   :kernelDimension "3";
+   :isNth 10;
+   :layerHeight 28;
+   :layerWidth 28;
+   :layerDepth 128;
+   :kernelDimension 3;
    :hasLayerType :Convolution;
-   :padding "0";
-   :stride "1";
+   :padding 0;
+   :stride 1;
    :isUsedBy :ResNet;
 rdfs:label "ResNet Layer 10" .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/ResNet_11
 :ResNet_11 rdf:type owl:NamedIndividual,
        :Layer;
-   :isNth "11";
-   :layerHeight "28";
-   :layerWidth "28";
-   :layerDepth "256";
-   :kernelDimension "3";
+   :isNth 11;
+   :layerHeight 28;
+   :layerWidth 28;
+   :layerDepth 256;
+   :kernelDimension 3;
    :hasLayerType :Convolution;
-   :padding "0";
-   :stride "2";
+   :padding 0;
+   :stride 2;
    :isUsedBy :ResNet;
 rdfs:label "ResNet Layer 11" .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/ResNet_12
 :ResNet_12 rdf:type owl:NamedIndividual,
        :Layer;
-   :isNth "12";
-   :layerHeight "14";
-   :layerWidth "14";
-   :layerDepth "256";
-   :kernelDimension "3";
+   :isNth 12;
+   :layerHeight 14;
+   :layerWidth 14;
+   :layerDepth 256;
+   :kernelDimension 3;
    :hasLayerType :Convolution;
-   :padding "0";
-   :stride "1";
+   :padding 0;
+   :stride 1;
    :isUsedBy :ResNet;
 rdfs:label "ResNet Layer 12" .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/ResNet_13
 :ResNet_13 rdf:type owl:NamedIndividual,
        :Layer;
-   :isNth "13";
-   :layerHeight "14";
-   :layerWidth "14";
-   :layerDepth "256";
-   :kernelDimension "3";
+   :isNth 13;
+   :layerHeight 14;
+   :layerWidth 14;
+   :layerDepth 256;
+   :kernelDimension 3;
    :hasLayerType :Convolution;
-   :padding "0";
-   :stride "1";
+   :padding 0;
+   :stride 1;
    :isUsedBy :ResNet;
 rdfs:label "ResNet Layer 13" .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/ResNet_14
 :ResNet_14 rdf:type owl:NamedIndividual,
        :Layer;
-   :isNth "14";
-   :layerHeight "14";
-   :layerWidth "14";
-   :layerDepth "256";
-   :kernelDimension "3";
+   :isNth 14;
+   :layerHeight 14;
+   :layerWidth 14;
+   :layerDepth 256;
+   :kernelDimension 3;
    :hasLayerType :Convolution;
-   :padding "0";
-   :stride "1";
+   :padding 0;
+   :stride 1;
    :isUsedBy :ResNet;
 rdfs:label "ResNet Layer 14" .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/ResNet_15
 :ResNet_15 rdf:type owl:NamedIndividual,
        :Layer;
-   :isNth "15";
-   :layerHeight "14";
-   :layerWidth "14";
-   :layerDepth "512";
-   :kernelDimension "3";
+   :isNth 15;
+   :layerHeight 14;
+   :layerWidth 14;
+   :layerDepth 512;
+   :kernelDimension 3;
    :hasLayerType :Convolution;
-   :padding "0";
-   :stride "2";
+   :padding 0;
+   :stride 2;
    :isUsedBy :ResNet;
 rdfs:label "ResNet Layer 15" .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/ResNet_16
 :ResNet_16 rdf:type owl:NamedIndividual,
        :Layer;
-   :isNth "16";
-   :layerHeight "7";
-   :layerWidth "7";
-   :layerDepth "256";
-   :kernelDimension "3";
+   :isNth 16;
+   :layerHeight 7;
+   :layerWidth 7;
+   :layerDepth 256;
+   :kernelDimension 3;
    :hasLayerType :Convolution;
-   :padding "0";
-   :stride "1";
+   :padding 0;
+   :stride 1;
    :isUsedBy :ResNet;
 rdfs:label "ResNet Layer 16" .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/ResNet_17
 :ResNet_17 rdf:type owl:NamedIndividual,
        :Layer;
-   :isNth "17";
-   :layerHeight "7";
-   :layerWidth "7";
-   :layerDepth "256";
-   :kernelDimension "3";
+   :isNth 17;
+   :layerHeight 7;
+   :layerWidth 7;
+   :layerDepth 256;
+   :kernelDimension 3;
    :hasLayerType :Convolution;
-   :padding "0";
-   :stride "1";
+   :padding 0;
+   :stride 1;
    :isUsedBy :ResNet;
 rdfs:label "ResNet Layer 17" .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/ResNet_18
 :ResNet_18 rdf:type owl:NamedIndividual,
        :Layer;
-   :isNth "18";
-   :layerHeight "7";
-   :layerWidth "7";
-   :layerDepth "256";
-   :kernelDimension "3";
+   :isNth 18;
+   :layerHeight 7;
+   :layerWidth 7;
+   :layerDepth 256;
+   :kernelDimension 3;
    :hasLayerType :Convolution;
-   :padding "0";
-   :stride "1";
+   :padding 0;
+   :stride 1;
    :isUsedBy :ResNet;
 rdfs:label "ResNet Layer 18" .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/ResNet_19
 :ResNet_19 rdf:type owl:NamedIndividual,
        :Layer;
-   :isNth "19";
-   :layerHeight "7";
-   :layerWidth "7";
-   :layerDepth "256";
-   :kernelDimension "0";
+   :isNth 19;
+   :layerHeight 7;
+   :layerWidth 7;
+   :layerDepth 256;
+   :kernelDimension 0;
    :hasLayerType :AvgPooling;
-   :padding "0";
-   :stride "1";
+   :padding 0;
+   :stride 1;
    :isUsedBy :ResNet;
 rdfs:label "ResNet Layer 19" .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/ResNet_20
 :ResNet_20 rdf:type owl:NamedIndividual,
        :Layer;
-   :isNth "20";
-   :layerHeight "1000";
-   :layerWidth "1000";
-   :layerDepth "1";
-   :kernelDimension "0";
+   :isNth 20;
+   :layerHeight 1000;
+   :layerWidth 1000;
+   :layerDepth 1;
+   :kernelDimension 0;
    :hasLayerType :FullyConnected;
-   :padding "0";
-   :stride "1";
+   :padding 0;
+   :stride 1;
    :isUsedBy :ResNet;
 rdfs:label "ResNet Layer 20" .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/VGG16_1
 :VGG16_1 rdf:type owl:NamedIndividual,
        :Layer;
-   :isNth "1";
-   :layerHeight "224";
-   :layerWidth "224";
-   :layerDepth "64";
-   :kernelDimension "3";
+   :isNth 1;
+   :layerHeight 224;
+   :layerWidth 224;
+   :layerDepth 64;
+   :kernelDimension 3;
    :hasLayerType :Convolution;
-   :padding "0";
-   :stride "1";
+   :padding 0;
+   :stride 1;
    :isUsedBy :VGG16;
 rdfs:label "VGG16 Layer 1" .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/VGG16_2
 :VGG16_2 rdf:type owl:NamedIndividual,
        :Layer;
-   :isNth "2";
-   :layerHeight "224";
-   :layerWidth "224";
-   :layerDepth "64";
-   :kernelDimension "3";
+   :isNth 2;
+   :layerHeight 224;
+   :layerWidth 224;
+   :layerDepth 64;
+   :kernelDimension 3;
    :hasLayerType :Convolution;
-   :padding "0";
-   :stride "1";
+   :padding 0;
+   :stride 1;
    :isUsedBy :VGG16;
 rdfs:label "VGG16 Layer 2" .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/VGG16_3
 :VGG16_3 rdf:type owl:NamedIndividual,
        :Layer;
-   :isNth "3";
-   :layerHeight "112";
-   :layerWidth "112";
-   :layerDepth "128";
-   :kernelDimension "3";
+   :isNth 3;
+   :layerHeight 112;
+   :layerWidth 112;
+   :layerDepth 128;
+   :kernelDimension 3;
    :hasLayerType :MaxPooling;
-   :padding "0";
-   :stride "2";
+   :padding 0;
+   :stride 2;
    :isUsedBy :VGG16;
 rdfs:label "VGG16 Layer 3" .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/VGG16_4
 :VGG16_4 rdf:type owl:NamedIndividual,
        :Layer;
-   :isNth "4";
-   :layerHeight "112";
-   :layerWidth "112";
-   :layerDepth "128";
-   :kernelDimension "3";
+   :isNth 4;
+   :layerHeight 112;
+   :layerWidth 112;
+   :layerDepth 128;
+   :kernelDimension 3;
    :hasLayerType :Convolution;
-   :padding "0";
-   :stride "1";
+   :padding 0;
+   :stride 1;
    :isUsedBy :VGG16;
 rdfs:label "VGG16 Layer 4" .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/VGG16_5
 :VGG16_5 rdf:type owl:NamedIndividual,
        :Layer;
-   :isNth "5";
-   :layerHeight "112";
-   :layerWidth "112";
-   :layerDepth "128";
-   :kernelDimension "3";
+   :isNth 5;
+   :layerHeight 112;
+   :layerWidth 112;
+   :layerDepth 128;
+   :kernelDimension 3;
    :hasLayerType :Convolution;
-   :padding "0";
-   :stride "1";
+   :padding 0;
+   :stride 1;
    :isUsedBy :VGG16;
 rdfs:label "VGG16 Layer 5" .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/VGG16_6
 :VGG16_6 rdf:type owl:NamedIndividual,
        :Layer;
-   :isNth "6";
-   :layerHeight "56";
-   :layerWidth "56";
-   :layerDepth "256";
-   :kernelDimension "3";
+   :isNth 6;
+   :layerHeight 56;
+   :layerWidth 56;
+   :layerDepth 256;
+   :kernelDimension 3;
    :hasLayerType :MaxPooling;
-   :padding "0";
-   :stride "2";
+   :padding 0;
+   :stride 2;
    :isUsedBy :VGG16;
 rdfs:label "VGG16 Layer 6" .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/VGG16_7
 :VGG16_7 rdf:type owl:NamedIndividual,
        :Layer;
-   :isNth "7";
-   :layerHeight "56";
-   :layerWidth "56";
-   :layerDepth "256";
-   :kernelDimension "3";
+   :isNth 7;
+   :layerHeight 56;
+   :layerWidth 56;
+   :layerDepth 256;
+   :kernelDimension 3;
    :hasLayerType :Convolution;
-   :padding "0";
-   :stride "1";
+   :padding 0;
+   :stride 1;
    :isUsedBy :VGG16;
 rdfs:label "VGG16 Layer 7" .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/VGG16_8
 :VGG16_8 rdf:type owl:NamedIndividual,
        :Layer;
-   :isNth "8";
-   :layerHeight "56";
-   :layerWidth "56";
-   :layerDepth "256";
-   :kernelDimension "3";
+   :isNth 8;
+   :layerHeight 56;
+   :layerWidth 56;
+   :layerDepth 256;
+   :kernelDimension 3;
    :hasLayerType :Convolution;
-   :padding "0";
-   :stride "1";
+   :padding 0;
+   :stride 1;
    :isUsedBy :VGG16;
 rdfs:label "VGG16 Layer 8" .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/VGG16_9
 :VGG16_9 rdf:type owl:NamedIndividual,
        :Layer;
-   :isNth "9";
-   :layerHeight "56";
-   :layerWidth "56";
-   :layerDepth "256";
-   :kernelDimension "3";
+   :isNth 9;
+   :layerHeight 56;
+   :layerWidth 56;
+   :layerDepth 256;
+   :kernelDimension 3;
    :hasLayerType :Convolution;
-   :padding "0";
-   :stride "1";
+   :padding 0;
+   :stride 1;
    :isUsedBy :VGG16;
 rdfs:label "VGG16 Layer 9" .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/VGG16_10
 :VGG16_10 rdf:type owl:NamedIndividual,
        :Layer;
-   :isNth "10";
-   :layerHeight "28";
-   :layerWidth "28";
-   :layerDepth "512";
-   :kernelDimension "3";
+   :isNth 10;
+   :layerHeight 28;
+   :layerWidth 28;
+   :layerDepth 512;
+   :kernelDimension 3;
    :hasLayerType :MaxPooling;
-   :padding "0";
-   :stride "2";
+   :padding 0;
+   :stride 2;
    :isUsedBy :VGG16;
 rdfs:label "VGG16 Layer 10" .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/VGG16_11
 :VGG16_11 rdf:type owl:NamedIndividual,
        :Layer;
-   :isNth "11";
-   :layerHeight "28";
-   :layerWidth "28";
-   :layerDepth "512";
-   :kernelDimension "3";
+   :isNth 11;
+   :layerHeight 28;
+   :layerWidth 28;
+   :layerDepth 512;
+   :kernelDimension 3;
    :hasLayerType :Convolution;
-   :padding "0";
-   :stride "1";
+   :padding 0;
+   :stride 1;
    :isUsedBy :VGG16;
 rdfs:label "VGG16 Layer 11" .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/VGG16_12
 :VGG16_12 rdf:type owl:NamedIndividual,
        :Layer;
-   :isNth "12";
-   :layerHeight "28";
-   :layerWidth "28";
-   :layerDepth "512";
-   :kernelDimension "3";
+   :isNth 12;
+   :layerHeight 28;
+   :layerWidth 28;
+   :layerDepth 512;
+   :kernelDimension 3;
    :hasLayerType :Convolution;
-   :padding "0";
-   :stride "1";
+   :padding 0;
+   :stride 1;
    :isUsedBy :VGG16;
 rdfs:label "VGG16 Layer 12" .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/VGG16_13
 :VGG16_13 rdf:type owl:NamedIndividual,
        :Layer;
-   :isNth "13";
-   :layerHeight "28";
-   :layerWidth "28";
-   :layerDepth "512";
-   :kernelDimension "3";
+   :isNth 13;
+   :layerHeight 28;
+   :layerWidth 28;
+   :layerDepth 512;
+   :kernelDimension 3;
    :hasLayerType :Convolution;
-   :padding "0";
-   :stride "1";
+   :padding 0;
+   :stride 1;
    :isUsedBy :VGG16;
 rdfs:label "VGG16 Layer 13" .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/VGG16_14
 :VGG16_14 rdf:type owl:NamedIndividual,
        :Layer;
-   :isNth "14";
-   :layerHeight "14";
-   :layerWidth "14";
-   :layerDepth "512";
-   :kernelDimension "3";
+   :isNth 14;
+   :layerHeight 14;
+   :layerWidth 14;
+   :layerDepth 512;
+   :kernelDimension 3;
    :hasLayerType :MaxPooling;
-   :padding "0";
-   :stride "2";
+   :padding 0;
+   :stride 2;
    :isUsedBy :VGG16;
 rdfs:label "VGG16 Layer 14" .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/VGG16_15
 :VGG16_15 rdf:type owl:NamedIndividual,
        :Layer;
-   :isNth "15";
-   :layerHeight "14";
-   :layerWidth "14";
-   :layerDepth "512";
-   :kernelDimension "3";
+   :isNth 15;
+   :layerHeight 14;
+   :layerWidth 14;
+   :layerDepth 512;
+   :kernelDimension 3;
    :hasLayerType :Convolution;
-   :padding "0";
-   :stride "1";
+   :padding 0;
+   :stride 1;
    :isUsedBy :VGG16;
 rdfs:label "VGG16 Layer 15" .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/VGG16_16
 :VGG16_16 rdf:type owl:NamedIndividual,
        :Layer;
-   :isNth "16";
-   :layerHeight "14";
-   :layerWidth "14";
-   :layerDepth "512";
-   :kernelDimension "3";
+   :isNth 16;
+   :layerHeight 14;
+   :layerWidth 14;
+   :layerDepth 512;
+   :kernelDimension 3;
    :hasLayerType :Convolution;
-   :padding "0";
-   :stride "1";
+   :padding 0;
+   :stride 1;
    :isUsedBy :VGG16;
 rdfs:label "VGG16 Layer 16" .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/VGG16_17
 :VGG16_17 rdf:type owl:NamedIndividual,
        :Layer;
-   :isNth "17";
-   :layerHeight "14";
-   :layerWidth "14";
-   :layerDepth "512";
-   :kernelDimension "3";
+   :isNth 17;
+   :layerHeight 14;
+   :layerWidth 14;
+   :layerDepth 512;
+   :kernelDimension 3;
    :hasLayerType :Convolution;
-   :padding "0";
-   :stride "1";
+   :padding 0;
+   :stride 1;
    :isUsedBy :VGG16;
 rdfs:label "VGG16 Layer 17" .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/VGG16_18
 :VGG16_18 rdf:type owl:NamedIndividual,
        :Layer;
-   :isNth "18";
-   :layerHeight "7";
-   :layerWidth "7";
-   :layerDepth "512";
-   :kernelDimension "3";
+   :isNth 18;
+   :layerHeight 7;
+   :layerWidth 7;
+   :layerDepth 512;
+   :kernelDimension 3;
    :hasLayerType :MaxPooling;
-   :padding "0";
-   :stride "2";
+   :padding 0;
+   :stride 2;
    :isUsedBy :VGG16;
 rdfs:label "VGG16 Layer 18" .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/VGG16_19
 :VGG16_19 rdf:type owl:NamedIndividual,
        :Layer;
-   :isNth "19";
-   :layerHeight "1";
-   :layerWidth "1";
-   :layerDepth "25088";
-   :kernelDimension "0";
+   :isNth 19;
+   :layerHeight 1;
+   :layerWidth 1;
+   :layerDepth 25088;
+   :kernelDimension 0;
    :hasLayerType :FullyConnected;
-   :padding "0";
-   :stride "1";
+   :padding 0;
+   :stride 1;
    :isUsedBy :VGG16;
 rdfs:label "VGG16 Layer 19" .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/VGG16_20
 :VGG16_20 rdf:type owl:NamedIndividual,
        :Layer;
-   :isNth "20";
-   :layerHeight "1";
-   :layerWidth "1";
-   :layerDepth "4096";
-   :kernelDimension "0";
+   :isNth 20;
+   :layerHeight 1;
+   :layerWidth 1;
+   :layerDepth 4096;
+   :kernelDimension 0;
    :hasLayerType :FullyConnected;
-   :padding "0";
-   :stride "1";
+   :padding 0;
+   :stride 1;
    :isUsedBy :VGG16;
 rdfs:label "VGG16 Layer 20" .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/VGG16_21
 :VGG16_21 rdf:type owl:NamedIndividual,
        :Layer;
-   :isNth "21";
-   :layerHeight "1";
-   :layerWidth "1";
-   :layerDepth "4096";
-   :kernelDimension "0";
+   :isNth 21;
+   :layerHeight 1;
+   :layerWidth 1;
+   :layerDepth 4096;
+   :kernelDimension 0;
    :hasLayerType :FullyConnected;
-   :padding "0";
-   :stride "1";
+   :padding 0;
+   :stride 1;
    :isUsedBy :VGG16;
 rdfs:label "VGG16 Layer 21" .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/VGG16_22
 :VGG16_22 rdf:type owl:NamedIndividual,
        :Layer;
-   :isNth "22";
-   :layerHeight "1";
-   :layerWidth "1";
-   :layerDepth "1000";
-   :kernelDimension "0";
+   :isNth 22;
+   :layerHeight 1;
+   :layerWidth 1;
+   :layerDepth 1000;
+   :kernelDimension 0;
    :hasLayerType :FullyConnected;
-   :padding "0";
-   :stride "1";
+   :padding 0;
+   :stride 1;
    :isUsedBy :VGG16;
 rdfs:label "VGG16 Layer 22" .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/AlexNet_1
 :AlexNet_1 rdf:type owl:NamedIndividual,
        :Layer;
-   :isNth "1";
-   :layerHeight "55";
-   :layerWidth "55";
-   :layerDepth "96";
-   :kernelDimension "11";
+   :isNth 1;
+   :layerHeight 55;
+   :layerWidth 55;
+   :layerDepth 96;
+   :kernelDimension 11;
    :hasLayerType :Convolution;
-   :padding "0";
-   :stride "4";
+   :padding 0;
+   :stride 4;
    :isUsedBy :AlexNet;
 rdfs:label "AlexNet Layer 1" .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/AlexNet_2
 :AlexNet_2 rdf:type owl:NamedIndividual,
        :Layer;
-   :isNth "2";
-   :layerHeight "27";
-   :layerWidth "27";
-   :layerDepth "96";
-   :kernelDimension "3";
+   :isNth 2;
+   :layerHeight 27;
+   :layerWidth 27;
+   :layerDepth 96;
+   :kernelDimension 3;
    :hasLayerType :MaxPooling;
-   :padding "0";
-   :stride "2";
+   :padding 0;
+   :stride 2;
    :isUsedBy :AlexNet;
 rdfs:label "AlexNet Layer 2" .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/AlexNet_3
 :AlexNet_3 rdf:type owl:NamedIndividual,
        :Layer;
-   :isNth "3";
-   :layerHeight "27";
-   :layerWidth "27";
-   :layerDepth "256";
-   :kernelDimension "5";
+   :isNth 3;
+   :layerHeight 27;
+   :layerWidth 27;
+   :layerDepth 256;
+   :kernelDimension 5;
    :hasLayerType :Convolution;
-   :padding "2";
-   :stride "1";
+   :padding 2;
+   :stride 1;
    :isUsedBy :AlexNet;
 rdfs:label "AlexNet Layer 3" .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/AlexNet_4
 :AlexNet_4 rdf:type owl:NamedIndividual,
        :Layer;
-   :isNth "4";
-   :layerHeight "13";
-   :layerWidth "13";
-   :layerDepth "256";
-   :kernelDimension "5";
+   :isNth 4;
+   :layerHeight 13;
+   :layerWidth 13;
+   :layerDepth 256;
+   :kernelDimension 5;
    :hasLayerType :MaxPooling;
-   :padding "0";
-   :stride "2";
+   :padding 0;
+   :stride 2;
    :isUsedBy :AlexNet;
 rdfs:label "AlexNet Layer 4" .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/AlexNet_5
 :AlexNet_5 rdf:type owl:NamedIndividual,
        :Layer;
-   :isNth "5";
-   :layerHeight "13";
-   :layerWidth "13";
-   :layerDepth "384";
-   :kernelDimension "3";
+   :isNth 5;
+   :layerHeight 13;
+   :layerWidth 13;
+   :layerDepth 384;
+   :kernelDimension 3;
    :hasLayerType :Convolution;
-   :padding "1";
-   :stride "1";
+   :padding 1;
+   :stride 1;
    :isUsedBy :AlexNet;
 rdfs:label "AlexNet Layer 5" .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/AlexNet_6
 :AlexNet_6 rdf:type owl:NamedIndividual,
        :Layer;
-   :isNth "6";
-   :layerHeight "13";
-   :layerWidth "13";
-   :layerDepth "384";
-   :kernelDimension "3";
+   :isNth 6;
+   :layerHeight 13;
+   :layerWidth 13;
+   :layerDepth 384;
+   :kernelDimension 3;
    :hasLayerType :Convolution;
-   :padding "1";
-   :stride "1";
+   :padding 1;
+   :stride 1;
    :isUsedBy :AlexNet;
 rdfs:label "AlexNet Layer 6" .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/AlexNet_7
 :AlexNet_7 rdf:type owl:NamedIndividual,
        :Layer;
-   :isNth "7";
-   :layerHeight "13";
-   :layerWidth "13";
-   :layerDepth "256";
-   :kernelDimension "3";
+   :isNth 7;
+   :layerHeight 13;
+   :layerWidth 13;
+   :layerDepth 256;
+   :kernelDimension 3;
    :hasLayerType :Convolution;
-   :padding "1";
-   :stride "1";
+   :padding 1;
+   :stride 1;
    :isUsedBy :AlexNet;
 rdfs:label "AlexNet Layer 7" .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/AlexNet_8
 :AlexNet_8 rdf:type owl:NamedIndividual,
        :Layer;
-   :isNth "8";
-   :layerHeight "6";
-   :layerWidth "6";
-   :layerDepth "256";
-   :kernelDimension "3";
+   :isNth 8;
+   :layerHeight 6;
+   :layerWidth 6;
+   :layerDepth 256;
+   :kernelDimension 3;
    :hasLayerType :MaxPooling;
-   :padding "0";
-   :stride "2";
+   :padding 0;
+   :stride 2;
    :isUsedBy :AlexNet;
 rdfs:label "AlexNet Layer 8" .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/AlexNet_9
 :AlexNet_9 rdf:type owl:NamedIndividual,
        :Layer;
-   :isNth "9";
-   :layerHeight "1";
-   :layerWidth "1";
-   :layerDepth "4096";
-   :kernelDimension "3";
+   :isNth 9;
+   :layerHeight 1;
+   :layerWidth 1;
+   :layerDepth 4096;
+   :kernelDimension 3;
    :hasLayerType :FullyConnected;
-   :padding "0";
-   :stride "1";
+   :padding 0;
+   :stride 1;
    :isUsedBy :AlexNet;
 rdfs:label "AlexNet Layer 9" .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/AlexNet_10
 :AlexNet_10 rdf:type owl:NamedIndividual,
        :Layer;
-   :isNth "10";
-   :layerHeight "1";
-   :layerWidth "1";
-   :layerDepth "4096";
-   :kernelDimension "3";
+   :isNth 10;
+   :layerHeight 1;
+   :layerWidth 1;
+   :layerDepth 4096;
+   :kernelDimension 3;
    :hasLayerType :FullyConnected;
-   :padding "0";
-   :stride "1";
+   :padding 0;
+   :stride 1;
    :isUsedBy :AlexNet;
 rdfs:label "AlexNet Layer 10" .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/AlexNet_11
 :AlexNet_11 rdf:type owl:NamedIndividual,
        :Layer;
-   :isNth "11";
-   :layerHeight "1";
-   :layerWidth "1";
-   :layerDepth "1000";
-   :kernelDimension "3";
+   :isNth 11;
+   :layerHeight 1;
+   :layerWidth 1;
+   :layerDepth 1000;
+   :kernelDimension 3;
    :hasLayerType :FullyConnected;
-   :padding "0";
-   :stride "1";
+   :padding 0;
+   :stride 1;
    :isUsedBy :AlexNet;
 rdfs:label "AlexNet Layer 11" .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/LeNet-5_1
 :LeNet-5_1 rdf:type owl:NamedIndividual,
        :Layer;
-   :isNth "1";
-   :layerHeight "28";
-   :layerWidth "28";
-   :layerDepth "6";
-   :kernelDimension "5";
+   :isNth 1;
+   :layerHeight 28;
+   :layerWidth 28;
+   :layerDepth 6;
+   :kernelDimension 5;
    :hasLayerType :Convolution;
-   :padding "0";
-   :stride "1";
+   :padding 0;
+   :stride 1;
    :isUsedBy :LeNet-5;
 rdfs:label "LeNet-5 Layer 1" .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/LeNet-5_2
 :LeNet-5_2 rdf:type owl:NamedIndividual,
        :Layer;
-   :isNth "2";
-   :layerHeight "14";
-   :layerWidth "14";
-   :layerDepth "6";
-   :kernelDimension "5";
+   :isNth 2;
+   :layerHeight 14;
+   :layerWidth 14;
+   :layerDepth 6;
+   :kernelDimension 5;
    :hasLayerType :AvgPooling;
-   :padding "0";
-   :stride "2";
+   :padding 0;
+   :stride 2;
    :isUsedBy :LeNet-5;
 rdfs:label "LeNet-5 Layer 2" .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/LeNet-5_3
 :LeNet-5_3 rdf:type owl:NamedIndividual,
        :Layer;
-   :isNth "3";
-   :layerHeight "10";
-   :layerWidth "10";
-   :layerDepth "16";
-   :kernelDimension "5";
+   :isNth 3;
+   :layerHeight 10;
+   :layerWidth 10;
+   :layerDepth 16;
+   :kernelDimension 5;
    :hasLayerType :Convolution;
-   :padding "0";
-   :stride "1";
+   :padding 0;
+   :stride 1;
    :isUsedBy :LeNet-5;
 rdfs:label "LeNet-5 Layer 3" .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/LeNet-5_4
 :LeNet-5_4 rdf:type owl:NamedIndividual,
        :Layer;
-   :isNth "4";
-   :layerHeight "5";
-   :layerWidth "5";
-   :layerDepth "16";
-   :kernelDimension "2";
+   :isNth 4;
+   :layerHeight 5;
+   :layerWidth 5;
+   :layerDepth 16;
+   :kernelDimension 2;
    :hasLayerType :AvgPooling;
-   :padding "0";
-   :stride "2";
+   :padding 0;
+   :stride 2;
    :isUsedBy :LeNet-5;
 rdfs:label "LeNet-5 Layer 4" .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/LeNet-5_5
 :LeNet-5_5 rdf:type owl:NamedIndividual,
        :Layer;
-   :isNth "5";
-   :layerHeight "1";
-   :layerWidth "1";
-   :layerDepth "120";
-   :kernelDimension "5";
+   :isNth 5;
+   :layerHeight 1;
+   :layerWidth 1;
+   :layerDepth 120;
+   :kernelDimension 5;
    :hasLayerType :Convolution;
-   :padding "0";
-   :stride "1";
+   :padding 0;
+   :stride 1;
    :isUsedBy :LeNet-5;
 rdfs:label "LeNet-5 Layer 5" .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/LeNet-5_6
 :LeNet-5_6 rdf:type owl:NamedIndividual,
        :Layer;
-   :isNth "6";
-   :layerHeight "1";
-   :layerWidth "1";
-   :layerDepth "84";
-   :kernelDimension "1";
+   :isNth 6;
+   :layerHeight 1;
+   :layerWidth 1;
+   :layerDepth 84;
+   :kernelDimension 1;
    :hasLayerType :FullyConnected;
-   :padding "0";
-   :stride "1";
+   :padding 0;
+   :stride 1;
    :isUsedBy :LeNet-5;
 rdfs:label "LeNet-5 Layer 6" .
+
 
 
 #################################################################
