@@ -372,25 +372,43 @@ foaf:fundedBy rdf:type owl:ObjectProperty ;
 :isNth rdf:type owl:DatatypeProperty ;
         rdfs:subPropertyOf owl:topDataProperty ;
         rdfs:domain :Layer ;
-        rdfs:range xsd:int .
+        rdfs:range xsd:integer .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/layerWidth
 :layerWidth rdf:type owl:DatatypeProperty ;
         rdfs:subPropertyOf owl:topDataProperty ;
         rdfs:domain :Layer ;
-        rdfs:range xsd:int .
+        rdfs:range xsd:integer .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/layerHeight
 :layerHeight rdf:type owl:DatatypeProperty ;
         rdfs:subPropertyOf owl:topDataProperty ;
         rdfs:domain :Layer ;
-        rdfs:range xsd:int .
+        rdfs:range xsd:integer .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/layerDepth
 :layerDepth rdf:type owl:DatatypeProperty ;
         rdfs:subPropertyOf owl:topDataProperty ;
         rdfs:domain :Layer ;
-        rdfs:range xsd:int .
+        rdfs:range xsd:integer .
+
+###  https://github.com/RiccardoOmiccioli/AMLO/padding
+:padding rdf:type owl:DatatypeProperty ;
+        rdfs:subPropertyOf owl:topDataProperty ;
+        rdfs:domain :Layer ;
+        rdfs:range xsd:integer .
+
+###  https://github.com/RiccardoOmiccioli/AMLO/stride
+:stride rdf:type owl:DatatypeProperty ;
+        rdfs:subPropertyOf owl:topDataProperty ;
+        rdfs:domain :Layer ;
+        rdfs:range xsd:integer .
+
+###  https://github.com/RiccardoOmiccioli/AMLO/kernelDimension
+:kernelDimension rdf:type owl:DatatypeProperty ;
+        rdfs:subPropertyOf owl:topDataProperty ;
+        rdfs:domain :Layer ;
+        rdfs:range xsd:integer .   
 
 #################################################################
 #    Classes
