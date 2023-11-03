@@ -98,6 +98,7 @@ foaf:fundedBy rdf:type owl:ObjectProperty ;
 
 ### https://github.com/RiccardoOmiccioli/AMLO/isMemberOf
 :isMemberOf rdf:type owl:ObjectProperty ,
+                owl:FunctionalProperty ,
                 owl:AsymmetricProperty ,
                 owl:IrreflexiveProperty ;
         rdfs:domain :Author ;
@@ -130,7 +131,7 @@ foaf:fundedBy rdf:type owl:ObjectProperty ;
                 owl:FunctionalProperty ,
                 owl:AsymmetricProperty ,
                 owl:IrreflexiveProperty ;
-        rdfs:domain :Organizer ;
+        rdfs:domain :Role ;
         rdfs:range foaf:Organization ;
         rdfs:comment "Associate an organizer with the organization he/she employs"@en,
                 "Associa un organizzatore all'ente in cui è dipendente"@it ;
@@ -408,7 +409,7 @@ foaf:fundedBy rdf:type owl:ObjectProperty ;
 :kernelDimension rdf:type owl:DatatypeProperty ;
         rdfs:subPropertyOf owl:topDataProperty ;
         rdfs:domain :Layer ;
-        rdfs:range xsd:integer .   
+        rdfs:range xsd:integer .
 
 #################################################################
 #    Classes
@@ -1780,6 +1781,8 @@ rdfs:label "LeNet-5 Layer 6" .
 
 :technology rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
 
+:organization rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
 :event rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
 
 :author rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
@@ -1950,6 +1953,35 @@ rdfs:label "LeNet-5 Layer 6" .
                                                        <http://www.w3.org/2003/11/swrl#propertyPredicate> :isCoAuthor ;
                                                        <http://www.w3.org/2003/11/swrl#argument1> :author1 ;
                                                        <http://www.w3.org/2003/11/swrl#argument2> :author2
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "isTeamOf" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :isAssignedTo ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :group ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> :project
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :isDevelopedBy ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :project ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> :organization
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :isTeamOf ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :group ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> :organization
                                                      ] ;
                                            rdf:rest rdf:nil
                                          ]
