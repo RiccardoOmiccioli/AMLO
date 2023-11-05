@@ -137,16 +137,16 @@ foaf:fundedBy rdf:type owl:ObjectProperty ;
                 owl:IrreflexiveProperty ;
         rdfs:domain :Role ;
         rdfs:range foaf:Organization ;
-        rdfs:comment "Associate an organizer with the organization he/she employs"@en ,
-                "Associa un organizzatore all'ente in cui è dipendente"@it ;
+        rdfs:comment "Associate a role with the organization he/she employs"@en ,
+                "Associa un ruolo all'ente in cui è dipendente"@it ;
         rdfs:label "is employed by"@en ,
                 "è dipendente di"@it .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/hasEmployee
 :hasEmployee rdf:type owl:ObjectProperty ;
         owl:inverseOf :isEmployedBy ;
-        rdfs:comment "Associate an organization with its employee who is an organizer"@en ,
-                "Associa un ente al suo dipendente che è un organizzatore"@it ;
+        rdfs:comment "Associate an organization with its employee"@en ,
+                "Associa un ente al suo dipendente"@it ;
         rdfs:label "has employee"@en ,
                 "ha dipendente"@it .
 
@@ -748,7 +748,8 @@ mlo:Algorithms rdf:type owl:Class ;
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/scikit-learn
 :scikit-learn rdf:type owl:NamedIndividual ;
-        foaf:fundedBy :Google .
+        foaf:fundedBy :Google ;
+        :isDevelopedBy :Google.
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/tensorFlow_Quantum
 :tensorFlow_Quantum rdf:type owl:NamedIndividual .
