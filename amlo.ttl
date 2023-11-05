@@ -16,7 +16,11 @@
         dcterms:author "Andrea Ingargiola" ,
                         "Cecilia Teodorani" ,
                         "Riccardo Omiccioli" ;
-        dcterms:title "Advanced Machine Learning Ontology" .
+        dcterms:title "Advanced Machine Learning Ontology" ;
+        rdfs:comment "This ontology models Machine Learning algorithms and techniques and the mathematical elements used. It also contains information about the individuals involved in their development, the organizations that have funded them and the competitions in which some of these technologies have received recognition."@en ,
+                "Questa ontologia modella gli algoritmi e le tecniche di Machine Learning e gli elementi matematici utilizzati. Contiene anche informazioni sulle persone coinvolte nella loro creazione, sugli enti che le hanno finanziate e sulle competizioni in cui alcune di queste tecnologie hanno ottenuto riconoscimenti."@it ;
+        dcterms:license "https://opensource.org/licenses/MIT" ;
+        owl:versionInfo "1.0.0".
 
 #################################################################
 #    Annotation properties
@@ -44,7 +48,7 @@ foaf:fundedBy rdf:type owl:ObjectProperty ;
                 owl:IrreflexiveProperty ;
         rdfs:domain foaf:Project ;
         rdfs:range foaf:Organization ;
-        rdfs:comment "Associate a project with the organization that funds it"@en,
+        rdfs:comment "Associate a project with the organization that funds it"@en ,
                 "Associa un progetto all'organizzazione che lo finanzia"@it ;
         rdfs:isDefinedBy foaf: ;
         rdfs:label "is funded by"@en ,
@@ -52,7 +56,7 @@ foaf:fundedBy rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/funds
 :funds rdf:type owl:ObjectProperty ;
-        rdfs:comment "Associate an organization with the project it funds"@en,
+        rdfs:comment "Associate an organization with the project it funds"@en ,
                 "Associa un'organizzazione al progetto che finanzia"@it ;
         rdfs:label "funds"@en ,
                 "finanzia"@it .
@@ -64,7 +68,7 @@ foaf:fundedBy rdf:type owl:ObjectProperty ;
                 owl:IrreflexiveProperty ;
         rdfs:domain foaf:Project ;
         rdfs:range foaf:Organization ;
-        rdfs:comment "Associate a project with the organization that develops it"@en,
+        rdfs:comment "Associate a project with the organization that develops it"@en ,
                 "Associa un progetto con l'ente che la sviluppa"@it ;
         rdfs:label "is developed by"@en ,
                 "è sviluppato da"@it .
@@ -72,7 +76,7 @@ foaf:fundedBy rdf:type owl:ObjectProperty ;
 ###  https://github.com/RiccardoOmiccioli/AMLO/develops
 :develops rdf:type owl:ObjectProperty ;
         owl:inverseOf :isDevelopedBy ;
-        rdfs:comment "Associate the organization with the project it develops"@en,
+        rdfs:comment "Associate the organization with the project it develops"@en ,
                 "Associa l'ente con il progetto che sviluppa"@it ;
         rdfs:label "develops"@en ,
                 "sviluppa"@it .
@@ -84,14 +88,14 @@ foaf:fundedBy rdf:type owl:ObjectProperty ;
                 owl:IrreflexiveProperty ;
         rdfs:domain foaf:Person ;
         rdfs:range :Role ;
-        rdfs:comment "Associate a person with its role"@en,
+        rdfs:comment "Associate a person with its role"@en ,
                 "Associa una persona al suo ruolo"@it ;
         rdfs:label "has role"@en ,
                 "ha ruolo"@it .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/isRoleOf
 :isRoleOf rdf:type owl:ObjectProperty ;
-        rdfs:comment "Associate a role with its person"@en,
+        rdfs:comment "Associate a role with its person"@en ,
                 "Associa un ruolo alla sua persona"@it ;
         rdfs:label "is role of"@en ,
                 "è ruolo di"@it .
@@ -102,7 +106,7 @@ foaf:fundedBy rdf:type owl:ObjectProperty ;
                 owl:IrreflexiveProperty ;
         rdfs:domain :Author ;
         rdfs:range foaf:Group ;
-        rdfs:comment "Associate an author with the group he/she is a member of"@en,
+        rdfs:comment "Associate an author with the group he/she is a member of"@en ,
                 "Associa un autore al gruppo di cui è membro"@it ;
         rdfs:label "is member of"@en ,
                 "è membro di"@it .
@@ -110,7 +114,7 @@ foaf:fundedBy rdf:type owl:ObjectProperty ;
 ### https://github.com/RiccardoOmiccioli/AMLO/hasMember
 :hasMember rdf:type owl:ObjectProperty ;
         owl:inverseOf :isMemberOf ;
-        rdfs:comment "Associate a group with one of its member authors"@en,
+        rdfs:comment "Associate a group with one of its member authors"@en ,
                 "Associa un gruppo ad un suo autore membro"@it ;
         rdfs:label "has member"@en ,
                 "ha membro"@it .
@@ -120,7 +124,7 @@ foaf:fundedBy rdf:type owl:ObjectProperty ;
                 owl:SymmetricProperty ;
         rdfs:domain :Author ;
         rdfs:range :Author ;
-        rdfs:comment "Associate an author with his/her coauthor"@en,
+        rdfs:comment "Associate an author with his/her coauthor"@en ,
                 "Associa un autore con il suo coautore"@it ;
         rdfs:label "is coauthor"@en ,
                 "è coautore"@it .
@@ -132,7 +136,7 @@ foaf:fundedBy rdf:type owl:ObjectProperty ;
                 owl:IrreflexiveProperty ;
         rdfs:domain :Organizer ;
         rdfs:range foaf:Organization ;
-        rdfs:comment "Associate an organizer with the organization he/she employs"@en,
+        rdfs:comment "Associate an organizer with the organization he/she employs"@en ,
                 "Associa un organizzatore all'ente in cui è dipendente"@it ;
         rdfs:label "is employed by"@en ,
                 "è dipendente di"@it .
@@ -140,7 +144,7 @@ foaf:fundedBy rdf:type owl:ObjectProperty ;
 ###  https://github.com/RiccardoOmiccioli/AMLO/hasEmployee
 :hasEmployee rdf:type owl:ObjectProperty ;
         owl:inverseOf :isEmployedBy ;
-        rdfs:comment "Associate an organization with its employee who is an organizer"@en,
+        rdfs:comment "Associate an organization with its employee who is an organizer"@en ,
                 "Associa un ente al suo dipendente che è un organizzatore"@it ;
         rdfs:label "has employee"@en ,
                 "ha dipendente"@it .
@@ -151,7 +155,7 @@ foaf:fundedBy rdf:type owl:ObjectProperty ;
                 owl:IrreflexiveProperty ;
         rdfs:domain foaf:Group ;
         rdfs:range foaf:Project ;
-        rdfs:comment "Associate a group with a project"@en,
+        rdfs:comment "Associate a group with a project"@en ,
                 "Associa un gruppo ad progetto"@it ;
         rdfs:label "is assigned to"@en ,
                 "è assegnato a"@it .
@@ -159,7 +163,7 @@ foaf:fundedBy rdf:type owl:ObjectProperty ;
 ###  https://github.com/RiccardoOmiccioli/AMLO/hasAssigned
 :hasAssigned rdf:type owl:ObjectProperty ;
         owl:inverseOf :isAssignedTo ;
-        rdfs:comment "Associate a project with its group"@en,
+        rdfs:comment "Associate a project with its group"@en ,
                 "Associa un progetto al suo gruppo"@it ;
         rdfs:label "has assigned"@en ,
                 "ha assegnato"@it .
@@ -171,14 +175,14 @@ foaf:fundedBy rdf:type owl:ObjectProperty ;
                 owl:IrreflexiveProperty ;
         rdfs:domain dbo:Competition ;
         rdfs:range :Edition ;
-        rdfs:comment "Associate a competition with one of its editions"@en,
+        rdfs:comment "Associate a competition with one of its editions"@en ,
                 "Associa una competizione ad una sua edizione"@it ;
         rdfs:label "has edition"@en ,
                 "ha edizione"@it .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/isEditionOf
 :isEditionOf rdf:type owl:ObjectProperty ;
-        rdfs:comment "Associate an edition with its competition"@en,
+        rdfs:comment "Associate an edition with its competition"@en ,
                 "Associa un'edizione alla sua competizione"@it ;
         rdfs:label "is edition of"@en ,
                 "è edizione di"@it .
@@ -191,14 +195,14 @@ foaf:fundedBy rdf:type owl:ObjectProperty ;
                 owl:IrreflexiveProperty ;
         rdfs:domain :Edition ;
         rdfs:range dbo:Year ;
-        rdfs:comment "Associate an edition with the year of its occurrence"@en,
+        rdfs:comment "Associate an edition with the year of its occurrence"@en ,
                 "Associa un'edizione all'anno del suo svolgimento"@it ;
         rdfs:label "has edition year"@en ,
                 "ha anno edizione"@it .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/isEditionYearOf
 :isEditionYearOf rdf:type owl:ObjectProperty ;
-        rdfs:comment "Associate a year with an edition that took place in that year"@en,
+        rdfs:comment "Associate a year with an edition that took place in that year"@en ,
                 "Associa un anno ad un'edizione che si è svolta in quell'anno"@it ;
         rdfs:label "is edition year of"@en ,
                 "è anno edizione di"@it .
@@ -209,7 +213,7 @@ foaf:fundedBy rdf:type owl:ObjectProperty ;
                 owl:IrreflexiveProperty ;
         rdfs:domain :Edition ;
         rdfs:range :Organizer ;
-        rdfs:comment "Associate an edition with its organizer"@en,
+        rdfs:comment "Associate an edition with its organizer"@en ,
                 "Associa un'edizione con il suo organizzatore"@it ;
         rdfs:label "is organized by"@en ,
                 "è organizzato da"@it .
@@ -217,7 +221,7 @@ foaf:fundedBy rdf:type owl:ObjectProperty ;
 ###  https://github.com/RiccardoOmiccioli/AMLO/organizes
 :organizes rdf:type owl:ObjectProperty ;
         owl:inverseOf :isOrganizedBy ;
-        rdfs:comment "Associate an organizer with his/her edition"@en,
+        rdfs:comment "Associate an organizer with his/her edition"@en ,
                 "Associa un organizzatore alla sua edizione"@it ;
         rdfs:label "organizes"@en ,
                 "organizza"@it .
@@ -230,14 +234,14 @@ foaf:fundedBy rdf:type owl:ObjectProperty ;
         owl:inverseOf :isWonBy ;
         rdfs:domain mlo:Algorithms ;
         rdfs:range :Edition ;
-        rdfs:comment "Associate an technology with the edition in which it wins"@en,
+        rdfs:comment "Associate an technology with the edition in which it wins"@en ,
                 "Associa una tecnologia all'edizione in cui vince"@it ;
         rdfs:label "wins"@en ,
                 "vince"@it .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/isWonBy
 :isWonBy rdf:type owl:ObjectProperty ;
-        rdfs:comment "Associate an edition with the technology that wins it"@en,
+        rdfs:comment "Associate an edition with the technology that wins it"@en ,
                 "Associa un'edizione alla tecnologia che l'ha vinta"@it ;
         rdfs:label "is won by"@en ,
                 "è vinto da"@it .
@@ -249,7 +253,7 @@ foaf:fundedBy rdf:type owl:ObjectProperty ;
                 owl:IrreflexiveProperty ;
         rdfs:domain foaf:Project ;
         rdfs:range mlo:Algorithms ;
-        rdfs:comment "Associate a project with the technology it has implemented"@en,
+        rdfs:comment "Associate a project with the technology it has implemented"@en ,
                 "Associa un progetto alla tecnologia che ha implementato"@it ;
         rdfs:label "is implementation of"@en ,
                 "è implementazione di"@it .
@@ -257,7 +261,7 @@ foaf:fundedBy rdf:type owl:ObjectProperty ;
 ###  https://github.com/RiccardoOmiccioli/AMLO/hasImplementation
 :hasImplementation rdf:type owl:ObjectProperty ;
         owl:inverseOf :isImplementationOf ;
-        rdfs:comment "Associate an technology with the project that implemented it"@en,
+        rdfs:comment "Associate an technology with the project that implemented it"@en ,
                 "Associa una tecnologia al progetto che l'ha implementata"@it ;
         rdfs:label "has implementation"@en ,
                 "ha implementazione"@it .
@@ -270,14 +274,14 @@ foaf:fundedBy rdf:type owl:ObjectProperty ;
                 owl:IrreflexiveProperty ;
         rdfs:domain mlo:Algorithms ;
         rdfs:range :MachineLearningType ;
-        rdfs:comment "Associate an technology with its Machine Learning type"@en,
+        rdfs:comment "Associate an technology with its Machine Learning type"@en ,
                 "Associa una tecnologia al suo tipo di Machine Learning"@it ;
         rdfs:label "has ML type"@en ,
                 "ha tipo ML"@it .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/isMLTypeOf
 :isMLTypeOf rdf:type owl:ObjectProperty ;
-        rdfs:comment "Associate a type of Machine Learning with one of its technologies"@en,
+        rdfs:comment "Associate a type of Machine Learning with one of its technologies"@en ,
                 "Associa un tipo di Machine Learning ad una delle sue tecnologie"@it ;
         rdfs:label "is ML type of"@en ,
                 "è tipo ML di"@it .
@@ -290,14 +294,14 @@ foaf:fundedBy rdf:type owl:ObjectProperty ;
                 owl:IrreflexiveProperty ;
         rdfs:domain mlo:Algorithms ;
         rdfs:range dbo:Year ;
-        rdfs:comment "Associate an technology with the year of its release"@en,
+        rdfs:comment "Associate an technology with the year of its release"@en ,
                 "Associa una tecnologia all'anno del suo rilascio"@it ;
         rdfs:label "has release year"@en ,
                 "ha anno rilascio"@it .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/isReleaseYearOf
 :isReleaseYearOf rdf:type owl:ObjectProperty ;
-        rdfs:comment "Associate a year with an technology released in that year"@en,
+        rdfs:comment "Associate a year with an technology released in that year"@en ,
                 "Associa un anno con una tecnologia rilasciata in quell'anno"@it ;
         rdfs:label "is release year of"@en ,
                 "è anno rilascio di"@it .
@@ -308,7 +312,7 @@ foaf:fundedBy rdf:type owl:ObjectProperty ;
                 owl:IrreflexiveProperty ;
         rdfs:domain mlo:Algorithms ;
         rdfs:range :Tool ;
-        rdfs:comment "Associate a technology with a tool that it uses"@en,
+        rdfs:comment "Associate a technology with a tool that it uses"@en ,
                 "Associa una tecnologia ad uno strumento che essa utilizza"@it ;
         rdfs:label "uses"@en ,
                 "utilizza"@it .
@@ -316,7 +320,7 @@ foaf:fundedBy rdf:type owl:ObjectProperty ;
 ###  https://github.com/RiccardoOmiccioli/AMLO/isUsedBy
 :isUsedBy rdf:type owl:ObjectProperty ;
         owl:inverseOf :uses ;
-        rdfs:comment "Associate a tool with the technology that uses it"@en,
+        rdfs:comment "Associate a tool with the technology that uses it"@en ,
                 "Associa uno strumento con la tecnologia che lo utilizza"@it ;
         rdfs:label "is used by"@en ,
                 "è utilizzato da"@it .
@@ -328,7 +332,7 @@ foaf:fundedBy rdf:type owl:ObjectProperty ;
                 owl:IrreflexiveProperty ;
         rdfs:domain :Layer ;
         rdfs:range :LayerType ;
-        rdfs:comment "Associate a layer with its type"@en,
+        rdfs:comment "Associate a layer with its type"@en ,
                 "Associa uno strato con il suo tipo"@it ;
         rdfs:label "has layer type"@en ,
                 "ha tipo strato"@it .
@@ -336,7 +340,7 @@ foaf:fundedBy rdf:type owl:ObjectProperty ;
 ###  https://github.com/RiccardoOmiccioli/AMLO/isLayerTypeOf
 :isLayerTypeOf rdf:type owl:ObjectProperty ;
         owl:inverseOf :hasLayerType ;
-        rdfs:comment "Associates a layer type with one of its layers"@en,
+        rdfs:comment "Associates a layer type with one of its layers"@en ,
                 "Associa un tipo di strato con uno dei suoi strati"@it ;
         rdfs:label "is layer type of"@en ,
                 "è tipo strato di"@it .
@@ -347,7 +351,7 @@ foaf:fundedBy rdf:type owl:ObjectProperty ;
                 owl:IrreflexiveProperty ;
         rdfs:domain :Author ;
         rdfs:range :Edition ;
-        rdfs:comment "Associate an author with an edition won by the technology in which he took part in the development"@en,
+        rdfs:comment "Associate an author with an edition won by the technology in which he took part in the development"@en ,
                 "Associa un autore ad un'edizione vinta dalla tecnologia in cui ha preso parte allo sviluppo"@it ;
         rdfs:label "is winner of"@en ,
                 "è vincitore di"@it .
@@ -418,6 +422,8 @@ foaf:fundedBy rdf:type owl:ObjectProperty ;
 mlo:Institutions rdf:type owl:Class ;
         rdfs:subClassOf foaf:Organization ;
         rdfs:isDefinedBy mlo: ;
+        rdfs:comment "A legally recognized business entity that operates independently, involving a group of individuals, engaged in various commercial activities and possessing distinct legal and financial characteristics separate from its owners."@en ,
+                "Un'entità legale riconosciuta, che coinvolge un gruppo di individui, tipicamente con lo scopo di condurre attività commerciali ed è caratterizzata da una distinta identità legale e finanziaria separata dai suoi proprietari o membri."@it ;
         rdfs:label "Company"@en ,
                 "Azienda"@it .
 
@@ -429,7 +435,8 @@ foaf:Agent rdf:type owl:Class ;
                         foaf:Organization
                 )
         ] ;
-        rdfs:comment "An agent (eg. person, group, software or physical artifact)."@en ;
+        rdfs:comment "An agent (eg. person, group, software or physical artifact)."@en ,
+                "Un agente (ad esempio: persona, gruppo, software o oggetto fisico)."@it ;
         rdfs:isDefinedBy foaf: ;
         rdfs:label "Agent"@en ,
                 "Agente"@it .
@@ -437,7 +444,8 @@ foaf:Agent rdf:type owl:Class ;
 ###  http://xmlns.com/foaf/0.1/Group
 foaf:Group rdf:type owl:Class ;
         rdfs:subClassOf foaf:Agent ;
-        rdfs:comment "A collection of individual agents."@en ;
+        rdfs:comment "A collection of individual agents."@en ,
+                "Un insieme di singoli agenti."@it ;
         rdfs:isDefinedBy foaf: ;
         rdfs:label "Group"@en ,
                 "Gruppo"@it .
@@ -451,7 +459,8 @@ foaf:Organization rdf:type owl:Class ;
                         aiiso:College
                 )
         ] ;
-        rdfs:comment "An organization."@en ;
+        rdfs:comment "An organization."@en ,
+                "Un ente."@it ;
         rdfs:isDefinedBy foaf: ;
         rdfs:label "Organization"@en ,
                 "Ente"@it .
@@ -461,7 +470,8 @@ aiiso:Institute rdf:type owl:Class ;
         rdfs:subClassOf foaf:Organization ;
         owl:disjointWith mlo:Institutions,
                 aiiso:College ;
-        rdfs:comment "An Institute is a group of people recognised by an organization as forming a cohesive group referred to by the organization as an institute."@en ;
+        rdfs:comment "An Institute is a group of people recognised by an organization as forming a cohesive group referred to by the organization as an institute."@en ,
+                "Un istituto è un gruppo di persone riconosciuto da un'ente come un gruppo coeso indicato dall'ente stesso come un istituto."@it ;
         rdfs:isDefinedBy aiiso: ;
         rdfs:label "Institute"@en ,
                 "Istituto"@it .
@@ -471,7 +481,8 @@ aiiso:College rdf:type owl:Class ;
         rdfs:subClassOf foaf:Organization ;
         owl:disjointWith mlo:Institutions,
                 aiiso:Institute;
-        rdfs:comment "A College is a group of people recognised by an organization as forming a cohesive group referred to by the organization as a college."@en ;
+        rdfs:comment "A College is a group of people recognised by an organization as forming a cohesive group referred to by the organization as a college."@en ,
+                "Un'università è un gruppo di persone riconosciuto da un'organizzazione come un gruppo coeso indicato dall'organizzazione stessa come un'università."@it ;
         rdfs:isDefinedBy aiiso: ;
         rdfs:label "College"@en ,
                 "Università"@it .
@@ -479,7 +490,8 @@ aiiso:College rdf:type owl:Class ;
 ###  http://xmlns.com/foaf/0.1/Person
 foaf:Person rdf:type owl:Class ;
         rdfs:subClassOf foaf:Agent ;
-        rdfs:comment "A person."@en ;
+        rdfs:comment "A person."@en ,
+                "Una persona."@it ;
         rdfs:isDefinedBy foaf: ;
         rdfs:label "Person"@en ,
                 "Persona"@it .
@@ -491,26 +503,31 @@ foaf:Person rdf:type owl:Class ;
                         :Organizer
                 )
         ] ;
+        rdfs:comment "A specific position and function that an individual assumes in a context and it defines how individuals interact and contribute within this context."@en ,
+                "Una posizione e una funzione specifica che un individuo assume in un contesto e definisce come gli individui interagiscono e contribuiscono all'interno di questo contesto."@it ;
         rdfs:label "Role"@en ,
                 "Ruolo"@it .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/Author
 :Author rdf:type owl:Class ;
         rdfs:subClassOf :Role ;
-        rdfs:comment "An author of a project."@en ;
+        rdfs:comment "A person who works on a project."@en ,
+                "Una persona che lavora ad un progetto."@it ;
         rdfs:label "Author"@en ,
                 "Autore"@it .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/Organizer
 :Organizer rdf:type owl:Class ;
         rdfs:subClassOf :Role ;
-        rdfs:comment "An organizer of an event."@en ;
+        rdfs:comment "A person who organizes an edition of a competition."@en ,
+                "Una persona che organizza un'edizione di una competizione."@it ;
         rdfs:label "Organizer"@en ,
                 "Organizzatore"@it .
 
 ###  http://xmlns.com/foaf/0.1/Project
 foaf:Project rdf:type owl:Class ;
-        rdfs:comment "A project (a collective endeavour of some kind)."@en ;
+        rdfs:comment "A project (a collective endeavour of some kind)."@en ,
+                "Un progetto (uno sforzo collettivo di qualche tipo)."@it ;
         rdfs:isDefinedBy foaf: ;
         rdfs:label "Project"@en ,
                 "Progetto"@it .
@@ -518,24 +535,31 @@ foaf:Project rdf:type owl:Class ;
 ###  http://dbpedia.org/ontology/Competition
 dbo:Competition rdf:type owl:Class ;
         rdfs:isDefinedBy dbo: ;
+        rdfs:comment "A contest in which individuals or teams participate to achieve a specific goal or win a prize, with established rules and challenges."@en ,
+                "Una sfida in cui individui o squadre partecipano con lo scopo di raggiungere un obiettivo specifico o vincere un premio, seguendo regole e affrontando sfide stabilite."@it ;
         rdfs:label "Competition"@en ,
                 "Competizione"@it .
 
 ###  http://dbpedia.org/ontology/Year
 dbo:Year rdf:type owl:Class ;
         rdfs:isDefinedBy dbo: ;
+        rdfs:comment "A period of time consisting of 365 or 366 days during which the Earth completes one orbit around the sun, serving as a fundamental unit of time measurement and a reference point for dating events."@en ,
+                "Un periodo di tempo composto da 365 o 366 giorni durante il quale la Terra completa un'orbita intorno al sole, fungendo da unità fondamentale di misura del tempo e punto di riferimento per datare eventi."@it ;
         rdfs:label "Anno"@it ,
                 "Year"@en .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/Edition
 :Edition rdf:type owl:Class ;
+        rdfs:comment "A particular occurrence of a competitive event held within a specific year, characterized by its unique features, participants and outcomes, distinct from other occurrences of the same competition."@en ,
+                "Una particolare occorrenza di un evento competitivo tenuto in un anno specifico, caratterizzato dalle sue caratteristiche uniche, partecipanti e risultati, distinti da altre occorrenze della stessa competizione."@it ;
         rdfs:label "Edition"@en ,
                 "Edizione"@it .
 
 ###  http://www.a2rd.net.br/mlo#Algorithms
 mlo:Algorithms rdf:type owl:Class ;
-        rdfs:comment "A concrete implementation of a theoretical concept of the AI field."@en ;
         rdfs:isDefinedBy mlo:;
+        rdfs:comment "A specific realization of an algorithm, model, or technology in the field of Machine Learning, representing the materialization of a theoretical concept in the domain."@en ,
+                "Una specifica realizzazione di un algoritmo, modello o tecnologia nel campo del Machine Learning, rappresentando la concretizzazione di un concetto teorico in questo dominio."@it ;
         rdfs:label "Technology"@en ,
                 "Tecnologia"@it .
 
@@ -547,21 +571,24 @@ mlo:Algorithms rdf:type owl:Class ;
                         :RecurrentNeuralNetwork
                 )
         ] ;
-        rdfs:comment "todo"@en ;
+        rdfs:comment "A computational model inspired by the structure and functioning of the human brain, consisting of interconnected nodes (neurons) that process and transmit information to perform tasks."@en ,
+                "Un modello computazionale ispirato alla struttura e al funzionamento del cervello umano, composta da nodi (neuroni) interconnessi che elaborano e trasmettono informazioni per svolgere compiti."@it ;
         rdfs:label "Neural Network"@en ,
                 "Rete Neurale"@it .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/ConvolutionalNeuralNetwork
 :ConvolutionalNeuralNetwork rdf:type owl:Class ;
         rdfs:subClassOf :NeuralNetwork ;
-        rdfs:comment "todo"@en ;
+        rdfs:comment "A deep learning model designed for processing and analyzing visual data, using a series of interconnected layers to automatically learn and extract features from images or other grid-like data structures."@en ,
+                "Un modello di deep learning progettato per elaborare e analizzare dati visivi, utilizzando una serie di strati interconnessi per apprendere in modo automatico ed estrarre caratteristiche da immagini o da altre strutture di dati simili a griglie."@it ;
         rdfs:label "Convolutional Neural Network"@en ,
                 "Rete Neurale Convoluzionale"@it .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/RecurrentNeuralNetwork
 :RecurrentNeuralNetwork rdf:type owl:Class ;
         rdfs:subClassOf :NeuralNetwork ;
-        rdfs:comment "todo"@en ;
+        rdfs:comment "A deep learning model with loops in its architecture, allowing it to process sequences of data by maintaining a hidden state that captures information from previous time steps."@en ,
+                "Un modello di deep learning con loop nella sua architettura, che consente di elaborare sequenze di dati mantenendo uno stato nascosto che cattura informazioni dai passaggi temporali precedenti."@it ;
         rdfs:label "Recurrent Neural Network"@en ,
                 "Rete Neurale Ricorrente"@it .
 
@@ -573,7 +600,8 @@ mlo:Algorithms rdf:type owl:Class ;
                         :Layer
                 )
         ] ;
-        rdfs:comment "A theoretical concept of the mathematical or AI field."@en ;
+        rdfs:comment "A concept that includes mathematical or computational elements used in Machine Learning technologies."@en ,
+                "Un concetto che comprende elementi matematici o informatici utilizzati nelle tecnologie di Machine Learning."@it ;
         rdfs:label "Tool"@en ,
                 "Strumento"@it .
 
@@ -584,21 +612,24 @@ mlo:Algorithms rdf:type owl:Class ;
                 owl:onProperty :hasLayerType ;
                 owl:someValuesFrom :LayerType
         ] ;
-        rdfs:comment "A single layer of neurons of a Neural Network"@en ;
+        rdfs:comment "A single layer of neurons of a Neural Network."@en ,
+                "Un singolo strato di neuroni di una rete neurale."@it ;
         rdfs:label "Layer"@en ,
                 "Strato"@it .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/GradientDescent
 :GradientDescent rdf:type owl:Class ;
         rdfs:subClassOf :Tool ;
-        rdfs:comment "todo"@en ;
+        rdfs:comment "An optimization algorithm used in Machine Learning to minimize the error or cost function by adjusting the model's parameters in the direction of the steepest decrease in the function."@en ,
+                "Un algoritmo di ottimizzazione utilizzato nell'ambito del Machine Learning per minimizzare l'errore o la funzione di costo, regolando i parametri del modello nella direzione della diminuzione più ripida nella funzione."@it ;
         rdfs:label "Gradient Descent"@en ,
                 "Discesa del Gradiente"@it .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/ActivationFunction
 :ActivationFunction rdf:type owl:Class ;
         rdfs:subClassOf :Tool ;
-        rdfs:comment "todo"@en ;
+        rdfs:comment "A mathematical function applied to the output of a neuron in a neural network, determining whether it should be activated or not based on a certain threshold."@en ,
+                "Una funzione matematica applicata all'output di un neurone in una rete neurale, determinando se dovrebbe essere attivato o meno in base a una determinata soglia."@it ;
         rdfs:label "Activation Function"@en ,
                 "Funzione di Attivazione"@it .
 
@@ -609,6 +640,8 @@ mlo:Algorithms rdf:type owl:Class ;
                         :LayerType
                 )
         ] ;
+        rdfs:comment "A concept that represents aspects that can be organized into families or categories."@en ,
+                "Un concetto che rappresenta aspetti che possono essere organizzati in famiglie o categorie."@it ;
         rdfs:label "Category"@en ,
                 "Categoria"@it .
 
@@ -621,12 +654,16 @@ mlo:Algorithms rdf:type owl:Class ;
                         :UnsupervisedLearning
                 )
         ] ;
+        rdfs:comment "A classification of Machine Learning algorithms: Supervised Learning, Unsupervised Learning, Reinforcement Learning."@en ,
+                "Una classificazione degli algoritmi di Machine Learning: Apprendimento Supervisionato, Apprendimento non Supervisionato, Apprendimento per Rinforzo."@it ;
         rdfs:label "Machine Learning Type"@en ,
                 "Tipo Machine Learning"@it .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/ReinforcementLearning
 :ReinforcementLearning rdf:type owl:Class ;
         rdfs:subClassOf :MachineLearningType ;
+        rdfs:comment "A type of Machine Learning where algorithms learn by interacting with an environment, receiving feedback in the form of rewards or penalties, and adjusting their actions to maximize cumulative rewards."@en ,
+                "Un tipo di Machine Learning in cui gli algoritmi imparano interagendo con un ambiente, ricevendo feedback sotto forma di ricompense o penalità e adattando le proprie azioni per massimizzare le ricompense cumulative."@it ;
         rdfs:label "Reinforcement Learning"@en ,
                 "Apprendimento per Rinforzo"@it .
 
@@ -638,6 +675,8 @@ mlo:Algorithms rdf:type owl:Class ;
                         :Regression
                 )
         ] ;
+        rdfs:comment "A type of Machine Learning where algorithms learn from labeled training data to make predictions or decisions without explicit programming."@en ,
+                "Un tipo di Machine Learning in cui gli algoritmi imparano da dati di addestramento etichettati per effettuare previsioni o decisioni senza una programmazione esplicita."@it ;
         rdfs:label "Supervised Learning"@en ,
                 "Apprendimento Supervisionato"@it .
 
@@ -649,6 +688,8 @@ mlo:Algorithms rdf:type owl:Class ;
                         :Dimensionality_Reduction
                 )
         ] ;
+        rdfs:comment "A type of Machine Learning where algorithms seek patterns or structures in data without the use of labeled training data."@en ,
+                "Un tipo di Machine Learning in cui gli algoritmi cercano modelli o strutture nei dati senza l'utilizzo di dati di addestramento etichettati."@it ;
         rdfs:label "Unsupervised Learning"@en ,
                 "Apprendimento non Supervisionato"@it .
 
@@ -661,6 +702,8 @@ mlo:Algorithms rdf:type owl:Class ;
                 )
         ] ;
         rdfs:subClassOf :Category ;
+        rdfs:comment "The specific role or function of a layer within a neural network architecture."@en ,
+                "Il ruolo o la funzione specifica di uno strato all'interno di un'architettura di una rete neurale."@it ;
         rdfs:label "Layer Type"@en ,
                 "Tipo Strato"@it .
 
