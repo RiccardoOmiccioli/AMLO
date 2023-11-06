@@ -361,12 +361,20 @@ foaf:fundedBy rdf:type owl:ObjectProperty ;
 :isTeamOf rdf:type owl:ObjectProperty ,
                 owl:AsymmetricProperty ,
                 owl:IrreflexiveProperty ;
-        rdfs:domain :Group ;
-        rdfs:range :Organization ;
+        rdfs:domain foaf:Group ;
+        rdfs:range foaf:Organization ;
         rdfs:comment "Associates a group with the organization responsible for the development of the project on which the group is working"@en ,
                 "Associa un gruppo all'ente responsabile dello sviluppo del progetto su cui il gruppo sta lavorando"@it ;
         rdfs:label "is team of"@en ,
                 "è gruppo di"@it .
+
+###  https://github.com/RiccardoOmiccioli/AMLO/hasTeam
+:hasTeam rdf:type owl:ObjectProperty ;
+        owl:inverseOf :isTeamOf ;
+        rdfs:comment "Associate an organization with the group that is working on a project for which the organization is responsible"@en ,
+                "Associa un ente al gruppo che lavora ad un progetto di cui l'ente è responsabile"@it ;
+        rdfs:label "has team"@en ,
+                "ha gruppo"@it .
 
 #################################################################
 #    Data properties
