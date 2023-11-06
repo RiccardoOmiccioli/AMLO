@@ -718,7 +718,8 @@ mlo:Algorithms rdf:type owl:Class ;
         owl:equivalentClass [ rdf:type owl:Class ;
                 owl:oneOf ( :Convolution
                         :Fully_Connected
-                        :Pooling
+                        :AvgPooling
+                        :MaxPooling
                 )
         ] ;
         rdfs:subClassOf :Category ;
@@ -726,6 +727,15 @@ mlo:Algorithms rdf:type owl:Class ;
                 "Il ruolo o la funzione specifica di uno strato all'interno di un'architettura di una rete neurale."@it ;
         rdfs:label "Layer Type"@en ,
                 "Tipo Strato"@it .
+
+###  https://github.com/RiccardoOmiccioli/AMLO/Pooling
+:Pooling rdf:type owl:Class ;
+        rdfs:subClassOf :LayerType ;
+        rdfs:comment "A particular Layer type that performs an aggregation function."@en ,
+                "Un tipo particolare di Layer che effettua un'operazione di aggregazione."@it ;
+        rdfs:label "Pooling"@en ,
+                "Pooling"@it .
+
 
 #################################################################
 #    Individuals
@@ -945,9 +955,13 @@ dbr:2015 rdf:type owl:NamedIndividual .
 :Xiangyu_Zhang_author_ResNet rdf:type owl:NamedIndividual ;
         :isMemberOf :ResNet_group .
 
-###  https://github.com/RiccardoOmiccioli/AMLO/Pooling
-:Pooling rdf:type owl:NamedIndividual,
-        :LayerType .
+###  https://github.com/RiccardoOmiccioli/AMLO/AvgPooling
+:AvgPooling rdf:type owl:NamedIndividual,
+        :Pooling .
+
+###  https://github.com/RiccardoOmiccioli/AMLO/MaxPooling
+:MaxPooling rdf:type owl:NamedIndividual,
+        :Pooling .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/Fully_Connected
 :Fully_Connected rdf:type owl:NamedIndividual,
@@ -988,6 +1002,18 @@ dbr:2015 rdf:type owl:NamedIndividual .
 ###  https://github.com/RiccardoOmiccioli/AMLO/Stanford_University
 :Stanford_University rdf:type owl:NamedIndividual ,
         aiiso:College .
+
+###  https://github.com/RiccardoOmiccioli/AMLO/ReLU
+:ReLU rdf:type owl:NamedIndividual ,
+        :ActivationFunction .
+
+###  https://github.com/RiccardoOmiccioli/AMLO/Sigmoid
+:Sigmoid rdf:type owl:NamedIndividual ,
+        :ActivationFunction .
+
+###  https://github.com/RiccardoOmiccioli/AMLO/SoftMax
+:SoftMax rdf:type owl:NamedIndividual ,
+        :ActivationFunction .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/ResNet_1
 :ResNet_1 rdf:type owl:NamedIndividual,
