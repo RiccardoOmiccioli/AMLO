@@ -357,6 +357,17 @@ foaf:fundedBy rdf:type owl:ObjectProperty ;
         rdfs:label "is winner of"@en ,
                 "è vincitore di"@it .
 
+###  https://github.com/RiccardoOmiccioli/AMLO/isTeamOf
+:isTeamOf rdf:type owl:ObjectProperty ,
+                owl:AsymmetricProperty ,
+                owl:IrreflexiveProperty ;
+        rdfs:domain :Group ;
+        rdfs:range :Organization ;
+        rdfs:comment "Associates a group with the organization responsible for the development of the project on which the group is working"@en ,
+                "Associa un gruppo all'ente responsabile dello sviluppo del progetto su cui il gruppo sta lavorando"@it ;
+        rdfs:label "is team of"@en ,
+                "è gruppo di"@it .
+
 #################################################################
 #    Data properties
 #################################################################
