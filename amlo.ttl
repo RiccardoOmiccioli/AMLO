@@ -1005,15 +1005,27 @@ dbr:2015 rdf:type owl:NamedIndividual .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/ReLU
 :ReLU rdf:type owl:NamedIndividual ,
-        :ActivationFunction .
+        :ActivationFunction ;
+        :isUsedBy :AlexNet ;
+        :isUsedBy :VGG16 ;
+        :isUsedBy :GoogLeNet ;
+        :isUsedBy :ResNet .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/Sigmoid
 :Sigmoid rdf:type owl:NamedIndividual ,
         :ActivationFunction .
 
+###  https://github.com/RiccardoOmiccioli/AMLO/Tanh
+:Tanh rdf:type owl:NamedIndividual ,
+        :ActivationFunction ;
+        :isUsedBy :LeNet-5 .
+
 ###  https://github.com/RiccardoOmiccioli/AMLO/SoftMax
 :SoftMax rdf:type owl:NamedIndividual ,
-        :ActivationFunction .
+        :ActivationFunction ;
+        :isUsedBy :LeNet-5 ;
+        :isUsedBy :VGG16 ;
+        :isUsedBy :GoogLeNet .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/ResNet_1
 :ResNet_1 rdf:type owl:NamedIndividual,
