@@ -717,7 +717,7 @@ mlo:Algorithms rdf:type owl:Class ;
 :LayerType rdf:type owl:Class ;
         owl:equivalentClass [ rdf:type owl:Class ;
                 owl:oneOf ( :Convolution
-                        :Fully_Connected
+                        :FullyConnected
                         :AvgPooling
                         :MaxPooling
                 )
@@ -735,7 +735,6 @@ mlo:Algorithms rdf:type owl:Class ;
                 "Un tipo particolare di Layer che effettua un'operazione di aggregazione."@it ;
         rdfs:label "Pooling"@en ,
                 "Pooling"@it .
-
 
 #################################################################
 #    Individuals
@@ -825,7 +824,8 @@ dbr:2015 rdf:type owl:NamedIndividual .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/ImageNet_LSVRC
 :ImageNet_LSVRC rdf:type owl:NamedIndividual ;
-        :hasEdition :ImageNet_LSVRC_2015 .
+        :hasEdition :ImageNet_LSVRC_2014 ,
+                :ImageNet_LSVRC_2015 .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/ImageNet_LSVRC_2014
 :ImageNet_LSVRC_2014 rdf:type owl:NamedIndividual ;
@@ -963,8 +963,8 @@ dbr:2015 rdf:type owl:NamedIndividual .
 :MaxPooling rdf:type owl:NamedIndividual,
         :Pooling .
 
-###  https://github.com/RiccardoOmiccioli/AMLO/Fully_Connected
-:Fully_Connected rdf:type owl:NamedIndividual,
+###  https://github.com/RiccardoOmiccioli/AMLO/FullyConnected
+:FullyConnected rdf:type owl:NamedIndividual,
         :LayerType .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/Convolution
