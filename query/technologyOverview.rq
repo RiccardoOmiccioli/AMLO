@@ -1,0 +1,20 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX : <https://github.com/RiccardoOmiccioli/AMLO/>
+PREFIX mlo: <http://www.a2rd.net.br/mlo#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+
+SELECT ?technology ?project ?releaseYear ?group (GROUP_CONCAT(DISTINCT ?name; separator=", ") AS ?authorsList) (GROUP_CONCAT(DISTINCT ?edition; separator=", ") AS ?editionsWinsList)
+WHERE {
+  ?technology a mlo:Algorithms.
+  ?technology :hasImplementation ?project.
+  ?technology :hasReleaseYear ?releaseYear.
+  ?project :hasAssigned ?group.
+  ?group :hasMember ?member.
+  ?member :isRoleOf ?person.
+  ?person :firstName ?firstName.
+  ?person :familyName ?familyName.
+  BIND(CONCAT(?firstName, " ", ?familyName) AS ?name)
+  ?technology :wins ?edition.
+}
+GROUP BY ?technology ?project ?releaseYear ?group

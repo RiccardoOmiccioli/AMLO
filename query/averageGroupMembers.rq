@@ -2,10 +2,9 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX : <https://github.com/RiccardoOmiccioli/AMLO/>
 PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 
-SELECT ?group (AVG(?numMembers) AS ?averageMembersPerGroup)
+SELECT (AVG(?numMembers) AS ?averageMembersPerGroup)
 WHERE {
   ?group a foaf:Group.
-  ?group :hasMember ?author.
   {
     SELECT ?group (COUNT(?author) AS ?numMembers) WHERE {
       ?group :hasMember ?author.
@@ -13,4 +12,3 @@ WHERE {
     GROUP BY ?group
   }
 }
-GROUP BY ?group

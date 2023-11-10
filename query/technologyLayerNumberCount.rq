@@ -1,0 +1,13 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX mlo: <http://www.a2rd.net.br/mlo#>
+PREFIX : <https://github.com/RiccardoOmiccioli/AMLO/>
+
+SELECT ?technology (COUNT(?layer) AS ?layerCount)
+WHERE {
+  ?technology a mlo:Algorithms.
+  ?technology :uses ?layer.
+  ?layer a :Layer.
+}
+GROUP BY ?technology
+ORDER BY DESC(?layerCount)
+LIMIT 10

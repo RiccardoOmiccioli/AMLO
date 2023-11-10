@@ -9,4 +9,4 @@ WHERE {
 }
 GROUP BY ?person
 ORDER BY DESC(?projectCount)
-LIMIT 1
+LIMIT 10

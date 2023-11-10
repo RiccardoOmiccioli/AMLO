@@ -125,6 +125,14 @@
     
 
 
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/hasTeam -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/RiccardoOmiccioli/AMLO/hasTeam">
+        <owl:inverseOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/isTeamOf"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://github.com/RiccardoOmiccioli/AMLO/isAssignedTo -->
 
     <owl:ObjectProperty rdf:about="https://github.com/RiccardoOmiccioli/AMLO/isAssignedTo"/>
@@ -191,7 +199,7 @@
     <!-- https://github.com/RiccardoOmiccioli/AMLO/isOrganizedBy -->
 
     <owl:ObjectProperty rdf:about="https://github.com/RiccardoOmiccioli/AMLO/isOrganizedBy">
-        <owl:inverseOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/organized"/>
+        <owl:inverseOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/organizes"/>
     </owl:ObjectProperty>
     
 
@@ -205,6 +213,12 @@
     <!-- https://github.com/RiccardoOmiccioli/AMLO/isRoleOf -->
 
     <owl:ObjectProperty rdf:about="https://github.com/RiccardoOmiccioli/AMLO/isRoleOf"/>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/isTeamOf -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/RiccardoOmiccioli/AMLO/isTeamOf"/>
     
 
 
@@ -225,14 +239,14 @@
     <!-- https://github.com/RiccardoOmiccioli/AMLO/isWonBy -->
 
     <owl:ObjectProperty rdf:about="https://github.com/RiccardoOmiccioli/AMLO/isWonBy">
-        <owl:inverseOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/won"/>
+        <owl:inverseOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/wins"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://github.com/RiccardoOmiccioli/AMLO/organized -->
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/organizes -->
 
-    <owl:ObjectProperty rdf:about="https://github.com/RiccardoOmiccioli/AMLO/organized"/>
+    <owl:ObjectProperty rdf:about="https://github.com/RiccardoOmiccioli/AMLO/organizes"/>
     
 
 
@@ -242,9 +256,9 @@
     
 
 
-    <!-- https://github.com/RiccardoOmiccioli/AMLO/won -->
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/wins -->
 
-    <owl:ObjectProperty rdf:about="https://github.com/RiccardoOmiccioli/AMLO/won"/>
+    <owl:ObjectProperty rdf:about="https://github.com/RiccardoOmiccioli/AMLO/wins"/>
     
 
 
@@ -268,6 +282,48 @@
     <!-- https://github.com/RiccardoOmiccioli/AMLO/firstName -->
 
     <owl:DatatypeProperty rdf:about="https://github.com/RiccardoOmiccioli/AMLO/firstName"/>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/isNth -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/RiccardoOmiccioli/AMLO/isNth"/>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/kernelDimension -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/RiccardoOmiccioli/AMLO/kernelDimension"/>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/layerDepth -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/RiccardoOmiccioli/AMLO/layerDepth"/>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/layerHeight -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/RiccardoOmiccioli/AMLO/layerHeight"/>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/layerWidth -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/RiccardoOmiccioli/AMLO/layerWidth"/>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/padding -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/RiccardoOmiccioli/AMLO/padding"/>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/stride -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/RiccardoOmiccioli/AMLO/stride"/>
     
 
 
@@ -857,49 +913,220 @@
     
 
 
-    <!-- https://github.com/RiccardoOmiccioli/AMLO/Adrin_Jalal -->
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/AlexNet -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/Adrin_Jalal">
-        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-        <hasRole rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Adrin_Jalal_author_scikit-learn"/>
-        <familyName>Jalal</familyName>
-        <firstName>Adrin</firstName>
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/AlexNet">
+        <rdf:type rdf:resource="http://www.a2rd.net.br/mlo#Algorithms"/>
+        <uses rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/AlexNet_1"/>
+        <uses rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/AlexNet_10"/>
+        <uses rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/AlexNet_11"/>
+        <uses rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/AlexNet_2"/>
+        <uses rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/AlexNet_3"/>
+        <uses rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/AlexNet_4"/>
+        <uses rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/AlexNet_5"/>
+        <uses rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/AlexNet_6"/>
+        <uses rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/AlexNet_7"/>
+        <uses rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/AlexNet_8"/>
+        <uses rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/AlexNet_9"/>
+        <uses rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ReLU"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/RiccardoOmiccioli/AMLO/Adrin_Jalal_author_scikit-learn -->
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/AlexNet_1 -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/Adrin_Jalal_author_scikit-learn">
-        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Author"/>
-        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Role"/>
-        <isCoAuthor rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Alexandre_Gramfort_author_scikit-learn"/>
-        <isMemberOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/scikit-learn_group"/>
-        <isRoleOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Adrin_Jalal"/>
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/AlexNet_1">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Layer"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <hasLayerType rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Convolution"/>
+        <isUsedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/AlexNet"/>
+        <isNth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</isNth>
+        <kernelDimension rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</kernelDimension>
+        <layerDepth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">96</layerDepth>
+        <layerHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">55</layerHeight>
+        <layerWidth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">55</layerWidth>
+        <padding rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</padding>
+        <stride rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</stride>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/RiccardoOmiccioli/AMLO/Alan_Ho -->
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/AlexNet_10 -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/Alan_Ho">
-        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-        <hasRole rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Alan_Ho_author_tensorFlow_Quantum"/>
-        <familyName>Ho</familyName>
-        <firstName>Alan</firstName>
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/AlexNet_10">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Layer"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <hasLayerType rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/FullyConnected"/>
+        <isUsedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/AlexNet"/>
+        <isNth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</isNth>
+        <kernelDimension rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</kernelDimension>
+        <layerDepth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4096</layerDepth>
+        <layerHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</layerHeight>
+        <layerWidth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</layerWidth>
+        <padding rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</padding>
+        <stride rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</stride>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/RiccardoOmiccioli/AMLO/Alan_Ho_author_tensorFlow_Quantum -->
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/AlexNet_11 -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/Alan_Ho_author_tensorFlow_Quantum">
-        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Author"/>
-        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Role"/>
-        <isMemberOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/tensorFlow_Quantum_group"/>
-        <isRoleOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Alan_Ho"/>
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/AlexNet_11">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Layer"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <hasLayerType rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/FullyConnected"/>
+        <isUsedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/AlexNet"/>
+        <isNth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</isNth>
+        <kernelDimension rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</kernelDimension>
+        <layerDepth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000</layerDepth>
+        <layerHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</layerHeight>
+        <layerWidth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</layerWidth>
+        <padding rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</padding>
+        <stride rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</stride>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/AlexNet_2 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/AlexNet_2">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Layer"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <hasLayerType rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/MaxPooling"/>
+        <isUsedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/AlexNet"/>
+        <isNth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</isNth>
+        <kernelDimension rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</kernelDimension>
+        <layerDepth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">96</layerDepth>
+        <layerHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">27</layerHeight>
+        <layerWidth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">27</layerWidth>
+        <padding rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</padding>
+        <stride rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</stride>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/AlexNet_3 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/AlexNet_3">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Layer"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <hasLayerType rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Convolution"/>
+        <isUsedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/AlexNet"/>
+        <isNth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</isNth>
+        <kernelDimension rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</kernelDimension>
+        <layerDepth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">256</layerDepth>
+        <layerHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">27</layerHeight>
+        <layerWidth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">27</layerWidth>
+        <padding rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</padding>
+        <stride rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</stride>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/AlexNet_4 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/AlexNet_4">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Layer"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <hasLayerType rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/MaxPooling"/>
+        <isUsedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/AlexNet"/>
+        <isNth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</isNth>
+        <kernelDimension rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</kernelDimension>
+        <layerDepth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">256</layerDepth>
+        <layerHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</layerHeight>
+        <layerWidth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</layerWidth>
+        <padding rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</padding>
+        <stride rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</stride>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/AlexNet_5 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/AlexNet_5">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Layer"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <hasLayerType rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Convolution"/>
+        <isUsedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/AlexNet"/>
+        <isNth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</isNth>
+        <kernelDimension rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</kernelDimension>
+        <layerDepth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">384</layerDepth>
+        <layerHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</layerHeight>
+        <layerWidth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</layerWidth>
+        <padding rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</padding>
+        <stride rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</stride>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/AlexNet_6 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/AlexNet_6">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Layer"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <hasLayerType rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Convolution"/>
+        <isUsedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/AlexNet"/>
+        <isNth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</isNth>
+        <kernelDimension rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</kernelDimension>
+        <layerDepth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">384</layerDepth>
+        <layerHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</layerHeight>
+        <layerWidth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</layerWidth>
+        <padding rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</padding>
+        <stride rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</stride>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/AlexNet_7 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/AlexNet_7">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Layer"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <hasLayerType rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Convolution"/>
+        <isUsedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/AlexNet"/>
+        <isNth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</isNth>
+        <kernelDimension rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</kernelDimension>
+        <layerDepth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">256</layerDepth>
+        <layerHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</layerHeight>
+        <layerWidth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</layerWidth>
+        <padding rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</padding>
+        <stride rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</stride>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/AlexNet_8 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/AlexNet_8">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Layer"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <hasLayerType rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/MaxPooling"/>
+        <isUsedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/AlexNet"/>
+        <isNth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</isNth>
+        <kernelDimension rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</kernelDimension>
+        <layerDepth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">256</layerDepth>
+        <layerHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</layerHeight>
+        <layerWidth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</layerWidth>
+        <padding rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</padding>
+        <stride rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</stride>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/AlexNet_9 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/AlexNet_9">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Layer"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <hasLayerType rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/FullyConnected"/>
+        <isUsedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/AlexNet"/>
+        <isNth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</isNth>
+        <kernelDimension rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</kernelDimension>
+        <layerDepth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4096</layerDepth>
+        <layerHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</layerHeight>
+        <layerWidth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</layerWidth>
+        <padding rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</padding>
+        <stride rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</stride>
     </owl:NamedIndividual>
     
 
@@ -923,32 +1150,20 @@
         <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Role"/>
         <isEmployedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/University_of_North_Carolina_Chapel_Hill"/>
         <isRoleOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Alex_Berg"/>
-        <organized rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ImageNet_LSVRC_2014"/>
-        <organized rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ImageNet_LSVRC_2015"/>
+        <organizes rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ImageNet_LSVRC_2014"/>
+        <organizes rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ImageNet_LSVRC_2015"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/RiccardoOmiccioli/AMLO/Alexandre_Gramfort -->
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/AvgPooling -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/Alexandre_Gramfort">
-        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-        <hasRole rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Alexandre_Gramfort_author_scikit-learn"/>
-        <familyName>Gramfort</familyName>
-        <firstName>Alexandre</firstName>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://github.com/RiccardoOmiccioli/AMLO/Alexandre_Gramfort_author_scikit-learn -->
-
-    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/Alexandre_Gramfort_author_scikit-learn">
-        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Author"/>
-        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Role"/>
-        <isCoAuthor rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Adrin_Jalal_author_scikit-learn"/>
-        <isMemberOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/scikit-learn_group"/>
-        <isRoleOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Alexandre_Gramfort"/>
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/AvgPooling">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Category"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/LayerType"/>
+        <isLayerTypeOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/LeNet-5_2"/>
+        <isLayerTypeOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/LeNet-5_4"/>
+        <isLayerTypeOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet_19"/>
     </owl:NamedIndividual>
     
 
@@ -990,6 +1205,44 @@
     <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/Convolution">
         <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Category"/>
         <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/LayerType"/>
+        <isLayerTypeOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/AlexNet_1"/>
+        <isLayerTypeOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/AlexNet_3"/>
+        <isLayerTypeOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/AlexNet_5"/>
+        <isLayerTypeOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/AlexNet_6"/>
+        <isLayerTypeOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/AlexNet_7"/>
+        <isLayerTypeOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/LeNet-5_1"/>
+        <isLayerTypeOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/LeNet-5_3"/>
+        <isLayerTypeOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/LeNet-5_5"/>
+        <isLayerTypeOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet_1"/>
+        <isLayerTypeOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet_10"/>
+        <isLayerTypeOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet_11"/>
+        <isLayerTypeOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet_12"/>
+        <isLayerTypeOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet_13"/>
+        <isLayerTypeOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet_14"/>
+        <isLayerTypeOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet_15"/>
+        <isLayerTypeOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet_16"/>
+        <isLayerTypeOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet_17"/>
+        <isLayerTypeOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet_18"/>
+        <isLayerTypeOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet_3"/>
+        <isLayerTypeOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet_4"/>
+        <isLayerTypeOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet_5"/>
+        <isLayerTypeOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet_6"/>
+        <isLayerTypeOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet_7"/>
+        <isLayerTypeOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet_8"/>
+        <isLayerTypeOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet_9"/>
+        <isLayerTypeOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/VGG16_1"/>
+        <isLayerTypeOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/VGG16_11"/>
+        <isLayerTypeOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/VGG16_12"/>
+        <isLayerTypeOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/VGG16_13"/>
+        <isLayerTypeOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/VGG16_15"/>
+        <isLayerTypeOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/VGG16_16"/>
+        <isLayerTypeOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/VGG16_17"/>
+        <isLayerTypeOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/VGG16_2"/>
+        <isLayerTypeOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/VGG16_4"/>
+        <isLayerTypeOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/VGG16_5"/>
+        <isLayerTypeOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/VGG16_7"/>
+        <isLayerTypeOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/VGG16_8"/>
+        <isLayerTypeOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/VGG16_9"/>
     </owl:NamedIndividual>
     
 
@@ -1023,17 +1276,26 @@
         <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Role"/>
         <isEmployedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Stanford_University"/>
         <isRoleOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Fei-Fei_Li"/>
-        <organized rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ImageNet_LSVRC_2014"/>
-        <organized rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ImageNet_LSVRC_2015"/>
+        <organizes rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ImageNet_LSVRC_2014"/>
+        <organizes rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ImageNet_LSVRC_2015"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/RiccardoOmiccioli/AMLO/Fully_Connected -->
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/FullyConnected -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/Fully_Connected">
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/FullyConnected">
         <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Category"/>
         <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/LayerType"/>
+        <isLayerTypeOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/AlexNet_10"/>
+        <isLayerTypeOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/AlexNet_11"/>
+        <isLayerTypeOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/AlexNet_9"/>
+        <isLayerTypeOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/LeNet-5_6"/>
+        <isLayerTypeOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet_20"/>
+        <isLayerTypeOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/VGG16_19"/>
+        <isLayerTypeOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/VGG16_20"/>
+        <isLayerTypeOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/VGG16_21"/>
+        <isLayerTypeOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/VGG16_22"/>
     </owl:NamedIndividual>
     
 
@@ -1044,18 +1306,9 @@
         <rdf:type rdf:resource="http://www.a2rd.net.br/mlo#Algorithms"/>
         <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ConvolutionalNeuralNetwork"/>
         <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/NeuralNetwork"/>
-        <won rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ImageNet_LSVRC_2014"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://github.com/RiccardoOmiccioli/AMLO/Google -->
-
-    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/Google">
-        <rdf:type rdf:resource="http://www.a2rd.net.br/mlo#Institutions"/>
-        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-        <funds rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/scikit-learn"/>
+        <uses rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ReLU"/>
+        <uses rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/SoftMax"/>
+        <wins rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ImageNet_LSVRC_2014"/>
     </owl:NamedIndividual>
     
 
@@ -1064,6 +1317,7 @@
 
     <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/ImageNet_LSVRC">
         <rdf:type rdf:resource="http://dbpedia.org/ontology/Competition"/>
+        <hasEdition rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ImageNet_LSVRC_2014"/>
         <hasEdition rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ImageNet_LSVRC_2015"/>
     </owl:NamedIndividual>
     
@@ -1074,6 +1328,7 @@
     <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/ImageNet_LSVRC_2014">
         <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Edition"/>
         <hasEditionYear rdf:resource="http://dbpedia.org/resource/2014"/>
+        <isEditionOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ImageNet_LSVRC"/>
         <isOrganizedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Alex_Berg_organizer_UNCCH"/>
         <isOrganizedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Fei-Fei_Li_organizer_SU"/>
         <isOrganizedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Jia_Deng_organizer_UM"/>
@@ -1120,8 +1375,8 @@
         <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Role"/>
         <isEmployedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/University_of_Michigan"/>
         <isRoleOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Jia_Deng"/>
-        <organized rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ImageNet_LSVRC_2014"/>
-        <organized rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ImageNet_LSVRC_2015"/>
+        <organizes rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ImageNet_LSVRC_2014"/>
+        <organizes rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ImageNet_LSVRC_2015"/>
     </owl:NamedIndividual>
     
 
@@ -1143,8 +1398,6 @@
     <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/Jian_Sun_author_ResNet">
         <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Author"/>
         <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Role"/>
-        <isCoAuthor rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Kaiming_He_author_ResNet"/>
-        <isCoAuthor rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Shaoquing_Ren_author_ResNet"/>
         <isCoAuthor rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Xiangyu_Zhang_author_ResNet"/>
         <isMemberOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet_group"/>
         <isRoleOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Jian_Sun"/>
@@ -1172,7 +1425,7 @@
         <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Role"/>
         <isEmployedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Stanford_University"/>
         <isRoleOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Jonathan_Krause"/>
-        <organized rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ImageNet_LSVRC_2014"/>
+        <organizes rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ImageNet_LSVRC_2014"/>
     </owl:NamedIndividual>
     
 
@@ -1194,12 +1447,165 @@
     <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/Kaiming_He_author_ResNet">
         <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Author"/>
         <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Role"/>
-        <isCoAuthor rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Jian_Sun_author_ResNet"/>
-        <isCoAuthor rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Shaoquing_Ren_author_ResNet"/>
         <isCoAuthor rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Xiangyu_Zhang_author_ResNet"/>
         <isMemberOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet_group"/>
         <isRoleOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Kaiming_He"/>
         <isWinnerOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ImageNet_LSVRC_2015"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/LeNet-5 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/LeNet-5">
+        <rdf:type rdf:resource="http://www.a2rd.net.br/mlo#Algorithms"/>
+        <uses rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/LeNet-5_1"/>
+        <uses rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/LeNet-5_2"/>
+        <uses rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/LeNet-5_3"/>
+        <uses rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/LeNet-5_4"/>
+        <uses rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/LeNet-5_5"/>
+        <uses rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/LeNet-5_6"/>
+        <uses rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/SoftMax"/>
+        <uses rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tanh"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/LeNet-5_1 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/LeNet-5_1">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Layer"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <hasLayerType rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Convolution"/>
+        <isUsedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/LeNet-5"/>
+        <isNth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</isNth>
+        <kernelDimension rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</kernelDimension>
+        <layerDepth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</layerDepth>
+        <layerHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28</layerHeight>
+        <layerWidth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28</layerWidth>
+        <padding rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</padding>
+        <stride rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</stride>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/LeNet-5_2 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/LeNet-5_2">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Layer"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <hasLayerType rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/AvgPooling"/>
+        <isUsedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/LeNet-5"/>
+        <isNth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</isNth>
+        <kernelDimension rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</kernelDimension>
+        <layerDepth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</layerDepth>
+        <layerHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</layerHeight>
+        <layerWidth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</layerWidth>
+        <padding rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</padding>
+        <stride rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</stride>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/LeNet-5_3 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/LeNet-5_3">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Layer"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <hasLayerType rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Convolution"/>
+        <isUsedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/LeNet-5"/>
+        <isNth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</isNth>
+        <kernelDimension rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</kernelDimension>
+        <layerDepth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</layerDepth>
+        <layerHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</layerHeight>
+        <layerWidth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</layerWidth>
+        <padding rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</padding>
+        <stride rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</stride>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/LeNet-5_4 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/LeNet-5_4">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Layer"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <hasLayerType rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/AvgPooling"/>
+        <isUsedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/LeNet-5"/>
+        <isNth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</isNth>
+        <kernelDimension rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</kernelDimension>
+        <layerDepth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</layerDepth>
+        <layerHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</layerHeight>
+        <layerWidth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</layerWidth>
+        <padding rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</padding>
+        <stride rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</stride>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/LeNet-5_5 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/LeNet-5_5">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Layer"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <hasLayerType rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Convolution"/>
+        <isUsedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/LeNet-5"/>
+        <isNth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</isNth>
+        <kernelDimension rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</kernelDimension>
+        <layerDepth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">120</layerDepth>
+        <layerHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</layerHeight>
+        <layerWidth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</layerWidth>
+        <padding rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</padding>
+        <stride rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</stride>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/LeNet-5_6 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/LeNet-5_6">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Layer"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <hasLayerType rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/FullyConnected"/>
+        <isUsedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/LeNet-5"/>
+        <isNth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</isNth>
+        <kernelDimension rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</kernelDimension>
+        <layerDepth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">84</layerDepth>
+        <layerHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</layerHeight>
+        <layerWidth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</layerWidth>
+        <padding rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</padding>
+        <stride rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</stride>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/MaxPooling -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/MaxPooling">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Category"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/LayerType"/>
+        <isLayerTypeOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/AlexNet_2"/>
+        <isLayerTypeOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/AlexNet_4"/>
+        <isLayerTypeOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/AlexNet_8"/>
+        <isLayerTypeOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet_2"/>
+        <isLayerTypeOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/VGG16_10"/>
+        <isLayerTypeOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/VGG16_14"/>
+        <isLayerTypeOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/VGG16_18"/>
+        <isLayerTypeOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/VGG16_3"/>
+        <isLayerTypeOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/VGG16_6"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/MicrosoftResearch -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/MicrosoftResearch">
+        <rdf:type rdf:resource="http://www.a2rd.net.br/mlo#Institutions"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <develops rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet_project"/>
+        <funds rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet_project"/>
+        <hasTeam rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet_group"/>
     </owl:NamedIndividual>
     
 
@@ -1224,7 +1630,7 @@
         <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Role"/>
         <isEmployedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Carnegie_Mellon_University"/>
         <isRoleOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Olga_Russakovsky"/>
-        <organized rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ImageNet_LSVRC_2015"/>
+        <organizes rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ImageNet_LSVRC_2015"/>
     </owl:NamedIndividual>
     
 
@@ -1236,16 +1642,20 @@
         <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Role"/>
         <isEmployedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Stanford_University"/>
         <isRoleOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Olga_Russakovsky"/>
-        <organized rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ImageNet_LSVRC_2014"/>
+        <organizes rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ImageNet_LSVRC_2014"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/RiccardoOmiccioli/AMLO/Pooling -->
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/ReLU -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/Pooling">
-        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Category"/>
-        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/LayerType"/>
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/ReLU">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ActivationFunction"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <isUsedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/AlexNet"/>
+        <isUsedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/GoogLeNet"/>
+        <isUsedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet"/>
+        <isUsedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/VGG16"/>
     </owl:NamedIndividual>
     
 
@@ -1269,7 +1679,388 @@
         <hasImplementation rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet_project"/>
         <hasMLType rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Classification"/>
         <hasReleaseYear rdf:resource="http://dbpedia.org/resource/2015"/>
-        <won rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ImageNet_LSVRC_2015"/>
+        <uses rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ReLU"/>
+        <uses rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet_1"/>
+        <uses rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet_10"/>
+        <uses rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet_11"/>
+        <uses rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet_12"/>
+        <uses rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet_13"/>
+        <uses rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet_14"/>
+        <uses rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet_15"/>
+        <uses rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet_16"/>
+        <uses rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet_17"/>
+        <uses rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet_18"/>
+        <uses rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet_19"/>
+        <uses rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet_2"/>
+        <uses rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet_20"/>
+        <uses rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet_3"/>
+        <uses rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet_4"/>
+        <uses rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet_5"/>
+        <uses rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet_6"/>
+        <uses rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet_7"/>
+        <uses rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet_8"/>
+        <uses rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet_9"/>
+        <wins rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ImageNet_LSVRC_2015"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/ResNet_1 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/ResNet_1">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Layer"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <hasLayerType rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Convolution"/>
+        <isUsedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet"/>
+        <isNth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</isNth>
+        <kernelDimension rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</kernelDimension>
+        <layerDepth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">64</layerDepth>
+        <layerHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">224</layerHeight>
+        <layerWidth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">224</layerWidth>
+        <padding rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</padding>
+        <stride rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</stride>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/ResNet_10 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/ResNet_10">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Layer"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <hasLayerType rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Convolution"/>
+        <isUsedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet"/>
+        <isNth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</isNth>
+        <kernelDimension rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</kernelDimension>
+        <layerDepth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">128</layerDepth>
+        <layerHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28</layerHeight>
+        <layerWidth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28</layerWidth>
+        <padding rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</padding>
+        <stride rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</stride>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/ResNet_11 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/ResNet_11">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Layer"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <hasLayerType rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Convolution"/>
+        <isUsedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet"/>
+        <isNth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</isNth>
+        <kernelDimension rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</kernelDimension>
+        <layerDepth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">256</layerDepth>
+        <layerHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28</layerHeight>
+        <layerWidth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28</layerWidth>
+        <padding rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</padding>
+        <stride rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</stride>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/ResNet_12 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/ResNet_12">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Layer"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <hasLayerType rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Convolution"/>
+        <isUsedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet"/>
+        <isNth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</isNth>
+        <kernelDimension rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</kernelDimension>
+        <layerDepth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">256</layerDepth>
+        <layerHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</layerHeight>
+        <layerWidth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</layerWidth>
+        <padding rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</padding>
+        <stride rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</stride>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/ResNet_13 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/ResNet_13">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Layer"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <hasLayerType rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Convolution"/>
+        <isUsedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet"/>
+        <isNth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</isNth>
+        <kernelDimension rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</kernelDimension>
+        <layerDepth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">256</layerDepth>
+        <layerHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</layerHeight>
+        <layerWidth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</layerWidth>
+        <padding rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</padding>
+        <stride rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</stride>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/ResNet_14 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/ResNet_14">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Layer"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <hasLayerType rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Convolution"/>
+        <isUsedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet"/>
+        <isNth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</isNth>
+        <kernelDimension rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</kernelDimension>
+        <layerDepth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">256</layerDepth>
+        <layerHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</layerHeight>
+        <layerWidth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</layerWidth>
+        <padding rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</padding>
+        <stride rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</stride>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/ResNet_15 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/ResNet_15">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Layer"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <hasLayerType rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Convolution"/>
+        <isUsedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet"/>
+        <isNth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</isNth>
+        <kernelDimension rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</kernelDimension>
+        <layerDepth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">512</layerDepth>
+        <layerHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</layerHeight>
+        <layerWidth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</layerWidth>
+        <padding rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</padding>
+        <stride rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</stride>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/ResNet_16 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/ResNet_16">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Layer"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <hasLayerType rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Convolution"/>
+        <isUsedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet"/>
+        <isNth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</isNth>
+        <kernelDimension rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</kernelDimension>
+        <layerDepth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">256</layerDepth>
+        <layerHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</layerHeight>
+        <layerWidth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</layerWidth>
+        <padding rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</padding>
+        <stride rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</stride>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/ResNet_17 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/ResNet_17">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Layer"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <hasLayerType rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Convolution"/>
+        <isUsedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet"/>
+        <isNth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17</isNth>
+        <kernelDimension rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</kernelDimension>
+        <layerDepth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">256</layerDepth>
+        <layerHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</layerHeight>
+        <layerWidth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</layerWidth>
+        <padding rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</padding>
+        <stride rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</stride>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/ResNet_18 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/ResNet_18">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Layer"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <hasLayerType rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Convolution"/>
+        <isUsedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet"/>
+        <isNth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</isNth>
+        <kernelDimension rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</kernelDimension>
+        <layerDepth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">256</layerDepth>
+        <layerHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</layerHeight>
+        <layerWidth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</layerWidth>
+        <padding rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</padding>
+        <stride rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</stride>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/ResNet_19 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/ResNet_19">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Layer"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <hasLayerType rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/AvgPooling"/>
+        <isUsedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet"/>
+        <isNth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">19</isNth>
+        <kernelDimension rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</kernelDimension>
+        <layerDepth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">256</layerDepth>
+        <layerHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</layerHeight>
+        <layerWidth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</layerWidth>
+        <padding rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</padding>
+        <stride rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</stride>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/ResNet_2 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/ResNet_2">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Layer"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <hasLayerType rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/MaxPooling"/>
+        <isUsedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet"/>
+        <isNth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</isNth>
+        <kernelDimension rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</kernelDimension>
+        <layerDepth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">64</layerDepth>
+        <layerHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">112</layerHeight>
+        <layerWidth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">112</layerWidth>
+        <padding rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</padding>
+        <stride rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</stride>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/ResNet_20 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/ResNet_20">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Layer"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <hasLayerType rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/FullyConnected"/>
+        <isUsedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet"/>
+        <isNth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</isNth>
+        <kernelDimension rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</kernelDimension>
+        <layerDepth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</layerDepth>
+        <layerHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000</layerHeight>
+        <layerWidth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000</layerWidth>
+        <padding rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</padding>
+        <stride rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</stride>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/ResNet_3 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/ResNet_3">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Layer"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <hasLayerType rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Convolution"/>
+        <isUsedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet"/>
+        <isNth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</isNth>
+        <kernelDimension rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</kernelDimension>
+        <layerDepth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">64</layerDepth>
+        <layerHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">56</layerHeight>
+        <layerWidth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">56</layerWidth>
+        <padding rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</padding>
+        <stride rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</stride>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/ResNet_4 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/ResNet_4">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Layer"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <hasLayerType rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Convolution"/>
+        <isUsedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet"/>
+        <isNth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</isNth>
+        <kernelDimension rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</kernelDimension>
+        <layerDepth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">64</layerDepth>
+        <layerHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">56</layerHeight>
+        <layerWidth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">56</layerWidth>
+        <padding rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</padding>
+        <stride rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</stride>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/ResNet_5 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/ResNet_5">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Layer"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <hasLayerType rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Convolution"/>
+        <isUsedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet"/>
+        <isNth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</isNth>
+        <kernelDimension rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</kernelDimension>
+        <layerDepth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">64</layerDepth>
+        <layerHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">56</layerHeight>
+        <layerWidth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">56</layerWidth>
+        <padding rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</padding>
+        <stride rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</stride>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/ResNet_6 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/ResNet_6">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Layer"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <hasLayerType rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Convolution"/>
+        <isUsedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet"/>
+        <isNth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</isNth>
+        <kernelDimension rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</kernelDimension>
+        <layerDepth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">64</layerDepth>
+        <layerHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">56</layerHeight>
+        <layerWidth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">56</layerWidth>
+        <padding rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</padding>
+        <stride rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</stride>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/ResNet_7 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/ResNet_7">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Layer"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <hasLayerType rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Convolution"/>
+        <isUsedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet"/>
+        <isNth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</isNth>
+        <kernelDimension rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</kernelDimension>
+        <layerDepth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">128</layerDepth>
+        <layerHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">56</layerHeight>
+        <layerWidth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">56</layerWidth>
+        <padding rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</padding>
+        <stride rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</stride>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/ResNet_8 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/ResNet_8">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Layer"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <hasLayerType rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Convolution"/>
+        <isUsedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet"/>
+        <isNth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</isNth>
+        <kernelDimension rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</kernelDimension>
+        <layerDepth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">128</layerDepth>
+        <layerHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28</layerHeight>
+        <layerWidth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28</layerWidth>
+        <padding rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</padding>
+        <stride rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</stride>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/ResNet_9 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/ResNet_9">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Layer"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <hasLayerType rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Convolution"/>
+        <isUsedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet"/>
+        <isNth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</isNth>
+        <kernelDimension rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</kernelDimension>
+        <layerDepth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">128</layerDepth>
+        <layerHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28</layerHeight>
+        <layerWidth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28</layerWidth>
+        <padding rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</padding>
+        <stride rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</stride>
     </owl:NamedIndividual>
     
 
@@ -1284,6 +2075,7 @@
         <hasMember rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Shaoquing_Ren_author_ResNet"/>
         <hasMember rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Xiangyu_Zhang_author_ResNet"/>
         <isAssignedTo rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet_project"/>
+        <isTeamOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/MicrosoftResearch"/>
     </owl:NamedIndividual>
     
 
@@ -1292,7 +2084,9 @@
 
     <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/ResNet_project">
         <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Project"/>
+        <foaf:fundedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/MicrosoftResearch"/>
         <hasAssigned rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet_group"/>
+        <isDevelopedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/MicrosoftResearch"/>
         <isImplementationOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet"/>
     </owl:NamedIndividual>
     
@@ -1317,7 +2111,7 @@
         <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Role"/>
         <isEmployedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Stanford_University"/>
         <isRoleOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Sean_Ma"/>
-        <organized rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ImageNet_LSVRC_2014"/>
+        <organizes rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ImageNet_LSVRC_2014"/>
     </owl:NamedIndividual>
     
 
@@ -1339,12 +2133,30 @@
     <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/Shaoquing_Ren_author_ResNet">
         <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Author"/>
         <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Role"/>
-        <isCoAuthor rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Jian_Sun_author_ResNet"/>
-        <isCoAuthor rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Kaiming_He_author_ResNet"/>
-        <isCoAuthor rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Xiangyu_Zhang_author_ResNet"/>
         <isMemberOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet_group"/>
         <isRoleOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Shaoquing_Ren"/>
         <isWinnerOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ImageNet_LSVRC_2015"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/Sigmoid -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/Sigmoid">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ActivationFunction"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/SoftMax -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/SoftMax">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ActivationFunction"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <isUsedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/GoogLeNet"/>
+        <isUsedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/LeNet-5"/>
+        <isUsedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/VGG16"/>
     </owl:NamedIndividual>
     
 
@@ -1359,6 +2171,16 @@
         <hasEmployee rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Jonathan_Krause_organizer_SU"/>
         <hasEmployee rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Olga_Russakovsky_organizer_SU"/>
         <hasEmployee rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Sean_Ma_organizer_SU"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/Tanh -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/Tanh">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ActivationFunction"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <isUsedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/LeNet-5"/>
     </owl:NamedIndividual>
     
 
@@ -1386,6 +2208,434 @@
     
 
 
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/VGG16 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/VGG16">
+        <rdf:type rdf:resource="http://www.a2rd.net.br/mlo#Algorithms"/>
+        <uses rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ReLU"/>
+        <uses rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/SoftMax"/>
+        <uses rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/VGG16_1"/>
+        <uses rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/VGG16_10"/>
+        <uses rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/VGG16_11"/>
+        <uses rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/VGG16_12"/>
+        <uses rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/VGG16_13"/>
+        <uses rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/VGG16_14"/>
+        <uses rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/VGG16_15"/>
+        <uses rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/VGG16_16"/>
+        <uses rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/VGG16_17"/>
+        <uses rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/VGG16_18"/>
+        <uses rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/VGG16_19"/>
+        <uses rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/VGG16_2"/>
+        <uses rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/VGG16_20"/>
+        <uses rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/VGG16_21"/>
+        <uses rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/VGG16_22"/>
+        <uses rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/VGG16_3"/>
+        <uses rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/VGG16_4"/>
+        <uses rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/VGG16_5"/>
+        <uses rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/VGG16_6"/>
+        <uses rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/VGG16_7"/>
+        <uses rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/VGG16_8"/>
+        <uses rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/VGG16_9"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/VGG16_1 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/VGG16_1">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Layer"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <hasLayerType rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Convolution"/>
+        <isUsedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/VGG16"/>
+        <isNth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</isNth>
+        <kernelDimension rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</kernelDimension>
+        <layerDepth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">64</layerDepth>
+        <layerHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">224</layerHeight>
+        <layerWidth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">224</layerWidth>
+        <padding rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</padding>
+        <stride rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</stride>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/VGG16_10 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/VGG16_10">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Layer"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <hasLayerType rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/MaxPooling"/>
+        <isUsedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/VGG16"/>
+        <isNth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</isNth>
+        <kernelDimension rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</kernelDimension>
+        <layerDepth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">512</layerDepth>
+        <layerHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28</layerHeight>
+        <layerWidth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28</layerWidth>
+        <padding rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</padding>
+        <stride rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</stride>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/VGG16_11 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/VGG16_11">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Layer"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <hasLayerType rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Convolution"/>
+        <isUsedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/VGG16"/>
+        <isNth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</isNth>
+        <kernelDimension rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</kernelDimension>
+        <layerDepth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">512</layerDepth>
+        <layerHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28</layerHeight>
+        <layerWidth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28</layerWidth>
+        <padding rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</padding>
+        <stride rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</stride>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/VGG16_12 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/VGG16_12">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Layer"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <hasLayerType rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Convolution"/>
+        <isUsedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/VGG16"/>
+        <isNth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</isNth>
+        <kernelDimension rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</kernelDimension>
+        <layerDepth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">512</layerDepth>
+        <layerHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28</layerHeight>
+        <layerWidth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28</layerWidth>
+        <padding rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</padding>
+        <stride rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</stride>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/VGG16_13 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/VGG16_13">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Layer"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <hasLayerType rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Convolution"/>
+        <isUsedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/VGG16"/>
+        <isNth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</isNth>
+        <kernelDimension rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</kernelDimension>
+        <layerDepth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">512</layerDepth>
+        <layerHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28</layerHeight>
+        <layerWidth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28</layerWidth>
+        <padding rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</padding>
+        <stride rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</stride>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/VGG16_14 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/VGG16_14">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Layer"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <hasLayerType rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/MaxPooling"/>
+        <isUsedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/VGG16"/>
+        <isNth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</isNth>
+        <kernelDimension rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</kernelDimension>
+        <layerDepth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">512</layerDepth>
+        <layerHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</layerHeight>
+        <layerWidth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</layerWidth>
+        <padding rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</padding>
+        <stride rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</stride>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/VGG16_15 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/VGG16_15">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Layer"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <hasLayerType rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Convolution"/>
+        <isUsedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/VGG16"/>
+        <isNth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</isNth>
+        <kernelDimension rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</kernelDimension>
+        <layerDepth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">512</layerDepth>
+        <layerHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</layerHeight>
+        <layerWidth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</layerWidth>
+        <padding rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</padding>
+        <stride rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</stride>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/VGG16_16 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/VGG16_16">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Layer"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <hasLayerType rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Convolution"/>
+        <isUsedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/VGG16"/>
+        <isNth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</isNth>
+        <kernelDimension rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</kernelDimension>
+        <layerDepth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">512</layerDepth>
+        <layerHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</layerHeight>
+        <layerWidth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</layerWidth>
+        <padding rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</padding>
+        <stride rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</stride>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/VGG16_17 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/VGG16_17">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Layer"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <hasLayerType rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Convolution"/>
+        <isUsedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/VGG16"/>
+        <isNth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17</isNth>
+        <kernelDimension rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</kernelDimension>
+        <layerDepth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">512</layerDepth>
+        <layerHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</layerHeight>
+        <layerWidth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</layerWidth>
+        <padding rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</padding>
+        <stride rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</stride>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/VGG16_18 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/VGG16_18">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Layer"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <hasLayerType rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/MaxPooling"/>
+        <isUsedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/VGG16"/>
+        <isNth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</isNth>
+        <kernelDimension rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</kernelDimension>
+        <layerDepth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">512</layerDepth>
+        <layerHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</layerHeight>
+        <layerWidth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</layerWidth>
+        <padding rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</padding>
+        <stride rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</stride>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/VGG16_19 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/VGG16_19">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Layer"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <hasLayerType rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/FullyConnected"/>
+        <isUsedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/VGG16"/>
+        <isNth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">19</isNth>
+        <kernelDimension rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</kernelDimension>
+        <layerDepth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25088</layerDepth>
+        <layerHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</layerHeight>
+        <layerWidth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</layerWidth>
+        <padding rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</padding>
+        <stride rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</stride>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/VGG16_2 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/VGG16_2">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Layer"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <hasLayerType rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Convolution"/>
+        <isUsedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/VGG16"/>
+        <isNth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</isNth>
+        <kernelDimension rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</kernelDimension>
+        <layerDepth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">64</layerDepth>
+        <layerHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">224</layerHeight>
+        <layerWidth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">224</layerWidth>
+        <padding rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</padding>
+        <stride rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</stride>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/VGG16_20 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/VGG16_20">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Layer"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <hasLayerType rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/FullyConnected"/>
+        <isUsedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/VGG16"/>
+        <isNth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</isNth>
+        <kernelDimension rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</kernelDimension>
+        <layerDepth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4096</layerDepth>
+        <layerHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</layerHeight>
+        <layerWidth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</layerWidth>
+        <padding rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</padding>
+        <stride rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</stride>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/VGG16_21 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/VGG16_21">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Layer"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <hasLayerType rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/FullyConnected"/>
+        <isUsedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/VGG16"/>
+        <isNth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21</isNth>
+        <kernelDimension rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</kernelDimension>
+        <layerDepth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4096</layerDepth>
+        <layerHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</layerHeight>
+        <layerWidth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</layerWidth>
+        <padding rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</padding>
+        <stride rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</stride>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/VGG16_22 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/VGG16_22">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Layer"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <hasLayerType rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/FullyConnected"/>
+        <isUsedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/VGG16"/>
+        <isNth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">22</isNth>
+        <kernelDimension rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</kernelDimension>
+        <layerDepth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000</layerDepth>
+        <layerHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</layerHeight>
+        <layerWidth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</layerWidth>
+        <padding rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</padding>
+        <stride rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</stride>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/VGG16_3 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/VGG16_3">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Layer"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <hasLayerType rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/MaxPooling"/>
+        <isUsedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/VGG16"/>
+        <isNth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</isNth>
+        <kernelDimension rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</kernelDimension>
+        <layerDepth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">128</layerDepth>
+        <layerHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">112</layerHeight>
+        <layerWidth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">112</layerWidth>
+        <padding rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</padding>
+        <stride rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</stride>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/VGG16_4 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/VGG16_4">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Layer"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <hasLayerType rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Convolution"/>
+        <isUsedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/VGG16"/>
+        <isNth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</isNth>
+        <kernelDimension rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</kernelDimension>
+        <layerDepth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">128</layerDepth>
+        <layerHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">112</layerHeight>
+        <layerWidth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">112</layerWidth>
+        <padding rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</padding>
+        <stride rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</stride>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/VGG16_5 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/VGG16_5">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Layer"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <hasLayerType rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Convolution"/>
+        <isUsedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/VGG16"/>
+        <isNth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</isNth>
+        <kernelDimension rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</kernelDimension>
+        <layerDepth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">128</layerDepth>
+        <layerHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">112</layerHeight>
+        <layerWidth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">112</layerWidth>
+        <padding rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</padding>
+        <stride rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</stride>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/VGG16_6 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/VGG16_6">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Layer"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <hasLayerType rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/MaxPooling"/>
+        <isUsedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/VGG16"/>
+        <isNth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</isNth>
+        <kernelDimension rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</kernelDimension>
+        <layerDepth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">256</layerDepth>
+        <layerHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">56</layerHeight>
+        <layerWidth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">56</layerWidth>
+        <padding rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</padding>
+        <stride rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</stride>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/VGG16_7 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/VGG16_7">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Layer"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <hasLayerType rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Convolution"/>
+        <isUsedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/VGG16"/>
+        <isNth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</isNth>
+        <kernelDimension rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</kernelDimension>
+        <layerDepth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">256</layerDepth>
+        <layerHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">56</layerHeight>
+        <layerWidth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">56</layerWidth>
+        <padding rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</padding>
+        <stride rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</stride>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/VGG16_8 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/VGG16_8">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Layer"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <hasLayerType rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Convolution"/>
+        <isUsedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/VGG16"/>
+        <isNth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</isNth>
+        <kernelDimension rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</kernelDimension>
+        <layerDepth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">256</layerDepth>
+        <layerHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">56</layerHeight>
+        <layerWidth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">56</layerWidth>
+        <padding rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</padding>
+        <stride rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</stride>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/RiccardoOmiccioli/AMLO/VGG16_9 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/VGG16_9">
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Layer"/>
+        <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Tool"/>
+        <hasLayerType rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Convolution"/>
+        <isUsedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/VGG16"/>
+        <isNth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</isNth>
+        <kernelDimension rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</kernelDimension>
+        <layerDepth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">256</layerDepth>
+        <layerHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">56</layerHeight>
+        <layerWidth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">56</layerWidth>
+        <padding rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</padding>
+        <stride rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</stride>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://github.com/RiccardoOmiccioli/AMLO/Wei_Liu -->
 
     <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/Wei_Liu">
@@ -1405,7 +2655,7 @@
         <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Role"/>
         <isEmployedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/University_of_North_Carolina_Chapel_Hill"/>
         <isRoleOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Wei_Liu"/>
-        <organized rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ImageNet_LSVRC_2015"/>
+        <organizes rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ImageNet_LSVRC_2015"/>
     </owl:NamedIndividual>
     
 
@@ -1429,52 +2679,9 @@
         <rdf:type rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Role"/>
         <isCoAuthor rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Jian_Sun_author_ResNet"/>
         <isCoAuthor rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Kaiming_He_author_ResNet"/>
-        <isCoAuthor rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Shaoquing_Ren_author_ResNet"/>
         <isMemberOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ResNet_group"/>
         <isRoleOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Xiangyu_Zhang"/>
         <isWinnerOf rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/ImageNet_LSVRC_2015"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://github.com/RiccardoOmiccioli/AMLO/scikit-learn -->
-
-    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/scikit-learn">
-        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Project"/>
-        <foaf:fundedBy rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Google"/>
-        <hasAssigned rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/scikit-learn_group"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://github.com/RiccardoOmiccioli/AMLO/scikit-learn_group -->
-
-    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/scikit-learn_group">
-        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Group"/>
-        <hasMember rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Adrin_Jalal_author_scikit-learn"/>
-        <hasMember rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Alexandre_Gramfort_author_scikit-learn"/>
-        <isAssignedTo rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/scikit-learn"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://github.com/RiccardoOmiccioli/AMLO/tensorFlow_Quantum -->
-
-    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/tensorFlow_Quantum">
-        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Project"/>
-        <hasAssigned rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/tensorFlow_Quantum_group"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://github.com/RiccardoOmiccioli/AMLO/tensorFlow_Quantum_group -->
-
-    <owl:NamedIndividual rdf:about="https://github.com/RiccardoOmiccioli/AMLO/tensorFlow_Quantum_group">
-        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Group"/>
-        <hasMember rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/Alan_Ho_author_tensorFlow_Quantum"/>
-        <isAssignedTo rdf:resource="https://github.com/RiccardoOmiccioli/AMLO/tensorFlow_Quantum"/>
     </owl:NamedIndividual>
 </rdf:RDF>
 

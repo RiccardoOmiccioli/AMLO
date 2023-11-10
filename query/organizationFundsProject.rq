@@ -10,3 +10,4 @@ WHERE {
 }
 GROUP BY ?organization
 ORDER BY DESC(?projectCount)
+LIMIT 10

@@ -1,0 +1,9 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX : <https://github.com/RiccardoOmiccioli/AMLO/>
+
+SELECT ?mlType (COUNT(?technology) AS ?technologyCount)
+WHERE {
+  ?mlType a :MachineLearningType.
+  ?technology :hasMLType ?mlType.
+}
+GROUP BY ?mlType

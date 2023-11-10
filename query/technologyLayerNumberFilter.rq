@@ -1,0 +1,12 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX mlo: <http://www.a2rd.net.br/mlo#>
+PREFIX : <https://github.com/RiccardoOmiccioli/AMLO/>
+
+SELECT DISTINCT ?technology
+WHERE {
+  ?technology a mlo:Algorithms.
+  ?technology :uses ?layer.
+  ?layer a :Layer.
+  ?layer :isNth ?position.
+  FILTER (?position >= 15 && ?position <= 25)
+}
