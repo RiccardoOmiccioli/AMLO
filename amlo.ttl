@@ -728,67 +728,13 @@ mlo:Algorithms rdf:type owl:Class ;
         rdfs:label "Layer Type"@en ,
                 "Tipo Strato"@it .
 
-###  https://github.com/RiccardoOmiccioli/AMLO/Pooling
-:Pooling rdf:type owl:Class ;
-        rdfs:subClassOf :LayerType ;
-        rdfs:comment "A particular Layer type that performs an aggregation function."@en ,
-                "Un tipo particolare di Layer che effettua un'operazione di aggregazione."@it ;
-        rdfs:label "Pooling"@en ,
-                "Pooling"@it .
-
 #################################################################
 #    Individuals
 #################################################################
 
-###  https://github.com/RiccardoOmiccioli/AMLO/Adrin_Jalal
-:Adrin_Jalal rdf:type owl:NamedIndividual ;
-        :familyName "Jalal" ;
-        :firstName "Adrin" ;
-        :hasRole :Adrin_Jalal_author_scikit-learn .
-
-###  https://github.com/RiccardoOmiccioli/AMLO/Adrin_Jalal_author_scikit-learn
-:Adrin_Jalal_author_scikit-learn rdf:type owl:NamedIndividual ;
-        :isMemberOf :scikit-learn_group .
-
-###  https://github.com/RiccardoOmiccioli/AMLO/Alexandre_Gramfort
-:Alexandre_Gramfort rdf:type owl:NamedIndividual ;
-        :familyName "Gramfort" ;
-        :firstName "Alexandre" ;
-        :hasRole :Alexandre_Gramfort_author_scikit-learn .
-
-###  https://github.com/RiccardoOmiccioli/AMLO/Alexandre_Gramfort_author_scikit-learn
-:Alexandre_Gramfort_author_scikit-learn rdf:type owl:NamedIndividual ;
-        :isMemberOf :scikit-learn_group .
-
-###  https://github.com/RiccardoOmiccioli/AMLO/Alan_Ho
-:Alan_Ho rdf:type owl:NamedIndividual ;
-        :familyName "Ho" ;
-        :firstName "Alan" ;
-        :hasRole :Alan_Ho_author_tensorFlow_Quantum .
-
-###  https://github.com/RiccardoOmiccioli/AMLO/Alan_Ho_author_tensorFlow_Quantum
-:Alan_Ho_author_tensorFlow_Quantum rdf:type owl:NamedIndividual ;
-        :isMemberOf :tensorFlow_Quantum_group .
-
-###  https://github.com/RiccardoOmiccioli/AMLO/Google
-:Google rdf:type owl:NamedIndividual ,
+###  https://github.com/RiccardoOmiccioli/AMLO/MicrosoftResearch
+:MicrosoftResearch rdf:type owl:NamedIndividual ,
         mlo:Institutions .
-
-###  https://github.com/RiccardoOmiccioli/AMLO/scikit-learn
-:scikit-learn rdf:type owl:NamedIndividual ;
-        foaf:fundedBy :Google ;
-        :isDevelopedBy :Google.
-
-###  https://github.com/RiccardoOmiccioli/AMLO/tensorFlow_Quantum
-:tensorFlow_Quantum rdf:type owl:NamedIndividual .
-
-###  https://github.com/RiccardoOmiccioli/AMLO/scikit-learn_group
-:scikit-learn_group rdf:type owl:NamedIndividual ;
-        :isAssignedTo :scikit-learn .
-
-###  https://github.com/RiccardoOmiccioli/AMLO/tensorFlow_Quantum_group
-:tensorFlow_Quantum_group rdf:type owl:NamedIndividual ;
-        :isAssignedTo :tensorFlow_Quantum .
 
 ###  http://dbpedia.org/resource/2014
 dbr:2014 rdf:type owl:NamedIndividual ;
@@ -892,7 +838,9 @@ dbr:2015 rdf:type owl:NamedIndividual .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/ResNet_project
 :ResNet_project rdf:type owl:NamedIndividual ;
-        :isImplementationOf :ResNet .
+        :isImplementationOf :ResNet ;
+        foaf:fundedBy :MicrosoftResearch ;
+        :isDevelopedBy :MicrosoftResearch .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/Sean_Ma
 :Sean_Ma rdf:type owl:NamedIndividual ;
@@ -957,11 +905,11 @@ dbr:2015 rdf:type owl:NamedIndividual .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/AvgPooling
 :AvgPooling rdf:type owl:NamedIndividual,
-        :Pooling .
+        :LayerType .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/MaxPooling
 :MaxPooling rdf:type owl:NamedIndividual,
-        :Pooling .
+        :LayerType .
 
 ###  https://github.com/RiccardoOmiccioli/AMLO/FullyConnected
 :FullyConnected rdf:type owl:NamedIndividual,
